@@ -3,12 +3,12 @@
 
 /* Variáveis CSS */
 :root{
-	/* --header-height: 3rem; */
+	--header-height: 3rem;
 
 	/* Cores*/
 	--backgound-color: #121214;
 	--backgound-light-color: #fbfbfb;
-	--fist-color: #5429fc;
+	--fist-color: #5352ed;
 	--text-color: #fff;
 
 	/* Fontes e Tipografia */
@@ -63,6 +63,7 @@ h1, h2, h3, h4{
 
 .logo{
 	font-size: 20px;
+	width: 150px;
 }
 
 .header{
@@ -72,7 +73,8 @@ h1, h2, h3, h4{
 	background: var(--backgound-color);
 	padding: 20px 0;
 	z-index: var(--z-tooltip);
-	background: #3f3f47;
+	/* background: #3f3f47; */
+	background: var(--fist-color);
 }
 
 .header_menu{
@@ -94,7 +96,8 @@ h1, h2, h3, h4{
 }
 
 .header_menu ul li a:hover{
-	color: var(--fist-color);
+	color: #000;
+	font-weight: var(--font-semi-bold);
 }
 
 .header_menu ul li a.menu_ativo{
@@ -107,9 +110,49 @@ h1, h2, h3, h4{
 	width: 100%;
   height: 380px;
 	text-align: left;
-  padding-top: 80px;
 	padding: 350px 50px;
 	/* background-color: #5429fc; */
+}
+
+.btn{
+	width: 225px;
+	height: 55px;
+	left: 160px;
+	top: 392px;
+	border-radius: 5px;
+	background: var(--fist-color);
+	font-family: var(--body-font);
+	font-weight: var(--font-semi-bold);
+	color: #fbfbfb;
+	border: 0;
+}
+
+.btn:hover{
+	background: #3e29fc;
+}
+
+.btn-linkedin, .btn-curriculo{
+	width: 175px;
+	height: 55px;
+	left: 736px;
+	top: 1102px;
+	border-radius: 5px;
+	background: var(--fist-color);
+	font-family: var(--body-font);
+	font-weight: var(--font-semi-bold);
+	color: #fbfbfb;
+	border: 0;
+}
+
+.btn-curriculo:hover{
+	background: var(--fist-color);
+}
+.btn-linkedin:hover{
+	background: var(--fist-color);
+}
+
+.nome{
+	font-size: var(--titulo-pequeno);
 }
 
 /* Sobre */
@@ -117,7 +160,7 @@ h1, h2, h3, h4{
 .sobre{
 	width: 100%;
 	background: #202024;
-	padding: 300px;
+	padding: 400px;
 }
 
 
@@ -146,7 +189,7 @@ h1, h2, h3, h4{
 .footer{
 	width: 100%;
 	height: 200px;
-	background-color: #5429fc;
+	background-color: var(--fist-color);
 }
 
 .footer div{
