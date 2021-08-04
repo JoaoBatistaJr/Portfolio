@@ -119,16 +119,24 @@ h1, h2, h3, h4{
 	/* background-color: #5429fc; */
 }
 
-
+/* AVATAR */
+.avatar{
+	width: 250px;
+	height: 250px;
+	/* position: relative; */
+}
 
 .nome{
-	font-size: var(--titulo-pequeno);
-		line-height: 24px;
-		margin-bottom: 21px;
+	font-size: 32px;
+	line-height: 24px;
+}
+
+.cargo{
+	margin-bottom: 21px;
 }
 
 .btn{
-	width: 225px;
+	width: 250px;
 	height: 55px;
 	border-radius: 5px;
 	color: #fbfbfb;
@@ -137,6 +145,7 @@ h1, h2, h3, h4{
 	font-family: var(--body-font);
 	font-weight: var(--font-semi-bold);
 	border: 0;
+	margin-top: 20px;
 }
 
 
@@ -144,22 +153,14 @@ h1, h2, h3, h4{
 	background: #3e29fc;
 }
 
-/* AVATAR */
-.avatar{
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	border: 400px #000;
-	top: 1000px;
-	/* position: relative; */
-}
+
 
 /* Sobre */
 
 .sobre{
 	width: 100%;
 	/* background: #202024; */
-	padding: 100px 0;
+	padding: 150px 0;
 	margin: 100px 0 40px 0;
 }
 .sobre h1{
