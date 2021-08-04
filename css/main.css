@@ -115,9 +115,7 @@ h1, h2, h3, h4{
 
 .introducao{
 	width: 100%;
-	padding: 50px 0;
-	/* margin-top: 100px; */
-	margin-bottom: 40px;
+	margin-top: -50px;
 	/* background-color: #5429fc; */
 }
 
@@ -126,7 +124,7 @@ h1, h2, h3, h4{
 .nome{
 	font-size: var(--titulo-pequeno);
 		line-height: 24px;
-	margin-bottom: 21px;
+		margin-bottom: 21px;
 }
 
 .btn{
@@ -134,7 +132,6 @@ h1, h2, h3, h4{
 	height: 55px;
 	border-radius: 5px;
 	color: #fbfbfb;
-	padding: 10px 30px;
 	cursor: pointer;
 	background: var(--fist-color);
 	font-family: var(--body-font);
@@ -162,9 +159,8 @@ h1, h2, h3, h4{
 .sobre{
 	width: 100%;
 	/* background: #202024; */
-	padding: 200px 0;
-	margin-top: 100px;
-	margin-bottom: 40px;
+	padding: 100px 0;
+	margin: 100px 0 40px 0;
 }
 .sobre h1{
 	font-size: var(--titulo-medio);
@@ -175,8 +171,6 @@ h1, h2, h3, h4{
 .btn-linkedin, .btn-curriculo{
 	width: 175px;
 	height: 55px;
-	left: 736px;
-	top: 1102px;
 	margin-top: 35px;
 	border-radius: 5px;
 	background: var(--fist-color);
