@@ -61,6 +61,11 @@ h1, h2, h3, h4{
 .container{
 	display: flex;
 	justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 50px;
 } 
 
 .logo{
@@ -110,8 +115,9 @@ h1, h2, h3, h4{
 
 .introducao{
 	width: 100%;
-  height: 380px;
-	padding: 350px 50px;
+	padding: 200px 0;
+	margin-top: 100px;
+	margin-bottom: 40px;
 	/* background-color: #5429fc; */
 }
 
@@ -132,6 +138,7 @@ h1, h2, h3, h4{
 	font-weight: var(--font-semi-bold);
 	color: #fbfbfb;
 	border: 0;
+	cursor: pointer;
 }
 
 
@@ -144,9 +151,9 @@ h1, h2, h3, h4{
 .sobre{
 	width: 100%;
 	background: #202024;
-	padding: 400px;
-	justify-content: flex-end;
-	line-height: 24px;
+	padding: 200px 0;
+	margin-top: 100px;
+	margin-bottom: 40px;
 }
 .sobre h1{
 	font-size: var(--titulo-medio);
@@ -166,6 +173,7 @@ h1, h2, h3, h4{
 	font-weight: var(--font-semi-bold);
 	color: #fbfbfb;
 	border: 0;
+	cursor: pointer;
 }
 
 .btn-linkedin{
@@ -186,7 +194,6 @@ h1, h2, h3, h4{
 
 .projetos{
 	width: 100%;
-	padding: 300px;
 }
 
 /* Conhecimentos */
@@ -194,19 +201,15 @@ h1, h2, h3, h4{
 .servicos{
 	width: 100%;
 	background: #202024;
-	padding: 300px;
 }
 
 /* Conhecimentos */
 
 .conhecimentos{
-	width: 100%;
-	padding: 300px;
 }
 
 .footer{
 	width: 100%;
-	height: 200px;
 	background-color: var(--fist-color);
 }
 
