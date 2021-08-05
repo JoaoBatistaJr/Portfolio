@@ -20,7 +20,7 @@
 	--texto-medio: 16px;
 	--texto-grande: 18px;
 	--titulo-pequeno: 24px;
-	--titulo-medio: 36px;
+	--titulo-medio: 32px;
 	--titulo-grande: 48px; 
 
 	/* Pesos das fontes */
@@ -80,7 +80,6 @@ h1, h2, h3, h4{
 	background: var(--backgound-color);
 	padding: 20px 0;
 	z-index: var(--z-tooltip);
-	/* background: #3f3f47; */
 	background: var(--fist-color);
 }
 
@@ -96,7 +95,7 @@ h1, h2, h3, h4{
 }
 
 .header_menu ul li a{
-	color: #fbfbfb;
+	color: #f3fbfb;
 	font-size: 17px;
 	line-height: 25px;
 	padding: 10px 0;
@@ -116,14 +115,15 @@ h1, h2, h3, h4{
 .introducao{
 	width: 100%;
 	margin-top: -50px;
-	/* background-color: #5429fc; */
 }
 
 /* AVATAR */
 .avatar{
-	width: 250px;
-	height: 250px;
-	/* position: relative; */
+	width: auto;
+	height: auto;
+	max-width: 230px;
+	border-radius: 50%;
+	margin-bottom: 10px;
 }
 
 .nome{
@@ -145,7 +145,7 @@ h1, h2, h3, h4{
 	font-family: var(--body-font);
 	font-weight: var(--font-semi-bold);
 	border: 0;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 
@@ -159,11 +159,10 @@ h1, h2, h3, h4{
 
 .sobre{
 	width: 100%;
-	/* background: #202024; */
 	padding: 150px 0;
 	margin: 100px 0 40px 0;
 }
-.sobre h1{
+.titulo-sobre{
 	font-size: var(--titulo-medio);
 	line-height: 24px;
 	margin-bottom: 21px;
@@ -196,7 +195,59 @@ h1, h2, h3, h4{
 	background: var(--btn-hover);
 }
 
+/* Projetos */
 
+.projetos{
+	background: #202024;
+	margin-bottom: 200px;
+}
+
+.titulo-projetos{
+	font-size: var(--titulo-medio);
+	line-height: 24px;
+	padding-top: 100px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.projetos_lista li{
+	max-width: 348px;
+	padding: 20px;
+	margin: 10px;
+	background: var(--backgound-color);
+	border-radius: 5px;
+}
+
+.projetos_lista h2{
+	font-size: var(--texto-grande);
+	margin: 20px 20px;
+}
+
+.projetos_lista p{
+	margin: 20px;
+}
+
+a .link_github{
+	font-size: var(--texto-grande);
+	padding: 100px 50px;
+  text-align: center;
+
+}
+
+.btn_git{
+	max-width: 130px;
+	height: 35px;
+	padding: 10px 10px;
+	margin: 40px 10px 10px 20px;
+	border-radius: 5px;
+	background: var(--fist-color);
+	font-family: var(--body-font);
+	color: #fbfbfb;
+	border: 0;
+	cursor: pointer;
+}
+
+/* Footer */
 .footer{
 	width: 100%;
 	background-color: var(--fist-color);
