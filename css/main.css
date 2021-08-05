@@ -199,7 +199,8 @@ h1, h2, h3, h4{
 
 .projetos{
 	background: #202024;
-	margin-bottom: 200px;
+	padding-bottom: 80px;
+	margin-bottom: 100px;
 }
 
 .titulo-projetos{
@@ -211,7 +212,7 @@ h1, h2, h3, h4{
 }
 
 .projetos_lista li{
-	max-width: 348px;
+	/* max-width: 348px; */
 	padding: 20px;
 	margin: 10px;
 	background: var(--backgound-color);
@@ -227,10 +228,11 @@ h1, h2, h3, h4{
 	margin: 20px;
 }
 
-a .link_github{
+.link_github{
 	font-size: var(--texto-grande);
 	padding: 100px 50px;
-  text-align: center;
+	text-align: center;
+	color: var(--fist-color);
 
 }
 
