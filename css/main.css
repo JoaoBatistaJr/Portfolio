@@ -3,10 +3,11 @@
 
 /* Variáveis CSS */
 :root{
-	--header-height: 3rem;
+	/* --header-height: 3rem; */
 
 	/* Cores*/
 	--backgound-color: #121214;
+	--backgound-color2: #202024;
 	--backgound-light-color: #fbfbfb;
 	--fist-color: #5352ed;
 	--text-color: #fff;
@@ -198,21 +199,22 @@ h1, h2, h3, h4{
 /* Projetos */
 
 .projetos{
-	background: #202024;
+	background: var(--backgound-color2);
 	padding-bottom: 80px;
-	margin-bottom: 100px;
 }
 
 .titulo-projetos{
 	font-size: var(--titulo-medio);
 	line-height: 24px;
 	padding-top: 100px;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	text-align: center;
+	
 }
 
 .projetos_lista li{
-	/* max-width: 348px; */
+	max-width: 348px;
+	height: 270px;
 	padding: 20px;
 	margin: 10px;
 	background: var(--backgound-color);
@@ -228,19 +230,11 @@ h1, h2, h3, h4{
 	margin: 20px;
 }
 
-.link_github{
-	font-size: var(--texto-grande);
-	padding: 100px 50px;
-	text-align: center;
-	color: var(--fist-color);
-
-}
-
 .btn_git{
 	max-width: 130px;
 	height: 35px;
 	padding: 10px 10px;
-	margin: 40px 10px 10px 20px;
+	margin: 10px 10px 10px 20px;
 	border-radius: 5px;
 	background: var(--fist-color);
 	font-family: var(--body-font);
@@ -249,9 +243,68 @@ h1, h2, h3, h4{
 	cursor: pointer;
 }
 
+.link_github{
+	font-size: var(--texto-grande);
+	padding: 100px 50px;
+	text-align: center;
+	color: var(--fist-color);
+
+}
+
+/* Serviços */
+
+.servicos{
+	padding-top: 100px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.titulo_servicos{
+	font-size: var(--titulo-medio);
+	line-height: 24px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.projetos_lista li{
+	max-width: 348px;
+	padding: 20px;
+	margin: 10px;
+	background: var(--backgound-color);
+	border-radius: 5px;
+}
+
+.servicos_lista li{
+	max-width: 250px;
+	height: 300px;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 5px;
+	background: var(--backgound-color2);
+}
+
+.servicos img{
+	width: 50px;
+	height: 50px;
+	margin-top: 45px;
+	margin-bottom: 35px;
+}
+
+.servicos_lista h2{
+	font-size: var(--texto-medio);
+	font-weight: var(--font-semi-bold);
+	/* margin: 20px 20px; */
+}
+
+.servicos_lista p{
+	padding-top: 15px;
+}
+
 /* Footer */
 .footer{
 	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 80px;
 	background-color: var(--fist-color);
 }
 
