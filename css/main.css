@@ -298,8 +298,28 @@ h1, h2, h3, h4{
 
 .servicos_lista p{
 	padding-top: 15px;
+	font-size: var(--texto-pequeno);
 }
 
+/* Botão voltar ao top */
+
+/* #btn_voltar_topo{
+    position: fixed;
+		width: 55px;
+		height: 55px;
+    right: 30px;
+    bottom: 30px;
+    background-color: var(--fist-color);
+		color: #f3fbfb;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+		opacity: .8;
+}
+
+#btn_voltar_topo:hover{
+	opacity: 1;
+} */
 /* Footer */
 .footer{
 	width: 100%;
