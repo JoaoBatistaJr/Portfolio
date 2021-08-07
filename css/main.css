@@ -90,7 +90,7 @@ h1, h2, h3, h4{
 
 .header_menu ul li {
 	display: inline-block;
-	margin-left: 48px;
+	margin-left: 40px;
 	flex-direction: column;
 	
 }
@@ -200,7 +200,7 @@ h1, h2, h3, h4{
 
 .projetos{
 	background: var(--backgound-color2);
-	padding-bottom: 80px;
+	padding-bottom: 100px;
 }
 
 .titulo-projetos{
@@ -214,8 +214,8 @@ h1, h2, h3, h4{
 
 .projetos_lista li{
 	max-width: 348px;
-	height: 270px;
-	padding: 20px;
+	height: 300px;
+	padding: 30px;
 	margin: 10px;
 	background: var(--backgound-color);
 	border-radius: 5px;
@@ -266,28 +266,21 @@ h1, h2, h3, h4{
 	text-align: center;
 }
 
-.projetos_lista li{
-	max-width: 348px;
-	padding: 20px;
-	margin: 10px;
-	background: var(--backgound-color);
-	border-radius: 5px;
-}
-
 .servicos_lista li{
 	max-width: 250px;
-	height: 300px;
+	height: 350px;
 	padding: 20px;
 	margin: 10px;
 	border-radius: 5px;
 	background: var(--backgound-color2);
 }
 
-.servicos img{
+.icons{
 	width: 50px;
 	height: 50px;
 	margin-top: 45px;
 	margin-bottom: 35px;
+	color: var(--fist-color)
 }
 
 .servicos_lista h2{
