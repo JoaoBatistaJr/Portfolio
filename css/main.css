@@ -221,6 +221,7 @@ h1, h2, h3, h4{
 	border-radius: 5px;
 }
 
+
 .projetos_lista h2{
 	font-size: var(--texto-grande);
 	margin: 20px 20px;
@@ -254,8 +255,8 @@ h1, h2, h3, h4{
 /* Serviços */
 
 .servicos{
-	padding-top: 100px;
-	padding-bottom: 80px;
+	padding-top: 120px;
+	padding-bottom: 100px;
 	text-align: center;
 }
 
@@ -294,25 +295,30 @@ h1, h2, h3, h4{
 	font-size: var(--texto-pequeno);
 }
 
-/* Botão voltar ao top */
+/* Conhecimentos */
 
-/* #btn_voltar_topo{
-    position: fixed;
-		width: 55px;
-		height: 55px;
-    right: 30px;
-    bottom: 30px;
-    background-color: var(--fist-color);
-		color: #f3fbfb;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-		opacity: .8;
+#conhecimentos{
+	width: 100%;
+	padding: 170px 170px;
+	background: var(--backgound-color2);
 }
 
-#btn_voltar_topo:hover{
-	opacity: 1;
-} */
+.titulo_conhecimentos{
+	font-size: var(--titulo-medio);
+	line-height: 24px;
+	margin-bottom: 40px;
+}
+
+.skills_lista li{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10%;
+	background: var(--backgound-color);
+	text-align: center;
+}
+
 /* Footer */
 .footer{
 	width: 100%;
@@ -323,4 +329,5 @@ h1, h2, h3, h4{
 
 .footer div{
 	text-align: center;
+	
 }
