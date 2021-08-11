@@ -1,0 +1,53 @@
+// Variáveis
+$primary-color: #121214;
+$secondary-color: #202024;
+$component-color: #5352ed;
+$btnHover-color: #3e29fc;
+$text-color: #fbfbfb;
+
+// Tipografia
+$body-font: 'Fira Code', monospace; 
+
+// Tamanho de fonts
+$text-small: 14px;
+$text-medium: 16px;
+$text-big: 18px;
+$title-small: 24px;
+$title-medium: 32px;
+$title-big: 48px;
+
+// Peso das fonts
+$font-medium: 500;
+$font-semi-Bold: 600;
+
+//Configurações do z-index
+$z-navbar-fixed: 10;
+
+@mixin tipografia{
+	font-family: 'Fira Code', monospace;
+}
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0 0 .1rem 0;
+	@include tipografia;
+	font-size: $font-medium;
+	background-color: $primary-color;
+	color: $text-color;
+}
+
+h1, h2, h3, h4{
+	color: $text-color;
+	font-weight: $font-semi-Bold;
+}
+
+

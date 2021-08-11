@@ -1,0 +1,148 @@
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	padding: 0 50px;
+}
+
+.logo{
+	font-size: $text-big +2;
+	width: 150px;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: $primary-color;
+	padding: 20px 0;
+	z-index: $z-navbar-fixed;
+	background: $component-color;
+}
+
+.header_menu{
+	text-align: right;
+}
+
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 40px;
+	flex-direction: column;
+	
+}
+
+.header_menu ul li a{
+	color: $text-color;
+	font-size: 17px;
+	line-height: 25px;
+	padding: 10px 0;
+}
+
+.header_menu ul li a:hover{
+	color: #000;
+	font-weight: $font-semi-Bold;
+}
+
+.header_menu ul li a.menu_ativo{
+	color: $component-color;
+}
+
+/* Introdução */
+.introducao {
+  width: 100%;
+  margin-top: -50px;
+}
+
+/* Sobre */
+.sobre {
+  width: 100%;
+  padding: 150px 0;
+  margin: 100px 0 40px 0;
+}
+
+.titulo-sobre {
+  font-size: $title-medium;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+
+/* Projetos */
+.projetos {
+  background: $secondary-color;
+  padding-bottom: 100px;
+}
+
+.titulo-projetos {
+  font-size: $title-medium;
+  line-height: 24px;
+  padding-top: 100px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.projetos_lista h2 {
+  font-size: $text-big;
+  margin: 20px 20px;
+}
+
+.projetos_lista p {
+  margin: 20px;
+}
+
+.link_github {
+  font-size: $text-big;
+  padding: 100px 50px;
+  text-align: center;
+  color: $component-color;
+}
+
+/* Serviços */
+.servicos {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.titulo_servicos {
+  font-size: $title-medium;
+  line-height: 24px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.servicos_lista h2 {
+  font-size: $text-medium;
+  font-weight: $font-semi-Bold;
+  /* margin: 20px 20px; */
+}
+
+.servicos_lista p {
+  padding-top: 15px;
+  font-size: $text-small;
+}
+
+/* Conhecimentos */
+#conhecimentos {
+  width: 100%;
+  padding: 170px 170px;
+  background: $secondary-color;
+}
+
+.titulo_conhecimentos {
+  font-size: $title-medium;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: $component-color;
+}
+
+.footer div {
+  text-align: center;
+}

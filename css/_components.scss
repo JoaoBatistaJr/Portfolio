@@ -1,0 +1,112 @@
+/* AVATAR */
+.avatar {
+  width: auto;
+  height: auto;
+  max-width: 230px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nome {
+  font-size: $title-medium;
+  line-height: 24px;
+}
+
+.cargo {
+  margin-bottom: 21px;
+}
+
+.btn {
+  width: 250px;
+  height: 55px;
+  border-radius: 5px;
+  color: $text-color;
+  cursor: pointer;
+  background: $component-color;
+  font-family: $body-font;
+  font-weight: $font-semi-Bold;
+  border: 0;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background: $btnHover-color;
+}
+
+.btn-linkedin, .btn-curriculo {
+  width: 175px;
+  height: 55px;
+  margin-top: 35px;
+  border-radius: 5px;
+  background: $component-color;
+  font-family: $body-font;
+  font-weight: $font-semi-Bold;
+  color: $text-color;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-linkedin {
+  margin-right: 10px;
+}
+
+.btn-curriculo {
+  margin-left: 10px;
+}
+
+.btn-curriculo:hover {
+  background: $btnHover-color;
+}
+
+.btn-linkedin:hover {
+  background: $btnHover-color;
+}
+
+.projetos_lista li {
+  max-width: 348px;
+  height: 300px;
+  padding: 30px;
+  margin: 10px;
+  background: $primary-color;
+  border-radius: 5px;
+}
+
+.btn_git {
+  max-width: 130px;
+  height: 35px;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 20px;
+  border-radius: 5px;
+  background: $component-color;
+  font-family: $body-font;
+  color: $text-color;
+  border: 0;
+  cursor: pointer;
+}
+
+.servicos_lista li {
+  max-width: 250px;
+  height: 350px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background: $secondary-color;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  color: $component-color;
+}
+
+.skills_lista li {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10%;
+  background: $primary-color;
+  text-align: center;
+}
