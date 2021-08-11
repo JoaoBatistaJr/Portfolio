@@ -5,8 +5,7 @@
         "main.scss",
         "_base.scss",
         "_layout.scss",
-        "_components.scss",
-        "grid2.scss"
+        "_components.scss"
     ],
     "names": [],
     "file": "main.css"
