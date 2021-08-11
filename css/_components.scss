@@ -55,11 +55,11 @@
 }
 
 .btn-curriculo:hover {
-  background: $btnHover-color;
+  background-color: $btnHover-color;
 }
 
 .btn-linkedin:hover {
-  background: $btnHover-color;
+  background-color: $btnHover-color;
 }
 
 .projetos_lista li {
@@ -82,6 +82,11 @@
   color: $text-color;
   border: 0;
   cursor: pointer;
+}
+
+.btn_git:hover{
+	background-color: $btnHover-color;
+	cursor: pointer;
 }
 
 .servicos_lista li {

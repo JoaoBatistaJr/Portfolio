@@ -237,11 +237,11 @@ h1, h2, h3, h4 {
 }
 
 .btn-curriculo:hover {
-  background: #3e29fc;
+  background-color: #3e29fc;
 }
 
 .btn-linkedin:hover {
-  background: #3e29fc;
+  background-color: #3e29fc;
 }
 
 .projetos_lista li {
@@ -263,6 +263,11 @@ h1, h2, h3, h4 {
   font-family: "Fira Code", monospace;
   color: #fbfbfb;
   border: 0;
+  cursor: pointer;
+}
+
+.btn_git:hover {
+  background-color: #3e29fc;
   cursor: pointer;
 }
 
