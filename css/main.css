@@ -91,7 +91,11 @@ h1, h2, h3, h4 {
 .sobre {
   width: 100%;
   padding: 150px 0;
-  margin: 100px 0 40px 0;
+  margin: 57px 0 40px 0;
+}
+
+.sobre p {
+  line-height: 24px;
 }
 
 .titulo-sobre {
@@ -157,8 +161,14 @@ h1, h2, h3, h4 {
 
 /* Conhecimentos */
 #conhecimentos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  padding: 170px 170px;
+  padding: 150px 0 150px 0;
   background: #202024;
 }
 
@@ -171,13 +181,38 @@ h1, h2, h3, h4 {
 /* Footer */
 .footer {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #5352ed;
 }
 
 .footer div {
   text-align: center;
+}
+
+.contato-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.contato-footer li {
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contato-footer a {
+  color: #fbfbfb;
+}
+
+.contato-footer a:hover {
+  color: #000;
 }
 
 /* AVATAR */
@@ -199,8 +234,10 @@ h1, h2, h3, h4 {
 }
 
 .btn {
+  display: block;
   width: 250px;
   height: 55px;
+  padding: 15px 75px;
   border-radius: 5px;
   color: #fbfbfb;
   cursor: pointer;
@@ -216,15 +253,17 @@ h1, h2, h3, h4 {
 }
 
 .btn-linkedin, .btn-curriculo {
-  width: 175px;
+  display: block;
+  width: 200px;
   height: 55px;
-  margin-top: 35px;
+  margin: 0px;
+  padding: 15px 40px;
+  margin-top: 30px;
   border-radius: 5px;
   background: #5352ed;
   font-family: "Fira Code", monospace;
   font-weight: 600;
   color: #fbfbfb;
-  border: 0;
   cursor: pointer;
 }
 
@@ -288,11 +327,20 @@ h1, h2, h3, h4 {
   color: #5352ed;
 }
 
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .skills_lista li {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10%;
   background: #121214;
   text-align: center;

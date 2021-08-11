@@ -58,7 +58,10 @@
 .sobre {
   width: 100%;
   padding: 150px 0;
-  margin: 100px 0 40px 0;
+  margin: 57px 0 40px 0;
+	p{
+		line-height: 24px;
+	}
 }
 
 .titulo-sobre {
@@ -124,8 +127,10 @@
 
 /* Conhecimentos */
 #conhecimentos {
+	display: flex;
+	justify-content: space-between;
   width: 100%;
-  padding: 170px 170px;
+	padding: 150px 0 150px 0;
   background: $secondary-color;
 }
 
@@ -138,11 +143,30 @@
 /* Footer */
 .footer {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: $component-color;
 }
 
 .footer div {
   text-align: center;
+}
+
+.contato-footer{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	li{
+		text-align: center;
+		margin: 10px;
+		cursor: pointer;
+		border-radius: 5px;
+		
+	}
+	a{
+		color: $text-color;
+	}
+	a:hover{
+		color: #000;
+	}
 }
