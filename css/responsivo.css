@@ -1,49 +1,105 @@
 /*Estilo para tablets*/
 
 @media only screen and (min-width: 788px) and (max-width: 979px) {
-    /*Qualidade Home*/
-    .qualidade:after {
-        right: 66px;
-    }
-    .qualidade_lista li {
-        padding: 0 10px;
-    }
-    /*Footer*/
-    .footer_redes ul li a {
-        border: 3px solid #FFEB3B;
-        display: block;
-        padding: 6px;
-    }
-    .footer_redes ul li a img {
-        width: 26px;
-        height: 26px;
-    }
-    /*Produtos*/
-    .produto_item h2 {
-        top: -150px;
-        margin-bottom: -56px;
-    }
-    .produto_icone {
-        padding: 41px 0;
-    }
-    .produto_info p {
-        font-size: 14px;
-        line-height: 20px;
-        height: 122px;
-        padding: 20px 30px;
-    }
-    .produto_info ul li {
-        width: 181px;
-        height: 49px;
-    }
-    .anuncio_image img {
-        height: 320px;
-    }
-    /* TEMPORARIO */
-    .foto-equipe img {
-        width: 100%;
-        height: 250px;
-    }
+	/* MENU */
+	.logo{
+		font-size: 18px;
+		width: 100px;
+	}
+
+	.header{
+		position: relative;
+	}
+
+	.header_menu ul li{
+		margin-left: 20px;
+	}
+
+	.header_menu ul li a{
+		font-size: 15px;
+		line-height: 23px;
+	}
+	
+	/* Introdução sobre mim */
+
+	.avatar{
+		max-width: 227px;
+		margin-bottom: 0px;
+	}
+
+	.nome{
+		font-size: 22px;
+		line-height: 20px;
+	}
+
+	.cargo{
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+	.introducao{
+		margin-top: 15px;
+	}
+
+	.btn{
+		width: 150px;
+		padding: 15px 25px;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	.sobre{
+		padding: 50px 0;
+		margin: 25px 0 20px 0;
+	}
+
+	.titulo-sobre{
+		font-size: 22px;
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+
+	.sobre p{
+		line-height: 20px;
+		font-size: 14px;
+	}
+
+	.btn-linkedin, .btn-curriculo{
+		margin: 20px 10px 0 auto;
+		width: 150px;
+		padding: 15px 20px;
+		font-size: 14px;
+	}
+
+	/* Projetos */
+
+	
+
+	.titulo-projetos{
+		font-size: 22px;
+		line-height: 20px;
+		padding-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	.projetos_lista h2{
+		font-size: 16px;
+		margin: 10px 10px;
+	}
+	.projetos_lista p{
+		margin: 10px;
+		font-size: 14px;
+	}
+	.projetos_lista li{
+		width: 320px;
+		margin: 5px;
+	}
+
+	.btn_git{
+		display: flex;
+		justify-content: space-between;
+		max-width: 100px;
+		font-size: 14px;
+	}
 }
 
 
@@ -53,113 +109,7 @@
 /*Estilo para smartphone*/
 
 @media only screen and (max-width: 787px) {
-    /*Header*/
-    .header {
-        position: relative;
-        padding-bottom: 0px;
-    }
-    .header_mobi_sobre {
-        padding-bottom: 20px;
-    }
-    .header img {
-        margin: 0 auto 10px auto;
-    }
-    .header_menu {
-        text-align: center;
-    }
-    .header_menu ul li {
-        margin: 5px;
-    }
-    .header_menu ul li a {
-        border: 4px solid #4484CE;
-        width: 136px;
-        display: block;
-        float: left;
-    }
-    .header_menu ul li a:hover {
-        border-color: #fff;
-    }
-    .header_menu ul li a.menu_ativo {
-        border-color: #fff;
-    }
-    /*Introducao*/
-    .introducao h1 {
-        font-size: 38px;
-    }
-    .introducao {
-        margin-top: 0px;
-        padding-top: 40px;
-        background-size: cover;
-    }
-    /*Introdução Interna*/
-    .introducao-interna {
-        margin-top: 0px;
-    }
-    /*Call*/
-    .call {
-        padding-top: 10px;
-    }
-    /*Qualidade Home*/
-    .qualidade:after {
-        display: none;
-    }
-    /*Sobre*/
-    .missao_sobre div p {
-        font-size: 16px;
-        line-height: 20px;
-        padding-right: 0px;
-    }
-    .missao_sobre div ul li {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    /* TEMPORARIO */
-    .foto-equipe img {
-        width: 110%;
-        height: 150px;
-    }
-    /* TEMPORARIO */
-    /*Anuncios*/
-    .anuncio_image img {
-        height: 280px;
-    }
-    .anuncio_item h2 {
-        top: -100px;
-        margin-bottom: -68px;
-    }
-    .anuncio_icone {
-        padding: 41px 0;
-    }
-    .anuncio_info p {
-        font-size: 16px;
-        line-height: 20px;
-        height: auto;
-        padding: 20px 30px;
-    }
-    .anuncio_info ul li {
-        width: 149px;
-        height: 49px;
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 14px;
-    }
-    .form {
-        padding-right: 0px;
-    }
-    .orcamento_dados ul {
-        padding-right: 0px;
-    }
-    /*Contato*/
-    .contato_form {
-        padding-right: 0px;
-        margin-bottom: 40px;
-    }
-    /* TEMPORARIO */
-    .contato_mapa img {
-        width: 100%;
-        height: 150px;
-    }
-    /* TEMPORARIO */
+    
 }
 
 
