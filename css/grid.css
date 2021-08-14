@@ -9,7 +9,7 @@
 .container {
     width: 1240px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 0px;
     position: relative;
 }
 
@@ -42,51 +42,51 @@
 }
 
 .grid-1 {
-    width: 57px;
+    width: 64px;
 }
 
 .grid-2 {
-    width: 154px;
+    width: 168px;
 }
 
 .grid-3 {
-    width: 251px;
+    width: 272px;
 }
 
 .grid-4 {
-    width: 348px;
+    width: 376px;
 }
 
 .grid-5 {
-    width: 445px;
+    width: 480px;
 }
 
 .grid-6 {
-    width: 542px;
+    width: 584px;
 }
 
 .grid-7 {
-    width: 639px;
+    width: 688px;
 }
 
 .grid-8 {
-		width: 736px;
+		width: 792px;
 }
 
 .grid-9 {
-    width: 833px;
+    width: 896px;
 }
 
 .grid-10 {
-    width: 930px;
+    width: 1000px;
 }
 
 .grid-11 {
-    width: 1027px;
+    width: 1104px;
 }
 
 .grid-12 {
-    width: 1124px;
+    width: 1208px;
 }
 
 .grid-1-3 {

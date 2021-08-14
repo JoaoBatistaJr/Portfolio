@@ -13,6 +13,10 @@
 
 .header{
 	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	top: 0;
 	width: 100%;
 	background: $primary-color;
@@ -24,7 +28,6 @@
 .header_menu{
 	text-align: right;
 }
-
 .header_menu ul li {
 	display: inline-block;
 	margin-left: 40px;
@@ -33,6 +36,7 @@
 }
 
 .header_menu ul li a{
+	display: block;
 	color: $text-color;
 	font-size: 17px;
 	line-height: 25px;
