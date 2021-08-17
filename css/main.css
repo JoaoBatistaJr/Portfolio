@@ -78,7 +78,14 @@ h1, h2, h3, h4 {
 }
 
 .header_menu {
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  max-width: 920px;
 }
 
 .header_menu ul li {
@@ -110,18 +117,20 @@ h1, h2, h3, h4 {
 /* Introdução */
 .introducao {
   width: 100%;
-  margin-top: -50px;
 }
 
 /* Sobre */
-.sobre {
-  width: 100%;
-  padding: 150px 0;
-  margin: 57px 0 40px 0;
+#sobre {
+  height: 100vh;
 }
 
-.sobre p {
+#sobre p {
   line-height: 24px;
+}
+
+.sobre {
+  width: 100%;
+  padding-top: 65px;
 }
 
 .titulo-sobre {
@@ -133,7 +142,9 @@ h1, h2, h3, h4 {
 /* Projetos */
 .projetos {
   background: #202024;
-  padding-bottom: 100px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  height: 100vh;
 }
 
 .titulo-projetos {
@@ -166,8 +177,8 @@ h1, h2, h3, h4 {
 
 /* Serviços */
 .servicos {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  margin: 40px 0 40px 0;
+  height: 100vh;
   text-align: center;
 }
 
@@ -191,6 +202,7 @@ h1, h2, h3, h4 {
 
 /* Conhecimentos */
 #conhecimentos {
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +210,6 @@ h1, h2, h3, h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 150px 0 150px 0;
   background: #202024;
 }
 
