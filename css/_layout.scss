@@ -7,7 +7,7 @@
 }
 
 .logo{
-	font-size: $text-big +2;
+	font-size: $title-small;
 	width: 150px;
 }
 
@@ -41,7 +41,8 @@
 .header_menu ul li a{
 	display: block;
 	color: $text-color;
-	font-size: 17px;
+	font-weight: $font-semi-Bold;
+	font-size: 1rem;
 	line-height: 25px;
 	padding: 10px 0;
 }
@@ -69,7 +70,7 @@
 }
 .sobre {
   width: 100%;
-	padding-top: 65px;
+	padding-top: 70px;
   // // margin: 57px 0 40px 0;
 	// p{
 	// 	line-height: 24px;
@@ -83,12 +84,12 @@
 }
 
 /* Projetos */
-.projetos {
-  background: $secondary-color;
-  margin-bottom: 40px;
-	margin-top: 40px;
-	height: 100vh ;
-}
+// .projetos {
+//   background: $secondary-color;
+//   padding-bottom: 40px;
+// 	padding-top: 40px;
+// 	height: 100vh ;
+// }
 
 .titulo-projetos {
   font-size: $title-medium;
@@ -98,14 +99,14 @@
   text-align: center;
 }
 
-.projetos_lista h2 {
-  font-size: $text-big;
-  margin: 20px 20px;
-}
+// .projetos_lista h2 {
+//   font-size: $text-big;
+//   margin: 20px 20px;
+// }
 
-.projetos_lista p {
-  margin: 20px;
-}
+// .projetos_lista p {
+//   margin: 20px;
+// }
 
 .link_github {
   font-size: $text-big;
@@ -119,7 +120,7 @@
 }
 /* Serviços */
 .servicos {
-  margin: 40px 0 40px 0;
+	padding-top: 100px;
 	height: 100vh;
   text-align: center;
 }
@@ -127,6 +128,7 @@
 .titulo_servicos {
   font-size: $title-medium;
   line-height: 24px;
+	padding-top: 40px;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -144,7 +146,7 @@
 
 /* Conhecimentos */
 #conhecimentos {
-	height: 75vh;
+	height: 100vh;
 	display: flex;
 	justify-content: space-between;
   width: 100%;

@@ -52,7 +52,7 @@ h1, h2, h3, h4 {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 24px;
   width: 150px;
 }
 
@@ -100,7 +100,8 @@ h1, h2, h3, h4 {
 .header_menu ul li a {
   display: block;
   color: #fbfbfb;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 1rem;
   line-height: 25px;
   padding: 10px 0;
 }
@@ -130,7 +131,7 @@ h1, h2, h3, h4 {
 
 .sobre {
   width: 100%;
-  padding-top: 65px;
+  padding-top: 70px;
 }
 
 .titulo-sobre {
@@ -140,28 +141,12 @@ h1, h2, h3, h4 {
 }
 
 /* Projetos */
-.projetos {
-  background: #202024;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  height: 100vh;
-}
-
 .titulo-projetos {
   font-size: 32px;
   line-height: 24px;
   padding-top: 100px;
   margin-bottom: 60px;
   text-align: center;
-}
-
-.projetos_lista h2 {
-  font-size: 18px;
-  margin: 20px 20px;
-}
-
-.projetos_lista p {
-  margin: 20px;
 }
 
 .link_github {
@@ -177,7 +162,7 @@ h1, h2, h3, h4 {
 
 /* Serviços */
 .servicos {
-  margin: 40px 0 40px 0;
+  padding-top: 100px;
   height: 100vh;
   text-align: center;
 }
@@ -185,6 +170,7 @@ h1, h2, h3, h4 {
 .titulo_servicos {
   font-size: 32px;
   line-height: 24px;
+  padding-top: 40px;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -202,7 +188,7 @@ h1, h2, h3, h4 {
 
 /* Conhecimentos */
 #conhecimentos {
-  height: 75vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,5 +371,72 @@ h1, h2, h3, h4 {
   border-radius: 10%;
   background: #121214;
   text-align: center;
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.lista-item {
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 10px;
+  -webkit-box-shadow: 0 2px 6px rgba(50, 50, 90, 0.1);
+          box-shadow: 0 2px 6px rgba(50, 50, 90, 0.1);
+}
+
+.faq-titulo {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1em;
+  font-family: monospace;
+  color: #8f6ed5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.faq-titulo::before {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 24px;
+  margin-right: 10px;
+  background: #beb0f4;
+}
+
+.faq-titulo::after {
+  content: '+';
+  float: right;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.faq-conteudo {
+  padding: 10px;
+  color: #687c93;
+  font-family: sans-serif;
+  font-size: .875em;
+  line-height: 1.4em;
+  display: none;
+}
+
+.trigger-input {
+  display: none;
+}
+
+/* AGORA É O MACETE MESMO */
+.trigger-input:checked + .trigger-wrapper .faq-conteudo {
+  display: block;
+}
+
+.trigger-input:checked + .trigger-wrapper .faq-titulo::after {
+  -webkit-transform: rotate(45deg) scale(1.1);
+          transform: rotate(45deg) scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */
