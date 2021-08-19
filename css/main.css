@@ -123,6 +123,137 @@ h1, h2, h3, h4 {
   color: #5352ed;
 }
 
+/* AVATAR */
+.avatar {
+  width: auto;
+  height: auto;
+  max-width: 230px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nome {
+  font-size: 32px;
+  line-height: 24px;
+}
+
+.cargo {
+  margin-bottom: 21px;
+}
+
+.btn {
+  display: block;
+  width: 250px;
+  height: 55px;
+  padding: 15px 75px;
+  border-radius: 5px;
+  color: #fbfbfb;
+  cursor: pointer;
+  background: #5352ed;
+  font-family: "Fira Code", monospace;
+  font-weight: 600;
+  border: 0;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background: #3e29fc;
+}
+
+.btn-linkedin, .btn-curriculo {
+  display: block;
+  width: 200px;
+  height: 55px;
+  margin: 0px;
+  padding: 15px 40px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background: #5352ed;
+  font-family: "Fira Code", monospace;
+  font-weight: 600;
+  color: #fbfbfb;
+  cursor: pointer;
+}
+
+.btn-linkedin {
+  margin-right: 10px;
+}
+
+.btn-curriculo {
+  margin-left: 10px;
+}
+
+.btn-curriculo:hover {
+  background-color: #3e29fc;
+}
+
+.btn-linkedin:hover {
+  background-color: #3e29fc;
+}
+
+.projetos_lista li {
+  max-width: 348px;
+  height: 300px;
+  padding: 30px;
+  margin: 10px;
+  background: #121214;
+  border-radius: 5px;
+}
+
+.btn_git {
+  max-width: 130px;
+  height: 35px;
+  padding: 10px 10px;
+  margin: 10px 10px 10px 20px;
+  border-radius: 5px;
+  background: #5352ed;
+  font-family: "Fira Code", monospace;
+  color: #fbfbfb;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn_git:hover {
+  background-color: #3e29fc;
+  cursor: pointer;
+}
+
+.servicos_lista li {
+  max-width: 250px;
+  height: 350px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #202024;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  color: #5352ed;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.skills_lista li {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 10%;
+  background: #121214;
+  text-align: center;
+}
+
 /* Introdução */
 .introducao {
   width: 100%;
@@ -300,136 +431,5 @@ h1, h2, h3, h4 {
 
 .contato-footer a:hover {
   color: #000;
-}
-
-/* AVATAR */
-.avatar {
-  width: auto;
-  height: auto;
-  max-width: 230px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.nome {
-  font-size: 32px;
-  line-height: 24px;
-}
-
-.cargo {
-  margin-bottom: 21px;
-}
-
-.btn {
-  display: block;
-  width: 250px;
-  height: 55px;
-  padding: 15px 75px;
-  border-radius: 5px;
-  color: #fbfbfb;
-  cursor: pointer;
-  background: #5352ed;
-  font-family: "Fira Code", monospace;
-  font-weight: 600;
-  border: 0;
-  margin-top: 30px;
-}
-
-.btn:hover {
-  background: #3e29fc;
-}
-
-.btn-linkedin, .btn-curriculo {
-  display: block;
-  width: 200px;
-  height: 55px;
-  margin: 0px;
-  padding: 15px 40px;
-  margin-top: 30px;
-  border-radius: 5px;
-  background: #5352ed;
-  font-family: "Fira Code", monospace;
-  font-weight: 600;
-  color: #fbfbfb;
-  cursor: pointer;
-}
-
-.btn-linkedin {
-  margin-right: 10px;
-}
-
-.btn-curriculo {
-  margin-left: 10px;
-}
-
-.btn-curriculo:hover {
-  background-color: #3e29fc;
-}
-
-.btn-linkedin:hover {
-  background-color: #3e29fc;
-}
-
-.projetos_lista li {
-  max-width: 348px;
-  height: 300px;
-  padding: 30px;
-  margin: 10px;
-  background: #121214;
-  border-radius: 5px;
-}
-
-.btn_git {
-  max-width: 130px;
-  height: 35px;
-  padding: 10px 10px;
-  margin: 10px 10px 10px 20px;
-  border-radius: 5px;
-  background: #5352ed;
-  font-family: "Fira Code", monospace;
-  color: #fbfbfb;
-  border: 0;
-  cursor: pointer;
-}
-
-.btn_git:hover {
-  background-color: #3e29fc;
-  cursor: pointer;
-}
-
-.servicos_lista li {
-  max-width: 250px;
-  height: 350px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  background: #202024;
-}
-
-.icons {
-  width: 50px;
-  height: 50px;
-  margin-top: 45px;
-  margin-bottom: 35px;
-  color: #5352ed;
-}
-
-.skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.skills_lista li {
-  width: 120px;
-  height: 120px;
-  margin: 10px;
-  padding: 30px;
-  border-radius: 10%;
-  background: #121214;
-  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
