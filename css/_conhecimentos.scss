@@ -1,0 +1,15 @@
+/* Conhecimentos */
+#conhecimentos {
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+  width: 100%;
+	// padding: 150px 0 150px 0;
+  background: $secondary-color;
+}
+
+.titulo_conhecimentos {
+  font-size: $title-medium;
+  line-height: 24px;
+  margin-bottom: 40px;
+}

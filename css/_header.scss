@@ -1,0 +1,44 @@
+.header{
+	position: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	width: 100%;
+	background: $primary-color;
+	padding: 20px 0;
+	z-index: $z-navbar-fixed;
+	background: $component-color;
+}
+
+.header_menu{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 920px;
+}
+.header_menu ul li {
+	display: inline-block;
+	margin-left: 40px;
+	flex-direction: column;
+	
+}
+
+.header_menu ul li a{
+	display: block;
+	color: $text-color;
+	font-weight: $font-semi-Bold;
+	font-size: 1rem;
+	line-height: 25px;
+	padding: 10px 0;
+}
+
+.header_menu ul li a:hover{
+	color: #000;
+	font-weight: $font-semi-Bold;
+}
+
+.header_menu ul li a.menu_ativo{
+	color: $component-color;
+}
