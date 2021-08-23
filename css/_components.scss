@@ -7,11 +7,6 @@
   margin-bottom: 10px;
 }
 
-.nome {
-  font-size: $title-medium;
-  line-height: 24px;
-}
-
 .cargo {
   margin-bottom: 21px;
 }
@@ -25,7 +20,7 @@
   color: $text-color;
   cursor: pointer;
   background: $component-color;
-  font-family: $body-font;
+  @include tipografia;
   font-weight: $font-semi-Bold;
   border: 0;
   margin-top: 30px;
@@ -44,7 +39,7 @@
   margin-top: 30px;
   border-radius: 5px;
   background: $component-color;
-  font-family: $body-font;
+  @include tipografia;
   font-weight: $font-semi-Bold;
   color: $text-color;
   cursor: pointer;
@@ -66,15 +61,6 @@
   background-color: $btnHover-color;
 }
 
-.projetos_lista li {
-  max-width: 348px;
-  height: 300px;
-  padding: 30px;
-  margin: 10px;
-  background: $primary-color;
-  border-radius: 5px;
-}
-
 .btn_git {
   max-width: 130px;
   height: 35px;
@@ -82,24 +68,14 @@
   margin: 10px 10px 10px 20px;
   border-radius: 5px;
   background: $component-color;
-  font-family: $body-font;
+  @include tipografia;
   color: $text-color;
   border: 0;
   cursor: pointer;
-}
-
-.btn_git:hover{
-	background-color: $btnHover-color;
-	cursor: pointer;
-}
-
-.servicos_lista li {
-  max-width: 250px;
-  height: 350px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  background: $secondary-color;
+		.btn_git:hover{
+		background-color: $btnHover-color;
+		cursor: pointer;
+	}
 }
 
 .icons {
@@ -124,4 +100,3 @@
   background: $primary-color;
   text-align: center;
 }
-

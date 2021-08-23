@@ -1,7 +1,32 @@
-.titulo-projetos{
-	font-size: $title-medium;
-  line-height: 24px;
-  margin-bottom: 21px;
-	margin: 0 auto;
+
+.projetos{
+	text-align: center;
+	height: 100vh;
+	padding-top: 140px;
+	background: $secondary-color;
 }
 
+.titulo-projetos{
+	@include Titulo;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.projetos-lista{ 
+	li{
+		max-width: 348px;
+		height: 350px;
+		padding: 30px;
+		margin: 10px;
+		border-radius: 5px;
+		background: $primary-color;
+	}
+	h2{
+		font-size: $text-medium;
+		font-weight: $font-semi-Bold;
+	}
+	p {
+		padding-top: 15px;
+		font-size: $text-small;
+	}
+}

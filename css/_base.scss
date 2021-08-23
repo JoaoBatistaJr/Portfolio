@@ -6,7 +6,10 @@ $btnHover-color: #3e29fc;
 $text-color: #fbfbfb;
 
 // Tipografia
-$body-font: 'Fira Code', monospace; 
+// $body-font: 'Fira Code', monospace; 
+@mixin tipografia{
+	font-family: 'Fira Code', monospace;
+}
 
 // Tamanho de fonts
 $text-small: 14px;
@@ -22,10 +25,6 @@ $font-semi-Bold: 600;
 
 //Configurações do z-index
 $z-navbar-fixed: 10;
-
-@mixin tipografia{
-	font-family: 'Fira Code', monospace;
-}
 
 ::-webkit-scrollbar{
 	width: 10px;
@@ -84,4 +83,10 @@ h1, h2, h3, h4{
 	z-index: -100px;
 }
 
+// Título de Sessão.
+@mixin Titulo {
+	font-size: $title-medium;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
 

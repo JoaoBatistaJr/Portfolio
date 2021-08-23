@@ -8,6 +8,11 @@
 	width: 150px;
 }
 
+.nome {
+  font-size: $title-medium;
+  line-height: 24px;
+}
+
 /* Sobre */
 #sobre {
 	height: 100vh;
@@ -18,14 +23,11 @@
 .sobre {
   width: 100%;
 	padding-top: 70px;
-  // // margin: 57px 0 40px 0;
 	p{
 		line-height: 24px;
 	}
 }
 
 .titulo-sobre {
-  font-size: $title-medium;
-  line-height: 24px;
-  margin-bottom: 21px;
+  @include Titulo;
 }

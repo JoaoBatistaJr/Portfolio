@@ -1,25 +1,31 @@
 /* Serviços */
 .servicos {
-	padding-top: 100px;
+	padding-top: 140px;
 	height: 100vh;
-  text-align: center;
+  text-align: center;	
 }
 
 .titulo_servicos {
-  font-size: $title-medium;
-  line-height: 24px;
-	padding-top: 40px;
+  @include Titulo;
   margin-bottom: 60px;
-  text-align: center;
+  // text-align: center;
 }
 
-.servicos_lista h2 {
+.servicos_lista{ 
+	li {
+  max-width: 250px;
+  height: 350px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background: $secondary-color;
+	}
+	h2 {
   font-size: $text-medium;
   font-weight: $font-semi-Bold;
-  /* margin: 20px 20px; */
-}
-
-.servicos_lista p {
+	}
+	p {
   padding-top: 15px;
   font-size: $text-small;
+	}
 }

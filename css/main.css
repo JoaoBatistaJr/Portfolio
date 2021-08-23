@@ -73,11 +73,6 @@ h1, h2, h3, h4 {
   margin-bottom: 10px;
 }
 
-.nome {
-  font-size: 32px;
-  line-height: 24px;
-}
-
 .cargo {
   margin-bottom: 21px;
 }
@@ -91,7 +86,7 @@ h1, h2, h3, h4 {
   color: #fbfbfb;
   cursor: pointer;
   background: #5352ed;
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   font-weight: 600;
   border: 0;
   margin-top: 30px;
@@ -110,7 +105,7 @@ h1, h2, h3, h4 {
   margin-top: 30px;
   border-radius: 5px;
   background: #5352ed;
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   font-weight: 600;
   color: #fbfbfb;
   cursor: pointer;
@@ -132,15 +127,6 @@ h1, h2, h3, h4 {
   background-color: #3e29fc;
 }
 
-.projetos_lista li {
-  max-width: 348px;
-  height: 300px;
-  padding: 30px;
-  margin: 10px;
-  background: #121214;
-  border-radius: 5px;
-}
-
 .btn_git {
   max-width: 130px;
   height: 35px;
@@ -148,24 +134,15 @@ h1, h2, h3, h4 {
   margin: 10px 10px 10px 20px;
   border-radius: 5px;
   background: #5352ed;
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   color: #fbfbfb;
   border: 0;
   cursor: pointer;
 }
 
-.btn_git:hover {
+.btn_git .btn_git:hover {
   background-color: #3e29fc;
   cursor: pointer;
-}
-
-.servicos_lista li {
-  max-width: 250px;
-  height: 350px;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 5px;
-  background: #202024;
 }
 
 .icons {
@@ -264,6 +241,11 @@ h1, h2, h3, h4 {
   width: 150px;
 }
 
+.nome {
+  font-size: 32px;
+  line-height: 24px;
+}
+
 /* Sobre */
 #sobre {
   height: 100vh;
@@ -286,6 +268,92 @@ h1, h2, h3, h4 {
   font-size: 32px;
   line-height: 24px;
   margin-bottom: 21px;
+}
+
+.projetos {
+  text-align: center;
+  height: 100vh;
+  padding-top: 140px;
+  background: #202024;
+}
+
+.titulo-projetos {
+  font-size: 32px;
+  line-height: 24px;
+  margin-bottom: 21px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.projetos-lista li {
+  max-width: 348px;
+  height: 350px;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #121214;
+}
+
+.projetos-lista h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.projetos-lista p {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* Serviços */
+.servicos {
+  padding-top: 140px;
+  height: 100vh;
+  text-align: center;
+}
+
+.titulo_servicos {
+  font-size: 32px;
+  line-height: 24px;
+  margin-bottom: 21px;
+  margin-bottom: 60px;
+}
+
+.servicos_lista li {
+  max-width: 250px;
+  height: 350px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #202024;
+}
+
+.servicos_lista h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.servicos_lista p {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* Conhecimentos */
+#conhecimentos {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background: #202024;
+}
+
+.titulo_conhecimentos {
+  font-size: 32px;
+  line-height: 24px;
+  margin-bottom: 40px;
 }
 
 /* Footer */
