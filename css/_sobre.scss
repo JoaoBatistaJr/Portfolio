@@ -8,9 +8,22 @@
 	width: 150px;
 }
 
+
+.avatar {
+  width: auto;
+  height: auto;
+  max-width: 230px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 .nome {
   font-size: $title-medium;
   line-height: 24px;
+}
+
+.cargo {
+  margin-bottom: 21px;
 }
 
 /* Sobre */

@@ -64,19 +64,6 @@ h1, h2, h3, h4 {
   z-index: -100px;
 }
 
-/* AVATAR */
-.avatar {
-  width: auto;
-  height: auto;
-  max-width: 230px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.cargo {
-  margin-bottom: 21px;
-}
-
 .btn {
   display: block;
   width: 250px;
@@ -241,9 +228,21 @@ h1, h2, h3, h4 {
   width: 150px;
 }
 
+.avatar {
+  width: auto;
+  height: auto;
+  max-width: 230px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
 .nome {
   font-size: 32px;
   line-height: 24px;
+}
+
+.cargo {
+  margin-bottom: 21px;
 }
 
 /* Sobre */
@@ -295,13 +294,13 @@ h1, h2, h3, h4 {
 }
 
 .projetos-lista h2 {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .projetos-lista p {
   padding-top: 15px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 /* Serviços */
@@ -328,13 +327,13 @@ h1, h2, h3, h4 {
 }
 
 .servicos_lista h2 {
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .servicos_lista p {
   padding-top: 15px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 /* Conhecimentos */
