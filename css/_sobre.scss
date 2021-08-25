@@ -1,6 +1,9 @@
 /* Introdução */
 .introducao {
   width: 100%;
+	img{
+		border: 3px solid $component-color;
+	}
 }
 
 .logo{
@@ -13,6 +16,7 @@
   width: auto;
   height: auto;
   max-width: 230px;
+  max-height: 230px;
   border-radius: 50%;
   margin-bottom: 10px;
 }

@@ -57,7 +57,7 @@ h1, h2, h3, h4 {
   border-radius: 5px;
   padding: 120px 0 40px 0;
   margin: 0 auto;
-  font-size: 48px;
+  font-size: 3rem;
   color: orangered;
   background: #202024;
   text-align: center;
@@ -114,7 +114,7 @@ h1, h2, h3, h4 {
   background-color: #3e29fc;
 }
 
-.btn_git {
+.btn-site {
   max-width: 130px;
   height: 35px;
   padding: 10px 10px;
@@ -127,7 +127,7 @@ h1, h2, h3, h4 {
   cursor: pointer;
 }
 
-.btn_git .btn_git:hover {
+.btn-site .btn-site:hover {
   background-color: #3e29fc;
   cursor: pointer;
 }
@@ -223,8 +223,12 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
+.introducao img {
+  border: 3px solid #5352ed;
+}
+
 .logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   width: 150px;
 }
 
@@ -232,12 +236,13 @@ h1, h2, h3, h4 {
   width: auto;
   height: auto;
   max-width: 230px;
+  max-height: 230px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
 
 .nome {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 24px;
 }
 
@@ -264,7 +269,7 @@ h1, h2, h3, h4 {
 }
 
 .titulo-sobre {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 24px;
   margin-bottom: 21px;
 }
@@ -277,7 +282,7 @@ h1, h2, h3, h4 {
 }
 
 .titulo-projetos {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 24px;
   margin-bottom: 21px;
   text-align: center;
@@ -286,7 +291,7 @@ h1, h2, h3, h4 {
 
 .projetos-lista li {
   max-width: 348px;
-  height: 350px;
+  height: auto;
   padding: 30px;
   margin: 10px;
   border-radius: 5px;
@@ -294,13 +299,26 @@ h1, h2, h3, h4 {
 }
 
 .projetos-lista h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .projetos-lista p {
   padding-top: 15px;
-  font-size: 1rem;
+  font-size: 0.875rem;
+}
+
+.link-git {
+  margin: 20px 0 20px 0;
+  font-size: 1.125rem;
+}
+
+.link-git a {
+  color: #fff;
+}
+
+.link-git a:hover {
+  color: #5352ed;
 }
 
 /* Serviços */
@@ -311,7 +329,7 @@ h1, h2, h3, h4 {
 }
 
 .titulo_servicos {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 24px;
   margin-bottom: 21px;
   margin-bottom: 60px;
@@ -327,13 +345,13 @@ h1, h2, h3, h4 {
 }
 
 .servicos_lista h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .servicos_lista p {
   padding-top: 15px;
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 /* Conhecimentos */
@@ -350,7 +368,7 @@ h1, h2, h3, h4 {
 }
 
 .titulo_conhecimentos {
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 24px;
   margin-bottom: 40px;
 }

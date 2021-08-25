@@ -15,7 +15,7 @@
 .projetos-lista{ 
 	li{
 		max-width: 348px;
-		height: 350px;
+		height: auto;
 		padding: 30px;
 		margin: 10px;
 		border-radius: 5px;
@@ -28,5 +28,16 @@
 	p {
 		padding-top: 15px;
 		font-size: $text-small;
+	}
+}
+
+.link-git{
+	margin: 20px 0 20px 0;
+	font-size: $text-big;
+	a{
+		color: #fff;
+	}
+	a:hover{
+		color: $component-color;
 	}
 }
