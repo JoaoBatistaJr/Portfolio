@@ -1,6 +1,6 @@
 
 <h1 align="center"> 📋 Portfólio </h1>
-<h3 align="center"> 🚀 Feito para mostrar meu projetos e habilidades como desenvolvedor.</h3>
+<h3 align="center"> 🚀 Feito para mostrar meus projetos e habilidades como desenvolvedor.</h3>
 
 <h4 align="center"> 
 	🚧  Portfólio 🚀 Em construção...  🚧
