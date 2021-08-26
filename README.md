@@ -14,7 +14,7 @@
 
 ##
 
-<a href="https://juniorsantos.vercel.app"> <h4 align="center"> 🔗 Clique aqui para acessar o site.</h4></a>
+<a href="https://juniorsantos.vercel.app" target="_blank"> <h4 align="center"> 🔗 Clique aqui para acessar o site.</h4></a>
 
 ##
 
@@ -29,6 +29,12 @@
 - [CSS3](https://www.w3schools.com/css/)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [SASS](https://sass-lang.com/documentation)
+
+##
+
+<h3 id="licenc-a">🧾 Licença</h3>
+
+![badge](https://img.shields.io/github/license/joaobatistajr/Portifolio?color=f&logo=MIT&logoColor=blue&style=for-the-badge)
 
 ##
 
