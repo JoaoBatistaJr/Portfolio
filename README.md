@@ -32,7 +32,7 @@
 
 ##
 
-<h3 id="licenc-a">📃 Licença</h3>
+<h3 id="licenc-a">⚖️ Licença</h3>
 
 ![badge](https://img.shields.io/github/license/joaobatistajr/Portifolio?color=f&logo=MIT&logoColor=blue&style=for-the-badge)
 
