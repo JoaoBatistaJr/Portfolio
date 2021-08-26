@@ -32,7 +32,7 @@
 
 ##
 
-<h3 id="licenc-a">🧾 Licença</h3>
+<h3 id="licenc-a">📃 Licença</h3>
 
 ![badge](https://img.shields.io/github/license/joaobatistajr/Portifolio?color=f&logo=MIT&logoColor=blue&style=for-the-badge)
 
@@ -46,7 +46,7 @@
  <br />
  <sub><b>João Batista Júnior</b></sub></a>
  
-Feito por João Batista Júnior 👋🏽 Entre em contato!
+Feito por João Batista Júnior 👋🏻 Entre em contato!
 
 <div> 
   <a href="https://instagram.com/artesjbjunior" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
