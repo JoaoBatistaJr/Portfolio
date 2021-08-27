@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0 0 .1rem 0;
-  font-family: 'Fira Code', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 500;
   background-color: #121214;
   color: #fbfbfb;
@@ -66,16 +66,16 @@ h1, h2, h3, h4 {
 
 .btn {
   display: block;
-  width: 250px;
+  max-width: 220px;
+  width: auto;
   height: 55px;
-  padding: 15px 75px;
+  padding: 15px 55px;
   border-radius: 5px;
   color: #fbfbfb;
   cursor: pointer;
   background: #5352ed;
-  font-family: 'Fira Code', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  border: 0;
   margin-top: 30px;
 }
 
@@ -85,14 +85,14 @@ h1, h2, h3, h4 {
 
 .btn-linkedin, .btn-curriculo {
   display: block;
-  width: 200px;
+  width: auto;
   height: 55px;
   margin: 0px;
   padding: 15px 40px;
   margin-top: 30px;
   border-radius: 5px;
   background: #5352ed;
-  font-family: 'Fira Code', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #fbfbfb;
   cursor: pointer;
@@ -115,13 +115,13 @@ h1, h2, h3, h4 {
 }
 
 .btn-site {
-  max-width: 130px;
-  height: 35px;
+  max-width: 100px;
+  height: auto;
   padding: 10px 10px;
   margin: 10px 10px 10px 20px;
   border-radius: 5px;
   background: #5352ed;
-  font-family: 'Fira Code', monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fbfbfb;
   border: 0;
   cursor: pointer;
@@ -235,8 +235,8 @@ h1, h2, h3, h4 {
 .avatar {
   width: auto;
   height: auto;
-  max-width: 230px;
-  max-height: 230px;
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
@@ -261,7 +261,7 @@ h1, h2, h3, h4 {
 
 .sobre {
   width: 100%;
-  padding-top: 70px;
+  margin-top: 85px;
 }
 
 .sobre p {

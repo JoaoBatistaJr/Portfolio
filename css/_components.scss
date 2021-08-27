@@ -1,26 +1,26 @@
 
 .btn {
 	display: block;
-  width: 250px;
+	max-width: 220px;
+  width: auto;
   height: 55px;
-	padding: 15px 75px;
+	padding: 15px 55px;
   border-radius: 5px;
   color: $text-color;
   cursor: pointer;
   background: $component-color;
   @include tipografia;
   font-weight: $font-semi-Bold;
-  border: 0;
   margin-top: 30px;
+	&:hover{
+		background: $btnHover-color;
+	}
 }
 
-.btn:hover {
-  background: $btnHover-color;
-}
 
 .btn-linkedin, .btn-curriculo {
 	display: block;
-  width: 200px;
+  width: auto;
   height: 55px;
 	margin: 0px;
 	padding: 15px 40px;
@@ -50,8 +50,8 @@
 }
 
 .btn-site {
-  max-width: 130px;
-  height: 35px;
+  max-width: 100px;
+  height: auto;
   padding: 10px 10px;
   margin: 10px 10px 10px 20px;
   border-radius: 5px;
