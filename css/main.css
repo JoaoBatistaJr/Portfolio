@@ -220,6 +220,7 @@ h1, h2, h3, h4 {
 
 /* Introdução */
 .introducao {
+  padding-top: 50px;
   width: 100%;
 }
 
@@ -331,7 +332,6 @@ h1, h2, h3, h4 {
   padding: 10px;
   background: #202024;
   border-radius: 5px;
-  color: #fff;
 }
 
 /* Serviços */
