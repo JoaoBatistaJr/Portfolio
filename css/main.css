@@ -27,6 +27,7 @@ html {
 body {
   margin: 0 0 .1rem 0;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.4px;
   font-size: 500;
   background-color: #121214;
   color: #fbfbfb;
@@ -75,8 +76,9 @@ h1, h2, h3, h4 {
   cursor: pointer;
   background: #5352ed;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.4px;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .btn:hover {
@@ -93,9 +95,14 @@ h1, h2, h3, h4 {
   border-radius: 5px;
   background: #5352ed;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.4px;
   font-weight: 600;
   color: #fbfbfb;
   cursor: pointer;
+}
+
+.btn-linkedin:hover, .btn-curriculo:hover {
+  background: #3e29fc;
 }
 
 .btn-linkedin {
@@ -106,14 +113,6 @@ h1, h2, h3, h4 {
   margin-left: 10px;
 }
 
-.btn-curriculo:hover {
-  background-color: #3e29fc;
-}
-
-.btn-linkedin:hover {
-  background-color: #3e29fc;
-}
-
 .btn-site {
   max-width: 100px;
   height: auto;
@@ -122,6 +121,7 @@ h1, h2, h3, h4 {
   border-radius: 5px;
   background: #5352ed;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.4px;
   color: #fbfbfb;
   border: 0;
   cursor: pointer;
@@ -319,6 +319,19 @@ h1, h2, h3, h4 {
 
 .link-git a:hover {
   color: #5352ed;
+}
+
+.projeto-imagem {
+  height: auto;
+}
+
+.projeto-imagem img {
+  margin: 20px;
+  max-width: 250px;
+  padding: 10px;
+  background: #202024;
+  border-radius: 5px;
+  color: #fff;
 }
 
 /* Serviços */

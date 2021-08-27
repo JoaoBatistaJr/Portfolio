@@ -11,7 +11,7 @@
   background: $component-color;
   @include tipografia;
   font-weight: $font-semi-Bold;
-  margin-top: 30px;
+  margin-top: 25px;
 	&:hover{
 		background: $btnHover-color;
 	}
@@ -31,6 +31,9 @@
   font-weight: $font-semi-Bold;
   color: $text-color;
   cursor: pointer;
+	&:hover{
+		background: $btnHover-color;
+	}
 }
 
 .btn-linkedin {
@@ -39,14 +42,6 @@
 
 .btn-curriculo {
   margin-left: 10px;
-}
-
-.btn-curriculo:hover {
-  background-color: $btnHover-color;
-}
-
-.btn-linkedin:hover {
-  background-color: $btnHover-color;
 }
 
 .btn-site {
