@@ -292,6 +292,7 @@ h1, h2, h3, h4 {
 
 .projetos-lista li {
   max-width: 348px;
+  max-height: 450px;
   height: auto;
   padding: 30px;
   margin: 10px;
@@ -300,12 +301,12 @@ h1, h2, h3, h4 {
 }
 
 .projetos-lista h2 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
 .projetos-lista p {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 0.875rem;
 }
 
@@ -329,9 +330,13 @@ h1, h2, h3, h4 {
 .projeto-imagem img {
   margin: 20px;
   max-width: 250px;
-  padding: 10px;
-  background: #202024;
+  padding: 5px;
+  background: #5352ed;
   border-radius: 5px;
+}
+
+.projeto-imagem img:hover {
+  opacity: 70%;
 }
 
 /* Serviços */

@@ -15,6 +15,7 @@
 .projetos-lista{ 
 	li{
 		max-width: 348px;
+		max-height: 450px;
 		height: auto;
 		padding: 30px;
 		margin: 10px;
@@ -22,11 +23,11 @@
 		background: $primary-color;
 	}
 	h2{
-		font-size: $text-medium;
+		font-size: $text-big;
 		font-weight: $font-semi-Bold;
 	}
 	p {
-		padding-top: 15px;
+		padding-top: 10px;
 		font-size: $text-small;
 	}
 }
@@ -47,11 +48,11 @@
 	img{
 		margin: 20px;
 		max-width: 250px;
-		padding: 10px;
-		background: $secondary-color;	
+		padding: 5px;
+		background: $component-color;	
 		border-radius: 5px;
 	}
 	img:hover{
-		
+		opacity: 70%;
 	}
 }
