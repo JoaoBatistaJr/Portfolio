@@ -312,6 +312,12 @@ h1, h2, h3, h4 {
 }
 
 .link-git {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 20px 0 20px 0;
   font-size: 1.125rem;
 }

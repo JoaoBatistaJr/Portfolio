@@ -33,6 +33,8 @@
 }
 
 .link-git{
+	display: flex;
+	justify-content: center;
 	margin: 20px 0 20px 0;
 	font-size: $text-big;
 	a{
