@@ -23,6 +23,7 @@
 	/* Introdução sobre mim */
 
 	.avatar{
+		
 		max-width: 227px;
 		margin-bottom: 0px;
 	}
@@ -44,11 +45,10 @@
 		width: 150px;
 		padding: 15px 25px;
 		font-size: 14px;
-		margin-top: 20px;
+		margin-top: 95px;
 	}
 
 	.sobre{
-		padding: 50px 0;
 		margin: 25px 0 20px 0;
 	}
 
