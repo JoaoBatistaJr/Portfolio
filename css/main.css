@@ -200,21 +200,46 @@ h1, h2, h3, h4 {
           flex-direction: column;
 }
 
-.header_menu ul li a {
-  display: block;
+.header_menu a {
   color: #fbfbfb;
   font-weight: 600;
   font-size: 1rem;
   line-height: 25px;
   padding: 10px 0;
+  display: inline-block;
+  position: relative;
 }
 
-.header_menu ul li a:hover {
-  color: #000;
+.header_menu a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 5px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fff;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.header_menu a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.header_menu a:hover {
   font-weight: 600;
 }
 
-.header_menu ul li a.menu_ativo {
+.header_menu a.menu_ativo {
   color: #5352ed;
 }
 

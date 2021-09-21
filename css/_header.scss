@@ -25,20 +25,41 @@
 	
 }
 
-.header_menu ul li a{
-	display: block;
+.header_menu a{
+	// display: block;
 	color: $text-color;
 	font-weight: $font-semi-Bold;
 	font-size: 1rem;
 	line-height: 25px;
 	padding: 10px 0;
+	display: inline-block;
+	position: relative;
 }
 
-.header_menu ul li a:hover{
-	color: #000;
+.header_menu a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 5px;
+	bottom: -2px;
+	left: 0;
+	background-color: #fff;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.header_menu a:hover::after{
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+
+.header_menu a:hover{
+	// color: #000;
 	font-weight: $font-semi-Bold;
 }
 
-.header_menu ul li a.menu_ativo{
+.header_menu a.menu_ativo{
 	color: $component-color;
 }
