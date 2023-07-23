@@ -1,12 +1,15 @@
 .dark {
-  background: #1c1c1c;
+  background: #000;
   .header{
-    background: #333439;
+    background: #000;
     color: #fcfcfc;
   }
   .container {
     background: #333439;
     color: #fcfcfc;
+  }
+  .logo, .nav-list a{
+    color: $color-c01;
   }
 
   .tema button {
@@ -41,13 +44,13 @@ label:after {
   left: 5px;
   width: 20px;
   height: 20px;
-  background: #fff;
+  background: $color-c01;
   border-radius: 90px;
   transition: 0.3s;
 }
 
 input:checked + label {
-  background: #4be1ec;
+  background: #1c1c1c;
 }
 
 // animação do toggle
