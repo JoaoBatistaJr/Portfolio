@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
-  "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch"
-  },
+ "scripts": {
+  "dev": "webpack --mode development --watch",
+  "build": "webpack --mode production"
+},
+
   "author": "",
   "license": "ISC",
   "devDependencies": {
