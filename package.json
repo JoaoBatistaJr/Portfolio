@@ -26,5 +26,8 @@
     "normalize-scss": "^7.0.1",
     "nvm": "^0.0.4",
     "sass": "^1.64.0"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
