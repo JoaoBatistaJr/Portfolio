@@ -1,0 +1,61 @@
+.dark {
+  background: #1c1c1c;
+  .header{
+    background: #333439;
+    color: #fcfcfc;
+  }
+  .container {
+    background: #333439;
+    color: #fcfcfc;
+  }
+
+  .tema button {
+    background: #1c1c1c;
+    color: #fcfcfc;
+    border: 3px solid #fcfcfc;
+  }
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+// Background toggle
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: #333439;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #4be1ec;
+}
+
+// animação do toggle
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 40px;
+}
