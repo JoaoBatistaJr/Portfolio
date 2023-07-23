@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
- "scripts": {
-  "dev": "webpack --mode development --watch",
-  "build": "webpack --mode production"
-},
-
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -23,7 +22,9 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "node": "^20.5.0",
     "normalize-scss": "^7.0.1",
+    "nvm": "^0.0.4",
     "sass": "^1.64.0"
   }
 }
