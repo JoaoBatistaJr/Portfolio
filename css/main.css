@@ -10,19 +10,15 @@
 }
 .dark .header {
   background: #000;
-  color: #fcfcfc;
+  color: #F5F7FA;
 }
 .dark .container {
   background: #333439;
-  color: #fcfcfc;
-}
-.dark .logo, .dark .nav-list a {
   color: #F5F7FA;
 }
-.dark .tema button {
-  background: #1c1c1c;
-  color: #fcfcfc;
-  border: 3px solid #fcfcfc;
+.dark .logo,
+.dark .nav-list a {
+  color: #F5F7FA;
 }
 
 input[type=checkbox] {
@@ -47,10 +43,10 @@ label:after {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background: #F5F7FA;
-  border-radius: 90px;
+  border-radius: 50%;
   transition: 0.3s;
 }
 
@@ -71,6 +67,7 @@ label:active:after {
   background: #F5F7FA;
   padding-inline: 4rem;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 .nav {
@@ -85,7 +82,7 @@ label:active:after {
 .logo {
   font-family: "Fira Sans", sans-serif;
   font-size: 3.6rem;
-  color: #0B0C12;
+  color: #0b0c12;
   font-weight: 700;
 }
 
@@ -96,8 +93,8 @@ label:active:after {
 }
 
 .nav-list a {
-  font-size: 24px;
-  color: #0B0C12;
+  font-size: 2.4rem;
+  color: #0b0c12;
   padding-block: 16px;
 }
 
@@ -105,7 +102,7 @@ label:active:after {
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #000;
   cursor: pointer;
 }
 
@@ -115,7 +112,7 @@ label:active:after {
   display: block;
   width: 30px;
   height: 3px;
-  background: #fff;
+  background: #000;
   margin-top: 5px;
   position: relative;
   transition: 0.3s;
@@ -132,7 +129,7 @@ label:active:after {
     left: 0;
     width: 100vh;
     height: 100vh;
-    background: #9055ff;
+    background: #0B0C12;
     -webkit-clip-path: circle(100px at 90% -15%);
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
@@ -143,7 +140,7 @@ label:active:after {
     pointer-events: none;
   }
   .nav-list a {
-    font-size: 24px;
+    font-size: 2.4rem;
     opacity: 0;
   }
   .nav-list li:nth-child(1) a {

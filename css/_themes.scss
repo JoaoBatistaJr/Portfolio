@@ -1,22 +1,18 @@
 .dark {
   background: #000;
-  .header{
+  .header {
     background: #000;
-    color: #fcfcfc;
+    color: $color-c01;
   }
   .container {
     background: #333439;
-    color: #fcfcfc;
+    color: $color-c01;
   }
-  .logo, .nav-list a{
+  .logo,
+  .nav-list a {
     color: $color-c01;
   }
 
-  .tema button {
-    background: #1c1c1c;
-    color: #fcfcfc;
-    border: 3px solid #fcfcfc;
-  }
 }
 
 input[type="checkbox"] {
@@ -42,11 +38,12 @@ label:after {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background: $color-c01;
-  border-radius: 90px;
+  border-radius: 50%;
   transition: 0.3s;
+  
 }
 
 input:checked + label {
