@@ -2,8 +2,29 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
   text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10%;
 }
 
 // Cores
@@ -19,4 +40,12 @@ $color-b01: #7ECEFC;
 $color-b03: #609AF2;//links
 $color-b04: #547EEC;
 $color-b12: #3C006A;
-$linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%)
+$linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
+
+// Estilo para o conteúdo principal
+.main-content{ 
+  width: 1160px; // Largura do conteúdo principal
+  margin: 0 auto; // Centraliza o conteúdo na página.
+  padding-left: 220px; // Espaçamento a esquerda do conteúdo da pragina
+  padding-right: 220px; // Espaçamento a direita do conteúdo da página
+}

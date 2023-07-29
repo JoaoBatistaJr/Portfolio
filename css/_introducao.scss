@@ -1,0 +1,31 @@
+img {
+  border-radius: 0;
+}
+
+p{
+  font-size: 1.8rem;
+  a{
+    color: $color-b03;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+h1{
+  font-size: 6.4rem;
+  line-height: 72px;
+  b {
+    color: $color-b03;
+  }
+}
+
+.introcucao {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  align-items: center;
+  .redes img{
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+// Estilo para o grid container [block]
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(12, 60px);
+  gap: 40px;
+}
+
+.grid-item--introducao{
+  grid-column: span 5;
+}
+.grid-item--introducao:nth-child(2){
+  grid-column: span 4;
+  grid-column: 8 / span 4;
+}
+.grid-item--introducao:nth-child(3){
+  grid-column: span 1;
+}

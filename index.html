@@ -24,69 +24,109 @@
 	<!-- Abre - Arquivos CSS -->
 	<link rel="stylesheet" href="/css/main.css" />
 	<!-- Fecha - Arquivos CSS -->
-<!-- Abre - JavaScript -->
-<script defer src="./js/script.js"></script>
-<script defer src="./js/app.js"></script>
-<!-- Fecha - JavaScript -->
+	<!-- Abre - JavaScript -->
+	<script defer src="./js/script.js"></script>
+	<script defer src="./js/app.js"></script>
+	<!-- Fecha - JavaScript -->
 
-	<script>
-		document.documentElement.classList.add("js");
-	</script>
 </head>
 
-<body>
-
-	<!-- Open - Header -->
-	<header class="header">
-		<nav class="nav">
-			<a class="logo" href="/">Portfólio</a>
-			<button class="burger"></button>
-			<ul class="nav-list">
-				<li><a href="#">Experiência</a></li>
-				<li><a href="#">Formação</a></li>
-				<li><a href="#">Serviços</a></li>
-				
-					<input onclick="mudaTema()" class="tema" type="checkbox" id="switch" /><label for="switch">Toggle</label>
-				
-			</ul>
+<body >
+	<div class="estrutura">
+		<header class="header">
 			
-		</nav>
-	</header>
-	<!-- close - Header -->
-	<main class="">
-		<!-- Open - Introduction -->
-		<section class="container" id="">
-			<div class="introducao">
-				<p>Oi,👋🏻 eu sou João</p>
-				<h1>Desenvolvedor FrontEnd & UI Desinger <span>.</span></h1>
-				<p>Tenho 29 anos, trabalho como freelancer a mais de 2 anos. Atualmente estou aprendendo frameworks como Reacjs,
-					Vuejs e UI/UX Design. <a href="">Saiba mais sobre mim.</a></p>
-			</div>
-			<div class="foto-intro">
-				<img src="" alt="">
-			</div>
-		</section>
-		<!-- Close - Introduction -->
+			<nav class="nav">
+				<a class="logo" href="/">Portfólio</a>
+				<button class="burger"></button>
+				
+				<ul class="nav-list">
+					<li><a href="#">Experiência</a></li>
+					<li><a href="#">Formação</a></li>
+					<li><a href="#">Serviços</a></li>
 
-		<!-- Abre - Projetos -->
-		<section class="projetos" id="projetos">
+					<input onclick="mudaTema()" class="tema" type="checkbox" id="switch" /><label for="switch">Toggle</label>
 
-		</section>
-		<!-- Fecha - Projetos -->
+				</ul>
 
-		
+			</nav>
+		</header>
+		<!-- close - Header -->
+		<main class="main-content">
+			<!-- Open - Introduction -->
+			<section class="grid-container introcucao">
+				<div class="grid-item grid-item--introducao introducao--item">
+					<p>Oi,👋🏻 eu sou João</p>
+					<h1>Desenvolvedor FrontEnd & <br>UI Desinger<b>.</b></h1>
+					<p>Tenho 29 anos, trabalho como freelancer a mais de 2 anos. Atualmente estou aprendendo frameworks como
+						Reacjs,
+						Vuejs e UI/UX Design. <a href="">Saiba mais sobre mim.</a></p>
+				</div>
+				<div class="grid-item grid-item--introducao foto-intro">
+					<img src="img/perfil-intro.png" alt="">
+				</div>
+				<div class="grid-item grid-item--introducao redes">
+					<img src="/img/svg/linkedin-icon-light.svg" alt="">
+					<img src="/img/svg/github-icon-light.svg" alt="">
+					<img src="/img/svg/intagram-icon-light.svg" alt="">
+				</div>
+			</section>
+			<!-- Close - Introduction -->
 
-		<!-- Fecha - Conhecimentos -->
-		<!-- Abre - Botão voltar ao topo -->
-		<!-- Fecha - Botão voltar ao topo -->
-	</main>
+			<!-- Abre - Experiência-->
+			<section class="grid-container">
+				<h1 class="titulo">Experiência</h1>
+				<div class="card">
+					<img src="/img/svg/smartphone-e-tablet.svg" alt="imagem do projeto1" class="img-card">
+					<p class="descricao-card">Trabalho desenvolvido para solucionar um problema comum no dia a dia, alinhado com
+						as necessidades do cliente.</p>
+					<button>Visitar Site</button>
+					<button>Código-fonte</button>
+				</div>
+				<div class="card">
+					<img src="/img/svg/smartphone-e-tablet.svg" alt="imagem do projeto2" class="img-card">
+					<p class="descricao-card">Trabalho desenvolvido para solucionar um problema comum no dia a dia, alinhado com
+						as necessidades do cliente.</p>
+					<button>Visitar Site</button>
+					<button>Código-fonte</button>
+				</div>
+			</section>
+			<!-- Fecha - Experiência -->
 
-	<!-- Abre - Footer -->
-	<footer class="footer">
-		
-	</footer>
-	<!-- Fecha - Footer -->
+			<!-- Abre - Formação -->
+			<section cclass="grid-container">
+				<h1>Formação</h1>
+				<div class="accordion">
+					<span>TÉCNICO</span>
+					<span>IMD-UFRN</span>
+					<h2>Informática para Internet</h2>
+					<p>Curso Técnico de Nível Médio desenvolvido pelo Instituto Metrópole Digital - UFRN, e aplicado na modalidade semipresencial pelo polo UFERSA - Angicos/RN, no período de Janeiro de 2018 à Janeiro de 2020. Com carga horária total de 1,000 horas.</p>
+					<span>#LógicaDeProgramação #Java #POO #MySQL #HTML #CSS #JSON #AndroidStudio</span>
+				</div>
+			</section>
+			<!-- Fecha - formacao -->
+			<section cclass="grid-container">
+				<h1>Serviçõs</h1>
+				<div class="card-servicos">
+					<img src="/img/svg/CodeBlock.svg" alt="">
+					<h2>Criação de Sites</h2>
+				<div class="card-servicos">
+					<img src="/img/svg/FigmaLogo.svg" alt="">
+					<h2>Criação de Sites</h2>
+				<div class="card-servicos">
+					<img src="/img/svg/DeviceMobileCamera.svg" alt="">
+					<h2>Criação de Sites</h2>
+				</div>
+			</section>
+			<!-- Abre - Botão voltar ao topo -->
+			<!-- Fecha - Botão voltar ao topo -->
+		</main>
 
+		<!-- Abre - Footer -->
+		<footer class="grid-container">
+
+		</footer>
+		<!-- Fecha - Footer -->
+	</div>
 </body>
 
 </html>

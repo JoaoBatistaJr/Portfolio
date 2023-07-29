@@ -1,20 +1,21 @@
+// estilos para o tema dark
 .dark {
   background: #000;
   .header {
     background: #000;
-    color: $color-c01;
+    color: #F5F7FA;
   }
   .container {
     background: #333439;
-    color: $color-c01;
+    color: #F5F7FA;
   }
   .logo,
   .nav-list a {
-    color: $color-c01;
+    color: #F5F7FA;
   }
-
 }
 
+// estilos para o toggle
 input[type="checkbox"] {
   height: 0;
   width: 0;
@@ -36,11 +37,11 @@ label {
 label:after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 22px;
-  height: 22px;
-  background: $color-c01;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: #F5F7FA;
   border-radius: 50%;
   transition: 0.3s;
   
