@@ -23,7 +23,7 @@ a {
 img {
   display: block;
   max-width: 100%;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .main-content {
@@ -35,12 +35,12 @@ img {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(12, 60px);
+  grid-template-columns: repeat(12, 1fr);
   gap: 40px;
 }
 
 .grid-item--introducao {
-  grid-column: span 5;
+  grid-column: span 6;
 }
 
 .grid-item--introducao:nth-child(2) {
@@ -67,6 +67,15 @@ img {
 .dark .nav-list a {
   color: #F5F7FA;
 }
+.dark .introducao--item h1 {
+  color: #F5F7FA;
+}
+.dark .introducao--item p {
+  color: #B2B8BF;
+}
+.dark .introducao--item a {
+  color: #609AF2;
+}
 
 input[type=checkbox] {
   height: 0;
@@ -77,8 +86,8 @@ input[type=checkbox] {
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 50px;
-  height: 30px;
+  width: 45px;
+  height: 25px;
   background: #333439;
   display: block;
   border-radius: 100px;
@@ -90,8 +99,8 @@ label:after {
   position: absolute;
   top: 3px;
   left: 3px;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background: #F5F7FA;
   border-radius: 50%;
   transition: 0.3s;
@@ -113,14 +122,13 @@ label:active:after {
 .header {
   background: #F5F7FA;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  z-index: 10;
 }
 
 .nav {
   max-width: 1160px;
   padding-left: 220px;
   padding-right: 220px;
-  height: 70px;
+  height: 80px;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -140,9 +148,8 @@ label:active:after {
 }
 
 .nav-list a {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #0b0c12;
-  padding-block: 16px;
 }
 
 .burger {
@@ -221,28 +228,6 @@ label:active:after {
     top: -7px;
   }
 }
-img {
-  border-radius: 0;
-}
-
-p {
-  font-size: 1.8rem;
-}
-p a {
-  color: #609AF2;
-}
-p a:hover {
-  text-decoration: underline;
-}
-
-h1 {
-  font-size: 6.4rem;
-  line-height: 72px;
-}
-h1 b {
-  color: #609AF2;
-}
-
 .introcucao {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -251,4 +236,23 @@ h1 b {
 .introcucao .redes img {
   margin-bottom: 20px;
   cursor: pointer;
+}
+.introcucao h1 {
+  font-size: 6.4rem;
+  line-height: 72px;
+}
+.introcucao h1 b {
+  color: #609AF2;
+}
+.introcucao img {
+  border-radius: 10px;
+}
+.introcucao p {
+  font-size: 1.8rem;
+}
+.introcucao p a {
+  color: #547EEC;
+}
+.introcucao p a:hover {
+  text-decoration: underline;
 }

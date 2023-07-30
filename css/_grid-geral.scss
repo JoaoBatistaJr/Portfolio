@@ -1,12 +1,12 @@
 // Estilo para o grid container [block]
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(12, 60px);
+  grid-template-columns: repeat(12, 1fr);
   gap: 40px;
 }
 
 .grid-item--introducao{
-  grid-column: span 5;
+  grid-column: span 6;
 }
 .grid-item--introducao:nth-child(2){
   grid-column: span 4;
