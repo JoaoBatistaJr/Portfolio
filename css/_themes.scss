@@ -1,8 +1,9 @@
 // estilos para o tema dark
 .dark {
-  background: #000;
+  background: $color-c12;
   .header {
-    background: #000;
+    background: $color-c12;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .5);
     color: #F5F7FA;
   }
   .container {
@@ -12,6 +13,9 @@
   .logo,
   .nav-list a {
     color: #F5F7FA;
+  }
+  .nav{
+    background: $color-c12;
   }
   .introducao--item{
     h1{
