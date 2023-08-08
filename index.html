@@ -31,18 +31,18 @@
 
 </head>
 
-<body >
+<body>
 	<div class="">
 		<header class="header">
-			
+
 			<nav class="nav">
 				<a class="logo" href="/">Portfólio</a>
 				<button class="burger"></button>
-				
+
 				<ul class="nav-list">
-					<li><a href="#">Experiência</a></li>
-					<li><a href="#">Formação</a></li>
-					<li><a href="#">Serviços</a></li>
+					<li><a href="#experiencia">Experiência</a></li>
+					<li><a href="#formacao">Formação</a></li>
+					<li><a href="#sevicos">Serviços</a></li>
 
 					<input onclick="mudaTema()" class="tema" type="checkbox" id="switch" /><label for="switch">Toggle</label>
 
@@ -55,11 +55,13 @@
 			<!-- Open - Introduction -->
 			<section class="grid-container introcucao">
 				<div class="grid-item grid-item--introducao introducao--item">
-					<p>Oi,👋🏻 eu sou João</p>
-					<h1>Desenvolvedor FrontEnd & <br>UI Desinger<b>.</b></h1>
-					<p>Tenho 29 anos, trabalho como freelancer a mais de 2 anos. Atualmente estou aprendendo frameworks como <b>Reacjs</b>, <b>Vuejs</b> <br>e <b>UI/UX Design</b>. <a href="">Saiba mais sobre mim.</a></p>
+					<p>Oi, eu sou João 👋🏻</p>
+					<h1>Desenvolvedor FullStack & <br>UI Desinger<b>.</b></h1>
+					<p>Tenho 29 anos, trabalho como freelancer a mais de 2 anos. Atualmente estou aprendendo frameworks como
+						<b>Reacjs</b>, <b>Vuejs</b> e <b>UI/UX Design</b>. <a href="">Saiba mais sobre mim.</a>
+					</p>
 				</div>
-				<div class="grid-item grid-item--introducao ">
+				<div class="grid-item--introducao ">
 					<img src="img/imagem-introducao.png" class="foto-intro">
 				</div>
 				<div class="grid-item grid-item--introducao redes">
@@ -71,50 +73,64 @@
 			<!-- Close - Introduction -->
 
 			<!-- Abre - Experiência-->
-			<section class="grid-container">
-				<h1 class="titulo">Experiência</h1>
-				<div class="card">
-					<img src="/img/svg/smartphone-e-tablet.svg" alt="imagem do projeto1" class="img-card">
-					<p class="descricao-card">Trabalho desenvolvido para solucionar um problema comum no dia a dia, alinhado com
-						as necessidades do cliente.</p>
-					<button>Visitar Site</button>
-					<button>Código-fonte</button>
+			<section class="grid-container experiencia" id="experiencia">
+				<div class="grid-item--experiencia">
+					<h1 class="titulo">Experiência</h1>
 				</div>
-				<div class="card">
-					<img src="/img/svg/smartphone-e-tablet.svg" alt="imagem do projeto2" class="img-card">
-					<p class="descricao-card">Trabalho desenvolvido para solucionar um problema comum no dia a dia, alinhado com
-						as necessidades do cliente.</p>
-					<button>Visitar Site</button>
-					<button>Código-fonte</button>
+				<div class="grid-item--experiencia">
+					<div class="card-experiencia">
+						<img src="/img/svg/smartphone-e-tablet.svg" alt="imagem do projeto1" class="img-card">
+						<p class="descricao-card">Trabalho desenvolvido para solucionar um problema comum no dia a dia, alinhado com
+							as necessidades do cliente.</p>
+						<button class="btn"><img src="/img/svg/github-icon-btn.svg">Github</button>
+						<button class="btn"><img src="/img/svg/github-icon-btn.svg">Deploy</button>
+					</div>
 				</div>
+				<div class="grid-item--experiencia">
+					<div class="card-experiencia">
+						<img src="/img/svg/smartphone-e-tablet.svg" alt="imagem do projeto2" class="img-card">
+						<p class="descricao-card">Trabalho desenvolvido para solucionar um problema comum no dia a dia, alinhado com
+							as necessidades do cliente.</p>
+						<button class="btn"><img src="/img/svg/github-icon-btn.svg">Github</button>
+						<button class="btn"><img src="/img/svg/github-icon-btn.svg">Deploy</button>
+					</div>
+				</div>
+
 			</section>
 			<!-- Fecha - Experiência -->
 
 			<!-- Abre - Formação -->
-			<section cclass="grid-container">
-				<h1>Formação</h1>
+			<section cclass="grid-container formacao" id="formacao">
+				<h1 class="titulo">Formação</h1>
 				<div class="accordion">
 					<span>TÉCNICO</span>
 					<span>IMD-UFRN</span>
 					<h2>Informática para Internet</h2>
-					<p>Curso Técnico de Nível Médio desenvolvido pelo Instituto Metrópole Digital - UFRN, e aplicado na modalidade semipresencial pelo polo UFERSA - Angicos/RN, no período de Janeiro de 2018 à Janeiro de 2020. Com carga horária total de 1,000 horas.</p>
+					<p>Curso Técnico de Nível Médio desenvolvido pelo Instituto Metrópole Digital - UFRN, e aplicado na modalidade
+						semipresencial pelo polo UFERSA - Angicos/RN, no período de Janeiro de 2018 à Janeiro de 2020. Com carga
+						horária
+						total de 1,000 horas.</p>
 					<span>#LógicaDeProgramação #Java #POO #MySQL #HTML #CSS #JSON #AndroidStudio</span>
 				</div>
 			</section>
 			<!-- Fecha - formacao -->
-			<section cclass="grid-container">
-				<h1>Serviçõs</h1>
+
+			<!-- Abre - Serviços -->
+			<section cclass="grid-container servicos" id="servicos">
+				<h1 class="titulo">Serviçõs</h1>
 				<div class="card-servicos">
 					<img src="/img/svg/CodeBlock.svg" alt="">
 					<h2>Criação de Sites</h2>
-				<div class="card-servicos">
-					<img src="/img/svg/FigmaLogo.svg" alt="">
-					<h2>Criação de Sites</h2>
-				<div class="card-servicos">
-					<img src="/img/svg/DeviceMobileCamera.svg" alt="">
-					<h2>Criação de Sites</h2>
-				</div>
+					<div class="card-servicos">
+						<img src="/img/svg/FigmaLogo.svg" alt="">
+						<h2>Criação de Sites</h2>
+						<div class="card-servicos">
+							<img src="/img/svg/DeviceMobileCamera.svg" alt="">
+							<h2>Criação de Sites</h2>
+						</div>
 			</section>
+			<!-- Fecha - Serviços -->
+
 			<!-- Abre - Botão voltar ao topo -->
 			<!-- Fecha - Botão voltar ao topo -->
 		</main>

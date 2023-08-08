@@ -1,0 +1,25 @@
+.titulo {
+  font-size: 3.6rem;
+}
+
+.btn {
+  border: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: $linear-gradiente;
+  width: 130px;
+  height: 50px;
+  // padding: 12px 20px;
+  color: $color-b12;
+  font-weight: 700;
+  line-height: 24px;
+  img{
+    width: 24px;
+    height: auto;
+    padding: 10px;
+  }
+}

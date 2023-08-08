@@ -5,19 +5,21 @@
   align-items: center;
   .redes img{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     cursor: pointer;
   }
   h1{
     font-size: 6.4rem;
     line-height: 72px;
+    padding-bottom: 5px;
     b {
       color: $color-b03;
     }
   }
-  img {
-    border-radius: 10px;
+  .foto-intro{
+    border: 2px solid $color-b04;
   }
-  
   p{
     font-size: 1.8rem;
     a{
