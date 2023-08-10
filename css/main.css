@@ -12,6 +12,10 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+section {
+  padding-block: 120px;
+}
+
 li {
   list-style: none;
 }
@@ -30,13 +34,17 @@ img {
   border-radius: 10px;
 }
 
+.main-content, .nav {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 .titulo {
   font-size: 3.6rem;
 }
 
-.main-content, .nav {
-  width: 1000px;
-  margin: 0 auto;
+.ponto {
+  color: #609AF2;
 }
 
 .grid-container {
@@ -74,6 +82,15 @@ img {
 .dark {
   background: #0B0C12;
 }
+.dark h1 {
+  color: #F5F7FA;
+}
+.dark p {
+  color: #B2B8BF;
+}
+.dark a {
+  color: #609AF2;
+}
 .dark .header {
   background: #0B0C12;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
@@ -90,14 +107,8 @@ img {
 .dark .nav {
   background: #0B0C12;
 }
-.dark .introducao--item h1 {
-  color: #F5F7FA;
-}
-.dark .introducao--item p {
-  color: #B2B8BF;
-}
-.dark .introducao--item a {
-  color: #609AF2;
+.dark .card-experiencia {
+  background-color: #161822;
 }
 
 input[type=checkbox] {
@@ -151,12 +162,12 @@ label:active:after {
 
 .nav {
   background: #F5F7FA;
-  max-width: 1600px;
   height: 80px;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .logo {
@@ -279,7 +290,6 @@ label:active:after {
 
 .introcucao {
   height: 100%;
-  padding: 120px 0;
   align-items: center;
 }
 .introcucao .redes img {
@@ -293,11 +303,8 @@ label:active:after {
   line-height: 72px;
   padding-bottom: 5px;
 }
-.introcucao h1 b {
-  color: #609AF2;
-}
 .introcucao .foto-intro {
-  border: 2px solid #547EEC;
+  border: 1px solid #547EEC;
 }
 .introcucao p {
   font-size: 1.8rem;
@@ -310,16 +317,7 @@ label:active:after {
 }
 
 .experiencia {
-  background-color: #F5F7FA;
-  margin-left: -440px;
-  margin-right: -440px;
-  padding: 120px 440px;
-}
-.experiencia h1 {
   font-size: 3.6rem;
-}
-.experiencia b {
-  color: #609AF2;
 }
 
 .grid-item--experiencia {
@@ -340,11 +338,10 @@ label:active:after {
   margin: 0 auto;
   background-color: #E6EAF0;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  border: 2px solid linear-gradient(180deg, #7ECEFC 0%, #547EEC 100%);
   max-width: 100%;
   border-radius: 10px;
-  border: 2px solid #547EEC;
-  padding: 60px;
+  border: 1px solid #547EEC;
+  padding: 40px;
   align-items: center;
 }
 .card-experiencia img {
