@@ -1,49 +1,38 @@
 .experiencia {
-  background-color: $color-c01;
-  margin-left: -440px; 
-  margin-right: -440px; 
-  padding: 120px 440px;
-  h1{
-    font-size: 3.6rem;
-  }
-  b{
-    color: $color-b03;
-  }
+  font-size: 3.6rem;
 }
 
-.grid-item--experiencia{
+.grid-item--experiencia {
   grid-column: span 12;
 }
 
-.grid-item--experiencia:nth-child(2){
+.grid-item--experiencia:nth-child(2) {
   grid-column: 6;
   grid-column: 1 / span 6;
 }
-.grid-item--experiencia:nth-child(3){
+.grid-item--experiencia:nth-child(3) {
   grid-column: 6;
   grid-column: 7 / span 6;
 }
 
-.card-experiencia{
+.card-experiencia {
   margin: 0 auto;
   background-color: $color-c02;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
-  border: 2px solid $linear-gradiente;
   max-width: 100%;
   border-radius: 10px;
-  border: 2px solid $color-b04;
-  padding: 60px;
+  border: 1px solid $color-b04;
+  padding: 40px;
   align-items: center;
-  img{
+  img {
     width: 440px;
     height: auto;
   }
-  p{
-    font-family: 'Roboto', sans-serif;
+  p {
+    font-family: "Roboto", sans-serif;
     font-size: 1.4rem;
     text-align: center;
     margin-top: 8px;
     margin-bottom: 20px;
   }
-  
 }

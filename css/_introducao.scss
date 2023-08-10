@@ -1,6 +1,5 @@
 .introcucao {
   height: 100%;
-  padding: 120px 0;
   align-items: center;
   .redes img{
     margin-bottom: 20px;
@@ -12,12 +11,9 @@
     font-size: 6.4rem;
     line-height: 72px;
     padding-bottom: 5px;
-    b {
-      color: $color-b03;
-    }
   }
   .foto-intro{
-    border: 2px solid $color-b04;
+    border: 1px solid $color-b04;
   }
   p{
     font-size: 1.8rem;

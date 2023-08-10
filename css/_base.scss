@@ -12,14 +12,15 @@ html {
 body {
   font-family: 'Fira Sans', sans-serif;
 }
-
+section {
+  padding-block: 120px;
+}
 li {
   list-style: none;
 }
 p{
   font-family: 'Roboto', sans-serif;
 }
-
 a {
   text-decoration: none;
 }
@@ -28,9 +29,6 @@ img {
   display: block;
   max-width: 100%;
   border-radius: 10px;
-}
-.titulo{
-  font-size: 3.6rem;
 }
 
 // Cores
@@ -41,7 +39,7 @@ $color-c07: #7E838C;
 $color-c08: #636973;
 $color-c09: #474D59;
 $color-c10: #363B47;
-$color-c11: #242833;
+$color-c11: #161822;
 $color-c12: #0B0C12;
 $color-b01: #7ECEFC;
 $color-b03: #609AF2;//links
@@ -53,6 +51,11 @@ $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 .main-content, .nav{ 
   width: 1000px; // Largura do conteúdo principal
   margin: 0 auto; // Centraliza o conteúdo na página.
-  // padding-left: 220px; // Espaçamento a esquerda do conteúdo da pragina
-  // padding-right: 220px; // Espaçamento a direita do conteúdo da página
+}
+
+.titulo{
+  font-size: 3.6rem;
+}
+.ponto{
+  color: $color-b03;
 }
