@@ -37,8 +37,6 @@ img {
 .main-content, .nav {
   width: 1000px;
   margin: 0 auto;
-  padding-left: 220px;
-  padding-right: 220px;
 }
 
 .grid-container {
@@ -261,28 +259,27 @@ label:active:after {
 .btn {
   border: none;
   display: inline-flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 8px;
-  padding: 12px 20px;
   border-radius: 10px;
   background: linear-gradient(180deg, #7ECEFC 0%, #547EEC 100%);
   width: 130px;
   height: 50px;
+  padding: 20px;
+  margin-left: 40px;
   color: #3C006A;
+  font-size: 1.6rem;
   font-weight: 700;
   line-height: 24px;
 }
 .btn img {
-  width: 24px;
+  width: 20px;
   height: auto;
-  padding: 10px;
+  margin: 5px;
 }
 
 .introcucao {
   height: 100%;
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 120px 0;
   align-items: center;
 }
 .introcucao .redes img {
@@ -314,9 +311,15 @@ label:active:after {
 
 .experiencia {
   background-color: #F5F7FA;
-  padding: 40px;
-  max-width: 100%;
-  z-index: -1;
+  margin-left: -440px;
+  margin-right: -440px;
+  padding: 120px 440px;
+}
+.experiencia h1 {
+  font-size: 3.6rem;
+}
+.experiencia b {
+  color: #609AF2;
 }
 
 .grid-item--experiencia {
@@ -334,6 +337,7 @@ label:active:after {
 }
 
 .card-experiencia {
+  margin: 0 auto;
   background-color: #E6EAF0;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   border: 2px solid linear-gradient(180deg, #7ECEFC 0%, #547EEC 100%);
@@ -346,4 +350,11 @@ label:active:after {
 .card-experiencia img {
   width: 440px;
   height: auto;
+}
+.card-experiencia p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
