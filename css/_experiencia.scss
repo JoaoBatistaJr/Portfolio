@@ -4,6 +4,9 @@
 
 .grid-item--experiencia {
   grid-column: span 12;
+  .btn-2{
+    @include custom-button(185px, 50px);
+  }
 }
 
 .grid-item--experiencia:nth-child(2) {
@@ -13,6 +16,12 @@
 .grid-item--experiencia:nth-child(3) {
   grid-column: 6;
   grid-column: 7 / span 6;
+}
+
+.grid-item--experiencia:nth-child(4){
+  grid-column: 5 / span 2;
+  margin-left: 60px;
+
 }
 
 .card-experiencia {
@@ -34,5 +43,10 @@
     text-align: center;
     margin-top: 8px;
     margin-bottom: 20px;
+  }
+  .btn{
+    @include custom-button(130px, 50px);
+    margin-left: 40px;
+    margin-right: -10px;
   }
 }

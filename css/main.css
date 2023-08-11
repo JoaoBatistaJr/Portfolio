@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -67,16 +68,39 @@ img {
   grid-column: span 1;
 }
 
-/* Media query para dispositivos com largura entre 768px e 991px (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr); /* Grid de 4 colunas para tablets */
+/* Estilos para dispositivos móveis pequenos (até 480px) */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px; /* Ajuste o gap de acordo com o seu design */
   }
 }
-/* Media query para dispositivos com largura menor que 768px (smartphones) */
-@media (max-width: 767px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* Grid de 2 colunas para smartphones */
+/* Estilos para dispositivos móveis médios (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Ajuste o gap de acordo com o seu design */
+  }
+}
+/* Estilos para tablets em modo paisagem e telas pequenas (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Ajuste o gap de acordo com o seu design */
+  }
+}
+/* Estilos para telas médias (1024px a 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px; /* Ajuste o gap de acordo com o seu design */
+  }
+}
+/* Estilos para telas grandes (1440px e acima) */
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px; /* Ajuste o gap de acordo com o seu design */
   }
 }
 .dark {
@@ -167,7 +191,6 @@ label:active:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
 }
 
 .logo {
@@ -267,27 +290,6 @@ label:active:after {
   font-size: 3.6rem;
 }
 
-.btn {
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #7ECEFC 0%, #547EEC 100%);
-  width: 130px;
-  height: 50px;
-  padding: 20px;
-  margin-left: 40px;
-  color: #3C006A;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 24px;
-}
-.btn img {
-  width: 20px;
-  height: auto;
-  margin: 5px;
-}
-
 .introcucao {
   height: 100%;
   align-items: center;
@@ -297,6 +299,9 @@ label:active:after {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+}
+.introcucao .redes img:hover {
+  transform: scale(0.95);
 }
 .introcucao h1 {
   font-size: 6.4rem;
@@ -323,6 +328,25 @@ label:active:after {
 .grid-item--experiencia {
   grid-column: span 12;
 }
+.grid-item--experiencia .btn-2 {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 185px;
+  height: 50px;
+  padding: 20px;
+  background: linear-gradient(180deg, #7ECEFC 0%, #547EEC 100%);
+  color: #3C006A;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 24px;
+}
+.grid-item--experiencia .btn-2:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
 
 .grid-item--experiencia:nth-child(2) {
   grid-column: 6;
@@ -332,6 +356,11 @@ label:active:after {
 .grid-item--experiencia:nth-child(3) {
   grid-column: 6;
   grid-column: 7/span 6;
+}
+
+.grid-item--experiencia:nth-child(4) {
+  grid-column: 5/span 2;
+  margin-left: 60px;
 }
 
 .card-experiencia {
@@ -354,4 +383,25 @@ label:active:after {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 20px;
+}
+.card-experiencia .btn {
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  width: 130px;
+  height: 50px;
+  padding: 20px;
+  background: linear-gradient(180deg, #7ECEFC 0%, #547EEC 100%);
+  color: #3C006A;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 40px;
+  margin-right: -10px;
+}
+.card-experiencia .btn:hover {
+  transform: scale(0.95);
+  cursor: pointer;
 }

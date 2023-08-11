@@ -2,23 +2,38 @@
   font-size: 3.6rem;
 }
 
-.btn {
+// .btn {
+//   border: none;
+//   display: inline-flex;
+//   align-items: center;
+//   border-radius: 10px;
+//   background: $linear-gradiente;
+//   width: 130px;
+//   height: 50px;
+//   padding: 20px;
+//   margin-left: 40px;
+//   color: $color-b12;
+//   font-size: 1.6rem;
+//   font-weight: 700;
+//   line-height: 24px;
+// }
+
+@mixin custom-button($width-size, $height-size){
   border: none;
   display: inline-flex;
   align-items: center;
+  text-align: center;
   border-radius: 10px;
-  background: $linear-gradiente;
-  width: 130px;
-  height: 50px;
+  width: $width-size;
+  height: $height-size;
   padding: 20px;
-  margin-left: 40px;
+  background: $linear-gradiente;
   color: $color-b12;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 24px;
-  img{
-    width: 20px;
-    height: auto;
-    margin: 5px;
+  &:hover{
+    transform: scale(0.95);
+    cursor: pointer;
   }
 }
