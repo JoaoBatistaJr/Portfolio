@@ -16,16 +16,42 @@
   grid-column: span 1;
 }
 
-/* Media query para dispositivos com largura entre 768px e 991px (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr); /* Grid de 4 colunas para tablets */
+/* Estilos para dispositivos móveis pequenos (até 480px) */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px; /* Ajuste o gap de acordo com o seu design */
   }
 }
 
-/* Media query para dispositivos com largura menor que 768px (smartphones) */
-@media (max-width: 767px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* Grid de 2 colunas para smartphones */
+/* Estilos para dispositivos móveis médios (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Ajuste o gap de acordo com o seu design */
+  }
+}
+
+/* Estilos para tablets em modo paisagem e telas pequenas (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Ajuste o gap de acordo com o seu design */
+  }
+}
+
+/* Estilos para telas médias (1024px a 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px; /* Ajuste o gap de acordo com o seu design */
+  }
+}
+
+/* Estilos para telas grandes (1440px e acima) */
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px; /* Ajuste o gap de acordo com o seu design */
   }
 }
