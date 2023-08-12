@@ -2,38 +2,71 @@
   font-size: 3.6rem;
 }
 
-// .btn {
-//   border: none;
-//   display: inline-flex;
-//   align-items: center;
-//   border-radius: 10px;
-//   background: $linear-gradiente;
-//   width: 130px;
-//   height: 50px;
-//   padding: 20px;
-//   margin-left: 40px;
-//   color: $color-b12;
-//   font-size: 1.6rem;
-//   font-weight: 700;
-//   line-height: 24px;
-// }
 
-@mixin custom-button($width-size, $height-size){
+@mixin custom-button($font-size: 1.6rem, $width:100px, $height:50px){
   border: none;
   display: inline-flex;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
-  width: $width-size;
-  height: $height-size;
-  padding: 20px;
+  border-radius: 5px;
+  width: $width;
+  height: $height;
+  padding: 24px;
   background: $linear-gradiente;
   color: $color-b12;
-  font-size: 1.6rem;
+  font-size: $font-size;
   font-weight: 700;
   line-height: 24px;
   &:hover{
     transform: scale(0.95);
     cursor: pointer;
   }
+}
+
+// estilos para o toggle
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+// toggle para mudar o tema.
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 25px;
+  background: #333439;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  bottom: 3px;
+  width: 20px;
+  height: 20px;
+  background: #F5F7FA;
+  border-radius: 50%;
+  transition: 0.3s;
+  
+}
+
+input:checked + label {
+  background: #1c1c1c;
+}
+
+// animação do toggle
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after { //Largura de deslocamento da aninmação do toggle
+width: 32px;
 }
