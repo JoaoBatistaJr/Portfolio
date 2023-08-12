@@ -7,13 +7,15 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Fira Sans', sans-serif;
 }
 section {
-  padding-block: 120px;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 li {
   list-style: none;

@@ -1,11 +1,7 @@
-.experiencia {
-  font-size: 3.6rem;
-}
-
 .grid-item--experiencia {
   grid-column: span 12;
   .btn-2{
-    @include custom-button(185px, 50px);
+    @include custom-button(1.6rem, 190px, 50px);
   }
 }
 
@@ -39,13 +35,19 @@
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
     margin-top: 8px;
     margin-bottom: 20px;
   }
   .btn{
-    @include custom-button(130px, 50px);
-    margin-left: 40px;
+    @include custom-button(1.6rem, 120px, 50px);
+    img{
+      width: 20px;
+    }
+  }
+  .btn-align{
+    display: flex;
+    justify-content: space-evenly;
   }
 }
