@@ -22,6 +22,10 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 20px; /* Ajuste o gap de acordo com o seu design */
   }
+  .main-content, .nav{ 
+    width: 400px; // Largura do conteúdo principal
+    margin: 0 auto; // Centraliza o conteúdo na página.
+  }
 }
 
 /* Estilos para dispositivos móveis médios (481px a 767px) */
@@ -29,6 +33,10 @@
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; /* Ajuste o gap de acordo com o seu design */
+  }
+  .main-content, .nav{ 
+    width: 300px; // Largura do conteúdo principal
+    margin: 0 auto; // Centraliza o conteúdo na página.
   }
 }
 
@@ -38,13 +46,29 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; /* Ajuste o gap de acordo com o seu design */
   }
+  .main-content, .nav{ 
+    width: 700px; // Largura do conteúdo principal
+    margin: 0 auto; // Centraliza o conteúdo na página.
+  }
+  .introducao{
+    background: red;
+    h1{
+      font-size: 3.2rem;
+      line-height: 40px;
+    }
+  }
 }
 
 /* Estilos para telas médias (1024px a 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: row;
     gap: 40px; /* Ajuste o gap de acordo com o seu design */
+  }
+  .main-content, .nav{ 
+    width: 900px; // Largura do conteúdo principal
+    margin: 0 auto; // Centraliza o conteúdo na página.
   }
 }
 

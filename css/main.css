@@ -32,7 +32,7 @@ a {
 img {
   display: block;
   max-width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .main-content, .nav {
@@ -74,12 +74,20 @@ img {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px; /* Ajuste o gap de acordo com o seu design */
   }
+  .main-content, .nav {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 /* Estilos para dispositivos móveis médios (481px a 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; /* Ajuste o gap de acordo com o seu design */
+  }
+  .main-content, .nav {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 /* Estilos para tablets em modo paisagem e telas pequenas (768px a 1023px) */
@@ -88,12 +96,28 @@ img {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; /* Ajuste o gap de acordo com o seu design */
   }
+  .main-content, .nav {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .introducao {
+    background: red;
+  }
+  .introducao h1 {
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
 }
 /* Estilos para telas médias (1024px a 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: row;
     gap: 40px; /* Ajuste o gap de acordo com o seu design */
+  }
+  .main-content, .nav {
+    width: 900px;
+    margin: 0 auto;
   }
 }
 /* Estilos para telas grandes (1440px e acima) */
@@ -333,7 +357,7 @@ label:active:after {
   display: inline-flex;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 185px;
   height: 50px;
   padding: 20px;
@@ -389,7 +413,7 @@ label:active:after {
   display: inline-flex;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 130px;
   height: 50px;
   padding: 20px;
@@ -399,7 +423,6 @@ label:active:after {
   font-weight: 700;
   line-height: 24px;
   margin-left: 40px;
-  margin-right: -10px;
 }
 .card-experiencia .btn:hover {
   transform: scale(0.95);
