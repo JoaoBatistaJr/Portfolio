@@ -13,6 +13,9 @@
   span{
     color: $color-c07;
   }
+  .background, .copy{
+    background: $color-c11;
+  }
   .header {
     background: $color-c12;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .5);
@@ -29,9 +32,7 @@
   .nav{
     background: $color-c12;
   }
-  .experiencia{
-  }
   .card-experiencia{
-    background-color: $color-c11;
+    background-color: $color-c10;
   }
 }
