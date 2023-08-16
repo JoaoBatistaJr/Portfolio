@@ -28,11 +28,17 @@
   .logo,
   .nav-list a {
     color: #F5F7FA;
+    b{
+      color: $color-b03;
+    }
   }
   .nav{
     background: $color-c12;
   }
   .card-experiencia{
     background-color: $color-c10;
+    .descricao-card{
+      color: $color-c04;
+    }
   }
 }

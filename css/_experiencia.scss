@@ -38,8 +38,10 @@
   .descricao-card {
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
+    color: $color-c10;
     text-align: center;
     margin-top: 8px;
+    padding-inline: 60px;
     margin-bottom: 20px;
   }
   .btn{
@@ -58,6 +60,6 @@
     text-transform: lowercase;
     display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
+    padding-top: 12px;
   }
 }

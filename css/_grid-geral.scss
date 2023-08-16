@@ -16,6 +16,11 @@
 }
 .grid-item--introducao:nth-child(3) {
   grid-column: span 1;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Estilos para telas médias (1024px a 1439px) */
@@ -24,42 +29,42 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
   }
-  section{
+  section {
     padding-block: 80px;
   }
   .main-content,
-  .nav{
+  .nav {
     max-width: 900px;
     margin: 0 auto;
-    .titulo{
+    .titulo {
       font-size: 2.8rem;
     }
   }
-  .nav{
+  .nav {
     height: 70px;
   }
-  .introcucao{
-    h1{
+  .introcucao {
+    h1 {
       font-size: 5.4rem;
       line-height: 54px;
     }
-    p{
+    p {
       font-size: 1.6rem;
     }
   }
-  .grid-item--experiencia{
-    .btn-2{
+  .grid-item--experiencia {
+    .btn-2 {
       @include custom-button(1.4rem, 170px, 40px);
     }
   }
-  .card-experiencia{
-    img{
+  .card-experiencia {
+    img {
       width: 400px;
     }
-    p{
+    p {
       font-size: 1.4rem;
     }
-    .btn{
+    .btn {
       @include custom-button(1.4rem, auto, 40px);
       margin-left: 40px;
     }

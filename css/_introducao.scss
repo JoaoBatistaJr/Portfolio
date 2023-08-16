@@ -1,10 +1,11 @@
 .introcucao {
-  padding-block: 160px;
+  padding-top: 190px;
+  padding-bottom: 120px;
   align-items: center;
   .redes img{
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+    
+
     cursor: pointer;
     &:hover{
       transform: scale(0.95);

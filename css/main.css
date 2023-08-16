@@ -36,6 +36,19 @@ img {
   border-radius: 5px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0B0C12;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #609AF2;
+  border-radius: 10px;
+}
+
 .background {
   background: #F5F7FA;
   width: 100%;
@@ -88,11 +101,18 @@ img {
 .dark .nav-list a {
   color: #F5F7FA;
 }
+.dark .logo b,
+.dark .nav-list a b {
+  color: #609AF2;
+}
 .dark .nav {
   background: #0B0C12;
 }
 .dark .card-experiencia {
   background-color: #363B47;
+}
+.dark .card-experiencia .descricao-card {
+  color: #B2B8BF;
 }
 
 .header {
@@ -112,7 +132,7 @@ img {
 
 .logo {
   font-family: "Fira Sans", sans-serif;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   color: #0b0c12;
   font-weight: 700;
   grid-column: span 11;
@@ -124,7 +144,7 @@ img {
 }
 
 .nav-list a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #0b0c12;
 }
 
@@ -214,7 +234,7 @@ label {
   cursor: pointer;
   text-indent: -9999px;
   width: 40px;
-  height: 25px;
+  height: 24px;
   background: #333439;
   display: block;
   border-radius: 100px;
@@ -224,7 +244,7 @@ label {
 label:after {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: 3px;
   bottom: 3px;
   width: 20px;
@@ -244,17 +264,16 @@ input:checked + label:after {
 }
 
 label:active:after {
-  width: 32px;
+  width: 35px;
 }
 
 .introcucao {
-  padding-block: 160px;
+  padding-top: 190px;
+  padding-bottom: 120px;
   align-items: center;
 }
 .introcucao .redes img {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
   cursor: pointer;
 }
 .introcucao .redes img:hover {
@@ -336,8 +355,10 @@ label:active:after {
 .card-experiencia .descricao-card {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  color: #363B47;
   text-align: center;
   margin-top: 8px;
+  padding-inline: 60px;
   margin-bottom: 20px;
 }
 .card-experiencia .btn {
@@ -373,7 +394,7 @@ label:active:after {
   text-transform: lowercase;
   display: flex;
   justify-content: flex-end;
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 .grid-item--footer {
@@ -410,6 +431,11 @@ label:active:after {
 
 .grid-item--introducao:nth-child(3) {
   grid-column: span 1;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /* Estilos para telas médias (1024px a 1439px) */
