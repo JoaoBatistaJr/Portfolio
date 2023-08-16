@@ -20,14 +20,18 @@
 
 }
 
+.experiencia{
+  padding-block: 95px;
+}
+
 .card-experiencia {
   margin: 0 auto;
-  background-color: $color-c02;
+  background: $color-c02;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid $color-b04;
-  padding: 32px;
+  padding: 20px;
   gap: 8px;
   max-width: 100%;
   align-items: center;
@@ -39,7 +43,7 @@
     margin-bottom: 20px;
   }
   .btn{
-    @include custom-button(1.6rem, 120px, 50px);
+    @include custom-button(1.6rem, 120px, 40px);
     img{
       width: 24px;
     }
