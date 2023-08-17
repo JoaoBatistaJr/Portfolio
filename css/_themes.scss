@@ -4,11 +4,14 @@
   h1{
     color: $color-c01;
   }
-  p {
-    color: $color-c04;
+  h2{
+    color: $color-c02;
   }
   a{
     color: $color-b03;
+  }
+  p, li{
+    color: $color-c04;
   }
   span{
     color: $color-c07;
@@ -38,6 +41,11 @@
   .card-experiencia{
     background-color: $color-c10;
     .descricao-card{
+      color: $color-c04;
+    }
+  }
+  .grid-item--footer:nth-child(3){
+    a{
       color: $color-c04;
     }
   }
