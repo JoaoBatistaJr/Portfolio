@@ -1,10 +1,25 @@
+.grid-item--introducao {
+  grid-column: span 6;
+}
+.grid-item--introducao:nth-child(2) {
+  grid-column: span 4;
+  grid-column: 8 / span 4;
+}
+.grid-item--introducao:nth-child(3) {
+  grid-column: span 1;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .introcucao {
-  padding-block: 160px;
+  padding-top: 190px;
+  padding-bottom: 120px;
   align-items: center;
   .redes img{
     margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
     cursor: pointer;
     &:hover{
       transform: scale(0.95);

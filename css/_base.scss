@@ -11,18 +11,18 @@ html {
 }
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 li {
   list-style: none;
 }
-p{
-  font-family: 'Roboto', sans-serif;
+p {
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
 }
-h2{
+h2 {
   font-size: 2.4rem;
 }
 img {
@@ -32,41 +32,48 @@ img {
 }
 
 // Cores
-$color-c01: #F5F7FA;
-$color-c02: #E6EAF0;
-$color-c04: #B2B8BF;
-$color-c07: #7E838C;
+$color-c01: #f5f7fa;
+$color-c02: #e6eaf0;
+$color-c04: #b2b8bf;
+$color-c07: #7e838c;
 $color-c08: #636973;
-$color-c09: #474D59;
-$color-c10: #363B47;
+$color-c09: #474d59;
+$color-c10: #363b47;
 $color-c11: #161822;
-$color-c12: #0B0C12;
-$color-b01: #7ECEFC;
-$color-b03: #609AF2;//links
-$color-b04: #547EEC;
-$color-b12: #3C006A;
+$color-c12: #0b0c12;
+$color-b01: #7ecefc;
+$color-b03: #609af2; //links
+$color-b04: #547eec;
+$color-b12: #3c006a;
 $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 
-// Estilo para o conteúdo principal
-// .main-content, .nav, .footer{ 
-//   width: 1000px; // Largura do conteúdo principal
-//   margin: 0 auto; // Centraliza o conteúdo na página.
-// }
+// Estilo para o ScrollBar
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: $color-c12;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $color-b03;
+  border-radius: 10px;
+}
 
-.background{
+.background {
   background: $color-c01;
   width: 100%;
 }
-.copy{
-  font-size: 1.4rem;
-  background: $color-c01;
-  padding-block: 20px;
-  padding-left: 220px;
+.copy {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 20px;
+  background: $color-c01;
+  font-size: 1.4rem;
 }
-.titulo{
+.titulo {
   font-size: 2.8rem;
 }
-.ponto{
+.ponto {
   color: $color-b03;
 }
