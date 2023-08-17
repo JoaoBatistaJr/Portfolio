@@ -1,51 +1,56 @@
 // estilos para o tema dark
 .dark {
   background: $color-c12;
-  h1{
+  h1 {
     color: $color-c01;
   }
-  h2{
+  h2 {
     color: $color-c02;
   }
-  a{
+  a {
     color: $color-b03;
   }
-  p, li{
+  p,
+  li {
     color: $color-c04;
   }
-  span{
+  span {
     color: $color-c07;
   }
-  .background, .copy{
+  .background,
+  .copy {
     background: $color-c11;
   }
   .header {
     background: $color-c12;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .5);
-    color: #F5F7FA;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    color: #f5f7fa;
   }
   .container {
     background: #333439;
-    color: #F5F7FA;
+    color: #f5f7fa;
   }
   .logo,
   .nav-list a {
-    color: #F5F7FA;
-    b{
+    color: #f5f7fa;
+    b {
       color: $color-b03;
     }
   }
-  .nav{
+  .nav {
     background: $color-c12;
   }
-  .card-experiencia{
+  .card-experiencia {
     background-color: $color-c10;
-    .descricao-card{
+    .descricao-card {
       color: $color-c04;
     }
   }
-  .grid-item--footer:nth-child(3){
-    a{
+  .card-servicos{
+    background: $color-c10;
+  }
+  .grid-item--footer:nth-child(3) {
+    a {
       color: $color-c04;
     }
   }
