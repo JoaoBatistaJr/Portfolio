@@ -1,0 +1,42 @@
+
+.grid-item--formacao{
+  grid-column: span 12;
+}
+
+.grid-item--formacao:nth-child(2){
+  grid-column: 2 / span 10 ;
+  display: block;
+}
+
+.grid-item--formacao:nth-child(3){
+  grid-column: 2 / span 10 ;
+  gap: 10px;
+}
+
+.formacao{
+  padding-block: 80px;
+}
+
+.accordion {
+  border-radius: 5px;
+  border: 1px solid $color-b03;
+}
+
+.accordion-item {
+  border: 1px solid $color-c01;
+}
+
+.accordion-header {
+  background-color: $color-c01;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-content.active {
+  display: block;
+}
