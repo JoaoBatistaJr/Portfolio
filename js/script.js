@@ -11,17 +11,23 @@ function mudaTema() {
 /** Accordion - Formação */
 const accordionItems = document.querySelectorAll('.accordion-item');
 
-accordionItems.forEach(item => {
-  const header = item.querySelector('.accordion-header');
-  const content = item.querySelector('.accordion-content');
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-content');
 
-  header.addEventListener('click', () => {
-    content.classList.toggle('active');
-
-    if (content.classList.contains('active')) {
-      content.style.display = 'block';
-    } else {
-      content.style.display = 'none';
-    }
+    header.addEventListener('click', () => {
+      if (content.style.display === 'block') {
+        content.style.display = 'none';
+      } else {
+        // Fecha todos os itens antes de abrir o item atual
+        accordionItems.forEach(otherItem => {
+          const otherContent = otherItem.querySelector('.accordion-content');
+          if (otherContent !== content) {
+            otherContent.style.display = 'none';
+          }
+        });
+        
+        content.style.display = 'block';
+      }
+    });
   });
-});
