@@ -56,3 +56,8 @@ accordionItems.forEach((item, index) => {
     }
   });
 });
+
+
+if(window.SimpleAnime) {
+	new SimpleAnime();
+}

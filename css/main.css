@@ -75,6 +75,20 @@ img {
   color: #609af2;
 }
 
+.js [data-anime] {
+  opacity: 0;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
 .header {
   background: #f5f7fa;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
