@@ -673,21 +673,28 @@ label:active:after {
   }
 }
 /* Estilos para dispositivos móveis médios (481px a 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
 }
 /* Estilos para tablets e telas pequenas (769px a 1279px) */
-@media (min-width: 769px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
   }
 }
 /* Estilos para telas maiores (1280px e acima) */
-@media (min-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+}
+/* Estilos para telas maiores (1280px e acima) */
+@media (min-width: 1281px) {
   .grid {
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
