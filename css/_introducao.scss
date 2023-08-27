@@ -2,7 +2,6 @@
   grid-column: span 6;
 }
 .grid-item--introducao:nth-child(2) {
-  grid-column: span 4;
   grid-column: 8 / span 4;
 }
 .grid-item--introducao:nth-child(3) {
@@ -14,7 +13,7 @@
   flex-wrap: wrap;
 }
 
-.introcucao {
+.introducao {
   padding-top: 190px;
   padding-bottom: 120px;
   align-items: center;
