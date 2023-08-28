@@ -337,12 +337,11 @@ label:active:after {
   margin: 0 auto;
   background: #e6eaf0;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
+  max-width: 100vh;
   border-radius: 10px;
   border: 1px solid #547eec;
-  padding: 20px;
+  padding: 32px;
   gap: 8px;
-  max-width: 100%;
   align-items: center;
 }
 .card-experiencia .descricao-card {
@@ -351,8 +350,8 @@ label:active:after {
   color: #333b59;
   text-align: center;
   margin-top: 8px;
-  padding-inline: 60px;
   margin-bottom: 20px;
+  padding-inline: 20px;
 }
 .card-experiencia .btn {
   border: none;
@@ -518,7 +517,6 @@ label:active:after {
   border: 1px solid #609af2;
   border-radius: 5px;
   padding: 20px;
-  margin: 20px;
 }
 .card-servicos img {
   width: 100px;
@@ -667,13 +665,13 @@ label:active:after {
     margin: 0 auto;
   }
 }
-/* Estilos para telas maiores (1280px e acima) */
+/* Estilos para telas de laptos e desktop entre 1025px e 1280px */
 @media (min-width: 1025px) and (max-width: 1280px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
   }
   .grid-item--introducao:nth-child(2) {
@@ -689,12 +687,18 @@ label:active:after {
     padding-bottom: 60px;
   }
   .introducao h1 {
-    font-size: 4.8rem;
-    line-height: 48px;
+    font-size: 5.4rem;
+    line-height: 54px;
   }
   .introducao p {
     font-size: 1.5rem;
-    max-width: 320px;
+    max-width: 370px;
+  }
+  .card-experiencia .descricao-card {
+    font-size: 1.4rem;
+  }
+  .card-experiencia .descricao-card span {
+    font-size: 1.2rem;
   }
 }
 /* Estilos para tablets e telas pequenas (769px a 1279px) */

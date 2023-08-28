@@ -28,12 +28,11 @@
   margin: 0 auto;
   background: $color-c02;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
+  max-width: 100vh;
   border-radius: 10px;
   border: 1px solid $color-b04;
-  padding: 20px;
+  padding: 32px;
   gap: 8px;
-  max-width: 100%;
   align-items: center;
   .descricao-card {
     font-family: "Roboto", sans-serif;
@@ -41,8 +40,8 @@
     color: $color-c10;
     text-align: center;
     margin-top: 8px;
-    padding-inline: 60px;
     margin-bottom: 20px;
+    padding-inline: 20px
   }
   .btn{
     @include custom-button(1.6rem, 120px, 40px);
