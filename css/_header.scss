@@ -5,13 +5,15 @@
   left: 0;
   top: 0;
   width: 100%;
+  
 }
 
 .nav{
   height: 70px;
   align-items: center;
   z-index: 1000;
-  
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -22,10 +24,10 @@
   grid-column: span 11;
 }
 
-
 .nav-list {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .nav-list a {
   font-size: 1.8rem;
