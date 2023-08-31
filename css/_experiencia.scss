@@ -25,20 +25,27 @@
   margin: 0 auto;
   background: $color-c02;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100vh;
+  max-width: 100%;
   border-radius: 10px;
   border: 1px solid $color-b04;
   padding: 32px;
   gap: 8px;
   align-items: center;
-  .descricao-card {
+  .titulo-projeto{
+    text-align: center;
+    font-size: 2.4rem;
+    color: $color-c11;
+    margin-top: 12px;
+  }
+  .tags-projeto {
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     color: $color-c10;
     text-align: center;
     margin-top: 8px;
     margin-bottom: 20px;
-    padding-inline: 20px
+    padding-inline: 20px;
+    text-transform: lowercase
   }
   .btn{
     @include custom-button(1.6rem, 120px, 40px);

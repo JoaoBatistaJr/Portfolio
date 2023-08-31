@@ -1,60 +1,56 @@
-.grid-item--footer{ 
+.grid-item--footer {
   padding-block: 60px;
   grid-column: span 4;
-  h1{
-    font-size: 3.2rem;
-    line-height: 32px;
-    margin-bottom: 20px;
-  }
-  P{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 2.0rem;
-    line-height: 32px;
-  }
 }
 
-.grid-item--footer:nth-child(2){ //Contato
+.grid-item--footer:nth-child(2) {
+  //Contato
   grid-column: span 4;
   grid-column: 6 / span 4;
-  h2{
-    margin-bottom: 20px;
-    line-height: 32px;
-  }
-  li{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-  }
-  .redes-footer{
+
+  .redes-footer {
     display: flex;
-    img{
+    img {
       width: 40px;
       padding-right: 14px;
       margin-left: -4px;
-      &:hover{
+      &:hover {
         transform: scale(0.95);
       }
     }
   }
 }
-.grid-item--footer:nth-child(3){ //Informações
+.grid-item--footer:nth-child(3) {
+  //Informações
   grid-column: span 2;
-  h2{
+}
+
+.footer {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: $color-c11;
+  }
+  P {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 2rem;
+    line-height: 32px;
+  }
+  h2 {
     margin-bottom: 20px;
     line-height: 32px;
   }
-  li{
-    color: $color-c02;
-    font-family: 'Roboto', sans-serif;
+  li {
+    font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     margin-bottom: 8px;
   }
-  a{
+  a {
     color: $color-c12;
-    &:hover{
+    &:hover {
       color: $color-b03;
       text-decoration: underline;
     }
   }
 }
-
