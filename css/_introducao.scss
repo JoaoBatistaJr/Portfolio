@@ -17,10 +17,10 @@
   padding-top: 190px;
   padding-bottom: 120px;
   align-items: center;
-  .redes{
+  .redes {
     gap: 40px;
     cursor: pointer;
-    &:hover{
+    a:hover{
       transform: scale(0.95);
     }
   }

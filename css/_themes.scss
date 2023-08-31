@@ -42,7 +42,10 @@
   }
   .card-experiencia {
     background-color: $color-c10;
-    .descricao-card {
+    .titulo-projeto{
+      color: $color-c02;
+    }
+    .tags-projeto {
       color: $color-c04;
     }
   }
