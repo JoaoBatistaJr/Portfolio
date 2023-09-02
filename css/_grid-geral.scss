@@ -209,16 +209,23 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    gap: 20px;
     width: 400px;
     margin: 0 auto;
   }
+  .titulo{
+    font-size: 2.4rem;
+  }
+  .nav{
+    height: 50px;
+  }
   .logo{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   .introducao{
     display: grid;
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     h1{
       font-size: 4.2rem;
       line-height: 42px;
@@ -233,12 +240,105 @@
   .grid-item--introducao:nth-child(2){
     grid-column: 1 / span 3;
   }
+  .grid-item--introducao:nth-child(3){
+    grid-column: 4 / span 1;
+  }
+
+  .experiencia{
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--experiencia{
+    grid-column: span 4;
+  }
+  .grid-item--experiencia:nth-child(2){
+    grid-column: span 4;
+  }
+  .grid-item--experiencia:nth-child(3){
+    grid-column: span 4;
+  }
+  .grid-item--experiencia:nth-child(4){
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+
+  .formacao{
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--formacao{
+    grid-column: span 4;
+  }
+  .grid-item--formacao:nth-child(2){
+    grid-column: span 4;
+  }
+  .tipo-formacao{
+    font-size: 1.4rem;
+  }
+  .instituto-formacao{
+    font-size: 1.6rem;
+  }
+  .tipo-formacao{
+    font-size: 1.8rem;
+  }
+  .descricao-formacao{
+    font-size: 1.4rem;
+  }
+
+  .servicos{
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--servicos{
+    grid-column: span 4;
+    
+
+  }
+  .grid-item--servicos:nth-child(2){
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+  
+  .grid-item--servicos:nth-child(3){
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+  
+  .grid-item--servicos:nth-child(4){
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+  .card-servicos{
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    h2{
+      font-size: 2.4rem;
+    }
+  }
+  .footer{
+    h1{
+      font-size: 2.6rem;
+      line-height: 26px;
+    }
+    p{
+      font-size: 2.0rem;
+      line-height: 24px;
+      max-width: 300px;
+    }
+  }
 }
 
 //* Estilos para dispositivos móveis pequenos (320px a 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
+    width: 340px;
+    margin: 0 auto;
+  }
+  .introducao{
+    display: grid;
+    grid-column: span 2;
   }
 }
