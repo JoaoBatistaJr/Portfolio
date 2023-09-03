@@ -888,7 +888,7 @@ label:active:after {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    width: 400px;
+    width: 90%;
     margin: 0 auto;
   }
   .titulo {
@@ -1014,7 +1014,7 @@ label:active:after {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 280px;
+    width: 90%;
     margin: 0 auto;
   }
   .titulo {
