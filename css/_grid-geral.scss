@@ -411,7 +411,7 @@
       font-size: 1.2rem;
     }
     .btn{
-      @include custom-button(1.2rem, 90px, 50px);
+      @include custom-button(1.2rem, 120px, 50px);
       margin: 0 10px;
     }
   }
