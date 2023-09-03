@@ -25,6 +25,15 @@
     background: $color-c12;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
     color: #f5f7fa;
+    
+  }
+  .burger{
+    border-top: 3px solid $color-b03;
+  }
+  .burger::after,
+  .burger::before {
+    background: $color-b03;
+    
   }
   .container {
     background: #333439;
@@ -36,6 +45,9 @@
     b {
       color: $color-b03;
     }
+  }
+  .nav-list{
+    background: $color-c12
   }
   .nav {
     background: $color-c12;

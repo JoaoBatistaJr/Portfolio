@@ -159,7 +159,7 @@ img {
     background: #f5f7fa;
     -webkit-clip-path: circle(100px at 90% -15%);
     clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
+    transition: 0.5s ease-out;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -389,13 +389,6 @@ label:active:after {
   justify-content: space-evenly;
   margin-inline: 20px;
 }
-.card-experiencia span {
-  font-size: 1.4rem;
-  text-transform: lowercase;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 12px;
-}
 
 .grid-item--formacao {
   grid-column: span 12;
@@ -611,6 +604,13 @@ label:active:after {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
   color: #f5f7fa;
 }
+.dark .burger {
+  border-top: 3px solid #609af2;
+}
+.dark .burger::after,
+.dark .burger::before {
+  background: #609af2;
+}
 .dark .container {
   background: #333439;
   color: #f5f7fa;
@@ -622,6 +622,9 @@ label:active:after {
 .dark .logo b,
 .dark .nav-list a b {
   color: #609af2;
+}
+.dark .nav-list {
+  background: #0b0c12;
 }
 .dark .nav {
   background: #0b0c12;
@@ -895,7 +898,7 @@ label:active:after {
     height: 50px;
   }
   .logo {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
   .introducao {
     display: grid;
@@ -945,17 +948,21 @@ label:active:after {
   .grid-item--formacao:nth-child(2) {
     grid-column: span 4;
   }
-  .tipo-formacao {
-    font-size: 1.4rem;
-  }
-  .instituto-formacao {
-    font-size: 1.6rem;
-  }
-  .tipo-formacao {
+  .accordion-item .titulo-formacao {
     font-size: 1.8rem;
   }
-  .descricao-formacao {
+  .accordion-item .tipo-formacao {
     font-size: 1.4rem;
+  }
+  .accordion-item .instituto-formacao {
+    font-size: 1.6rem;
+  }
+  .accordion-item .descricao-formacao {
+    font-size: 1.4rem;
+  }
+  .accordion-item .tags-formacao-header,
+  .accordion-item .tags-formacao-content {
+    font-size: 1.2rem;
   }
   .servicos {
     display: grid;
@@ -993,16 +1000,191 @@ label:active:after {
     line-height: 24px;
     max-width: 300px;
   }
+  .grid-item--footer {
+    padding-block: 40px;
+  }
+  .grid-item--footer:nth-child(2) {
+    padding-top: 10px;
+  }
+  .grid-item--footer:nth-child(3) {
+    padding-top: 10px;
+  }
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 340px;
+    width: 280px;
     margin: 0 auto;
+  }
+  .titulo {
+    font-size: 2.4rem;
+  }
+  .nav {
+    height: 50px;
+  }
+  .logo {
+    font-size: 2.6rem;
   }
   .introducao {
     display: grid;
     grid-column: span 2;
+    padding-block: 70px;
+  }
+  .introducao h1 {
+    font-size: 2.6rem;
+    line-height: 26px;
+  }
+  .introducao p {
+    font-size: 1.4rem;
+  }
+  .grid-item--introducao {
+    grid-column: span 2;
+  }
+  .grid-item--introducao:nth-child(2) {
+    grid-column: span 2;
+  }
+  .grid-item--introducao:nth-child(3) {
+    grid-column: span 2;
+  }
+  .experiencia {
+    padding-block: 60px;
+    display: grid;
+  }
+  .grid-item--experiencia {
+    grid-column: span 2;
+  }
+  .grid-item--experiencia .btn-2 {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    width: 190px;
+    height: 50px;
+    padding: 24px;
+    background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
+    color: #3c006a;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 20px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+  .grid-item--experiencia .btn-2:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+  }
+  .grid-item--experiencia:nth-child(2) {
+    grid-column: span 2;
+  }
+  .grid-item--experiencia:nth-child(3) {
+    grid-column: span 2;
+  }
+  .grid-item--experiencia:nth-child(4) {
+    grid-column: span 2;
+  }
+  .card-experiencia {
+    padding: 20px;
+  }
+  .card-experiencia .titulo-projeto {
+    font-size: 1.8rem;
+  }
+  .card-experiencia .tags-projeto {
+    font-size: 1.2rem;
+  }
+  .card-experiencia .btn {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    width: 90px;
+    height: 50px;
+    padding: 24px;
+    background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
+    color: #3c006a;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 20px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+  }
+  .card-experiencia .btn:hover {
+    transform: scale(0.97);
+    cursor: pointer;
+  }
+  .formacao {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--formacao {
+    grid-column: span 2;
+  }
+  .grid-item--formacao:nth-child(2) {
+    grid-column: span 2;
+  }
+  .accordion-item .titulo-formacao {
+    font-size: 1.8rem;
+  }
+  .accordion-item .tipo-formacao {
+    font-size: 1.4rem;
+  }
+  .accordion-item .instituto-formacao {
+    font-size: 1.6rem;
+  }
+  .accordion-item .descricao-formacao {
+    font-size: 1.4rem;
+  }
+  .accordion-item .tags-formacao-header,
+  .accordion-item .tags-formacao-content {
+    font-size: 1.2rem;
+  }
+  .servicos {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--servicos {
+    grid-column: span 2;
+  }
+  .grid-item--servicos:nth-child(2) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+  .grid-item--servicos:nth-child(3) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+  .grid-item--servicos:nth-child(4) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+  .card-servicos {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+  }
+  .card-servicos h2 {
+    font-size: 2.4rem;
+  }
+  .footer h1 {
+    font-size: 2.4rem;
+    line-height: 24px;
+  }
+  .footer p {
+    font-size: 1.8rem;
+    line-height: 18px;
+    max-width: 300px;
+  }
+  .grid-item--footer {
+    padding-block: 32px;
+  }
+  .grid-item--footer:nth-child(2) {
+    padding-top: 10px;
+  }
+  .grid-item--footer:nth-child(3) {
+    padding-top: 10px;
+  }
+  .copy {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
