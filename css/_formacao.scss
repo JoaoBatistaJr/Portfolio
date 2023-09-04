@@ -1,7 +1,6 @@
 
 .grid-item--formacao{
   grid-column: span 12;
-  
 }
 
 .grid-item--formacao:nth-child(2){
@@ -19,15 +18,13 @@
 
 .accordion-item {
   padding: 20px;
-  border: 1px solid $color-b03;
+  border: 1px solid $color-c05;
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: $color-c01;
   display: flex;
   flex-direction: column;
-  &:hover{
-    cursor: pointer;
-  }
+  
   .top-how{
     display: flex;
     align-items: center;
@@ -37,13 +34,13 @@
   .tipo-formacao{
     font-size: 1.6rem;
     float: left;
-    color: $color-c04;
+    color: $color-c06;
   }
   .instituto-formacao{
     font-size: 1.8rem;
     float: right;
     margin-right: auto;
-    color: $color-c04;
+    color: $color-c06;
   }
   .right-content {
     display: flex;
@@ -72,12 +69,12 @@
   .tags-formacao-header{
     margin-top: 4px;
     font-size: 1.4rem;
-    color: $color-c04;
+    color: $color-c06;
   }
   .tags-formacao-content{
     margin-top: 12px;
     font-size: 1.4rem;
-    color: $color-c04;
+    color: $color-c06;
   }
 }
 .accordion-header {

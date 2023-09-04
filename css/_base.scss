@@ -37,7 +37,9 @@ img {
 // Cores
 $color-c01: #f5f7fa;
 $color-c02: #e6eaf0;
-$color-c04: #b2b8bf;
+$color-c04: #C0C5CC;
+$color-c05: #B2B8BF;
+$color-c06: #989EA6;
 $color-c07: #7e838c;
 $color-c08: #636973;
 $color-c09: #474d59;
@@ -52,10 +54,10 @@ $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 
 // Estilo para o ScrollBar
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background-color: $color-c12;
+  background-color: $color-c10;
 }
 ::-webkit-scrollbar-thumb {
   background-color: $color-b03;
