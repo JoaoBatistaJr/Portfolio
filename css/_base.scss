@@ -19,7 +19,7 @@ li {
 p {
   font-family: "Roboto", sans-serif;
 }
-b{
+b {
   font-weight: 700;
 }
 a {
@@ -37,9 +37,9 @@ img {
 // Cores
 $color-c01: #f5f7fa;
 $color-c02: #e6eaf0;
-$color-c04: #C0C5CC;
-$color-c05: #B2B8BF;
-$color-c06: #989EA6;
+$color-c04: #c0c5cc;
+$color-c05: #b2b8bf;
+$color-c06: #989ea6;
 $color-c07: #7e838c;
 $color-c08: #636973;
 $color-c09: #474d59;
@@ -84,15 +84,17 @@ $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 }
 
 .js [data-anime] {
-	opacity: 0;
+  opacity: 0;
 }
 
 .js .fadeInDown {
-	transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
 }
 
 .js .anime {
-	opacity: 1;
-	transform: none;
-	transition: opacity 800ms, transform 800ms;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 800ms,
+    transform 800ms;
 }

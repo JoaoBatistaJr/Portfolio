@@ -24,44 +24,82 @@
   .header {
     background: $color-c12;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
-    color: #f5f7fa;
-    
+    color: $color-c02;
   }
-  .burger{
+  .burger {
     border-top: 3px solid $color-b03;
   }
   .burger::after,
   .burger::before {
     background: $color-b03;
-    
   }
   .container {
     background: #333439;
-    color: #f5f7fa;
+    color: $color-c02;
   }
   .logo,
   .nav-list a {
-    color: #f5f7fa;
+    color: $color-c02;
     b {
       color: $color-b03;
     }
+    &::after{
+      background: $color-c02
+    }
   }
-  .nav-list{
-    background: $color-c12
+  .nav-list {
+    background: $color-c12;
   }
   .nav {
     background: $color-c12;
   }
+  // .foto-intro{
+  //   &:hover {
+  //     background: #7ecefc;
+  //     color: #fff;
+  //     border-radius: 5px;
+  //     box-shadow:
+  //       0 0 5px #7ecefc,
+  //       0 0 25px #7ecefc,
+  //       0 0 50px #7ecefc,
+  //       0 0 100px #7ecefc;
+  //   }
+  // }
+  .redes{
+    a:hover {
+      background: #7ecefc;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow:
+        0 0 5px #7ecefc,
+        0 0 25px #7ecefc,
+        0 0 50px #7ecefc,
+        0 0 100px #7ecefc;
+    }
+  }
   .card-experiencia {
     background-color: $color-c10;
-    .titulo-projeto{
+    .titulo-projeto {
       color: $color-c02;
     }
     .tags-projeto {
       color: $color-c04;
     }
   }
-  .card-servicos{
+  .btn,
+  .btn-2{
+    &:hover{
+      background: #7ecefc;
+      // color: #fff;
+      border-radius: 5px;
+      box-shadow:
+        0 0 5px #7ecefc,
+        0 0 25px #7ecefc,
+        0 0 50px #7ecefc,
+        0 0 100px #7ecefc;
+    }
+  }
+  .card-servicos {
     background: $color-c10;
   }
   .grid-item--footer:nth-child(3) {
@@ -69,16 +107,38 @@
       color: $color-c04;
     }
   }
-  .accordion-item{
+  .accordion-item {
     background-color: $color-c11;
     .tipo-formacao,
     .instituto-formacao,
     .tags-formacao-header,
-    .tags-formacao-content{
+    .tags-formacao-content {
       color: $color-c08;
     }
-    .descricao-formacao{
+    .descricao-formacao {
       color: $color-c04;
+    }
+  }
+  .footer {
+    .redes-footer img{
+        &:hover {
+          background: #7ecefc;
+          color: #fff;
+          border-radius: 5px;
+          box-shadow:
+            0 0 5px #7ecefc,
+            0 0 25px #7ecefc,
+            0 0 50px #7ecefc,
+            0 0 100px #7ecefc;
+        }
+    }
+    .footer-informacoes {
+      a {
+        color: $color-c02;
+        &::after {
+          background: $color-c02;
+        }
+      }
     }
   }
 }

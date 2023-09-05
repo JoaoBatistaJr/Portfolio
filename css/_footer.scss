@@ -10,10 +10,11 @@
 
   .redes-footer {
     display: flex;
+    padding-right: 175px;
+    justify-content: space-between;
     img {
-      width: 40px;
-      padding-right: 14px;
-      margin-left: -4px;
+      width: 30px;
+      gap: 40px;
       &:hover {
         transform: scale(0.95);
         cursor: pointer;
@@ -35,7 +36,7 @@
   }
   P {
     font-family: "Fira Sans", sans-serif;
-    font-size: 2.0rem;
+    font-size: 2rem;
     line-height: 20px;
   }
   h2 {
@@ -47,11 +48,31 @@
     font-size: 1.8rem;
     margin-bottom: 8px;
   }
-  a {
+  .footer-informacoes a {
     color: $color-c12;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    transition: 0.1s;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 70%;
+      height: 3px;
+      background: $color-c12;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
     &:hover {
-      color: $color-b03;
-      text-decoration: underline;
+      color: $color-c12;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
     }
   }
 }
+

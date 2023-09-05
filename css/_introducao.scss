@@ -19,29 +19,29 @@
   align-items: center;
   .redes {
     gap: 40px;
-    a:hover{
+    a:hover {
       cursor: pointer;
       transform: scale(0.95);
     }
   }
-  h1{
+  h1 {
     font-size: 6.4rem;
     line-height: 72px;
     padding-bottom: 5px;
     color: $color-c12;
   }
-  .foto-intro{
+  .foto-intro {
     border: 1px solid $color-b04;
+
   }
-  p{
+  p {
     font-size: 1.8rem;
     color: $color-c11;
-    a{
-      color: $color-b04;;
+    a {
+      color: $color-b04;
     }
-    a:hover{
+    a:hover {
       text-decoration: underline;
     }
   }
 }
-

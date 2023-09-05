@@ -30,10 +30,34 @@
 }
 .nav-list a {
   font-size: 1.8rem;
-  color: #0b0c12;
-  // padding-block: 16px;
-}
+  color: $color-c12;
+  position: relative;
+  display: block;
+  padding: 2px 0;
+  text-decoration: none;
+  transition: 0.1s;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: $color-c12;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
 
+  &:hover {
+    color: $color-c12;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
 
 .burger {
   display: none;
@@ -101,7 +125,7 @@
   .nav.active .burger { //posição do hamburger
     position: fixed;
     top: 26px;
-    right: 16px;
+    right: 15px;
     border-top-color: transparent;
   }
   .nav.active .burger::before {

@@ -123,6 +123,30 @@ img {
 .nav-list a {
   font-size: 1.8rem;
   color: #0b0c12;
+  position: relative;
+  display: block;
+  padding: 2px 0;
+  text-decoration: none;
+  transition: 0.1s;
+}
+.nav-list a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0b0c12;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.nav-list a:hover {
+  color: #0b0c12;
+}
+.nav-list a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .burger {
@@ -190,7 +214,7 @@ img {
   .nav.active .burger {
     position: fixed;
     top: 26px;
-    right: 16px;
+    right: 15px;
     border-top-color: transparent;
   }
   .nav.active .burger::before {
@@ -216,7 +240,7 @@ label {
   display: block;
   border-radius: 100px;
   position: relative;
-  top: -5px;
+  top: -6px;
 }
 
 label:after {
@@ -412,7 +436,7 @@ label:active:after {
 
 .accordion-item {
   padding: 20px;
-  border: 1px solid #B2B8BF;
+  border: 1px solid #b2b8bf;
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: #f5f7fa;
@@ -429,13 +453,13 @@ label:active:after {
 .accordion-item .tipo-formacao {
   font-size: 1.6rem;
   float: left;
-  color: #989EA6;
+  color: #989ea6;
 }
 .accordion-item .instituto-formacao {
   font-size: 1.8rem;
   float: right;
   margin-right: auto;
-  color: #989EA6;
+  color: #989ea6;
 }
 .accordion-item .right-content {
   display: flex;
@@ -463,12 +487,12 @@ label:active:after {
 .accordion-item .tags-formacao-header {
   margin-top: 4px;
   font-size: 1.4rem;
-  color: #989EA6;
+  color: #989ea6;
 }
 .accordion-item .tags-formacao-content {
   margin-top: 12px;
   font-size: 1.4rem;
-  color: #989EA6;
+  color: #989ea6;
 }
 
 .accordion-header {
@@ -534,11 +558,12 @@ label:active:after {
 }
 .grid-item--footer:nth-child(2) .redes-footer {
   display: flex;
+  padding-right: 175px;
+  justify-content: space-between;
 }
 .grid-item--footer:nth-child(2) .redes-footer img {
-  width: 40px;
-  padding-right: 14px;
-  margin-left: -4px;
+  width: 30px;
+  gap: 40px;
 }
 .grid-item--footer:nth-child(2) .redes-footer img:hover {
   transform: scale(0.95);
@@ -569,12 +594,31 @@ label:active:after {
   font-size: 1.8rem;
   margin-bottom: 8px;
 }
-.footer a {
+.footer .footer-informacoes a {
+  color: #0b0c12;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  transition: 0.1s;
+}
+.footer .footer-informacoes a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background: #0b0c12;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.footer .footer-informacoes a:hover {
   color: #0b0c12;
 }
-.footer a:hover {
-  color: #609af2;
-  text-decoration: underline;
+.footer .footer-informacoes a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .dark {
@@ -591,7 +635,7 @@ label:active:after {
 }
 .dark p,
 .dark li {
-  color: #C0C5CC;
+  color: #c0c5cc;
 }
 .dark span {
   color: #7e838c;
@@ -603,7 +647,7 @@ label:active:after {
 .dark .header {
   background: #0b0c12;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
-  color: #f5f7fa;
+  color: #e6eaf0;
 }
 .dark .burger {
   border-top: 3px solid #609af2;
@@ -614,21 +658,31 @@ label:active:after {
 }
 .dark .container {
   background: #333439;
-  color: #f5f7fa;
+  color: #e6eaf0;
 }
 .dark .logo,
 .dark .nav-list a {
-  color: #f5f7fa;
+  color: #e6eaf0;
 }
 .dark .logo b,
 .dark .nav-list a b {
   color: #609af2;
+}
+.dark .logo::after,
+.dark .nav-list a::after {
+  background: #e6eaf0;
 }
 .dark .nav-list {
   background: #0b0c12;
 }
 .dark .nav {
   background: #0b0c12;
+}
+.dark .redes a:hover {
+  background: #7ecefc;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #7ecefc, 0 0 25px #7ecefc, 0 0 50px #7ecefc, 0 0 100px #7ecefc;
 }
 .dark .card-experiencia {
   background-color: #333b59;
@@ -637,13 +691,19 @@ label:active:after {
   color: #e6eaf0;
 }
 .dark .card-experiencia .tags-projeto {
-  color: #C0C5CC;
+  color: #c0c5cc;
+}
+.dark .btn:hover,
+.dark .btn-2:hover {
+  background: #7ecefc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #7ecefc, 0 0 25px #7ecefc, 0 0 50px #7ecefc, 0 0 100px #7ecefc;
 }
 .dark .card-servicos {
   background: #333b59;
 }
 .dark .grid-item--footer:nth-child(3) a {
-  color: #C0C5CC;
+  color: #c0c5cc;
 }
 .dark .accordion-item {
   background-color: #161822;
@@ -655,7 +715,19 @@ label:active:after {
   color: #636973;
 }
 .dark .accordion-item .descricao-formacao {
-  color: #C0C5CC;
+  color: #c0c5cc;
+}
+.dark .footer .redes-footer img:hover {
+  background: #7ecefc;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #7ecefc, 0 0 25px #7ecefc, 0 0 50px #7ecefc, 0 0 100px #7ecefc;
+}
+.dark .footer .footer-informacoes a {
+  color: #e6eaf0;
+}
+.dark .footer .footer-informacoes a::after {
+  background: #e6eaf0;
 }
 
 /* Estilos para telas maiores (1280px e acima) */
