@@ -36,13 +36,13 @@
   .tipo-formacao{
     font-size: 1.6rem;
     float: left;
-    color: $color-c06;
+    color: $color-c09;
   }
   .instituto-formacao{
     font-size: 1.8rem;
     float: right;
     margin-right: auto;
-    color: $color-c06;
+    color: $color-c09;
   }
   .right-content {
     display: flex;
@@ -67,20 +67,18 @@
     margin-top: 8px;
     max-width: 650px;
     font-size: 1.6rem;
+    font-weight: 500;
   }
   .tags-formacao-header{
     margin-top: 4px;
     font-size: 1.4rem;
-    color: $color-c06;
+    color: $color-c09;
   }
   .tags-formacao-content{
     margin-top: 12px;
     font-size: 1.4rem;
-    color: $color-c06;
+    color: $color-c09 ;
   }
-}
-.accordion-header {
-  cursor: pointer;
 }
 
 .accordion-content {

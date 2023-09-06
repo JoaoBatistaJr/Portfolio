@@ -456,13 +456,13 @@ label:active:after {
 .accordion-item .tipo-formacao {
   font-size: 1.6rem;
   float: left;
-  color: #989ea6;
+  color: #474d59;
 }
 .accordion-item .instituto-formacao {
   font-size: 1.8rem;
   float: right;
   margin-right: auto;
-  color: #989ea6;
+  color: #474d59;
 }
 .accordion-item .right-content {
   display: flex;
@@ -486,20 +486,17 @@ label:active:after {
   margin-top: 8px;
   max-width: 650px;
   font-size: 1.6rem;
+  font-weight: 500;
 }
 .accordion-item .tags-formacao-header {
   margin-top: 4px;
   font-size: 1.4rem;
-  color: #989ea6;
+  color: #474d59;
 }
 .accordion-item .tags-formacao-content {
   margin-top: 12px;
   font-size: 1.4rem;
-  color: #989ea6;
-}
-
-.accordion-header {
-  cursor: pointer;
+  color: #474d59;
 }
 
 .accordion-content {
@@ -719,7 +716,7 @@ label:active:after {
 .dark .accordion-item .instituto-formacao,
 .dark .accordion-item .tags-formacao-header,
 .dark .accordion-item .tags-formacao-content {
-  color: #636973;
+  color: #b2b8bf;
 }
 .dark .accordion-item .descricao-formacao {
   color: #c0c5cc;
