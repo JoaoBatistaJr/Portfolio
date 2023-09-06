@@ -312,10 +312,11 @@ label:active:after {
   color: #161822;
 }
 .introducao p a {
-  color: #547eec;
+  color: #0b0c12;
+  text-decoration: underline;
 }
 .introducao p a:hover {
-  text-decoration: underline;
+  color: #609af2;
 }
 
 .grid-item--experiencia {
@@ -678,6 +679,12 @@ label:active:after {
 .dark .nav {
   background: #0b0c12;
 }
+.dark .introducao p a {
+  color: #609af2;
+}
+.dark .introducao p a:hover {
+  color: #7ecefc;
+}
 .dark .redes a:hover {
   background: #7ecefc;
   color: #fff;
@@ -716,7 +723,7 @@ label:active:after {
 .dark .accordion-item .instituto-formacao,
 .dark .accordion-item .tags-formacao-header,
 .dark .accordion-item .tags-formacao-content {
-  color: #b2b8bf;
+  color: #989ea6;
 }
 .dark .accordion-item .descricao-formacao {
   color: #c0c5cc;

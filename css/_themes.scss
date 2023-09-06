@@ -65,6 +65,17 @@
   //       0 0 100px #7ecefc;
   //   }
   // }
+  .introducao{
+    p{
+      a{
+        color: $color-b03;
+        &:hover{
+          color: $color-b01;
+        }
+      }
+      
+    }
+  }
   .redes{
     a:hover {
       background: #7ecefc;
@@ -124,7 +135,7 @@
       color: $color-c06;
     }
     .descricao-formacao {
-      color: $color-c03;
+      color: $color-c04;
     }
     &:hover{
       border-radius: 5px;

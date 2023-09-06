@@ -38,10 +38,12 @@
     font-size: 1.8rem;
     color: $color-c11;
     a {
-      color: $color-b04;
-    }
-    a:hover {
+      color: $color-c12;
       text-decoration: underline;
+      &:hover {
+        color: $color-b03;
+      }
     }
+    
   }
 }
