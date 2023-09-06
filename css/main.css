@@ -247,17 +247,17 @@ label:after {
   content: "";
   position: absolute;
   top: 2px;
-  left: 3px;
+  left: 4px;
   bottom: 3px;
   width: 20px;
   height: 20px;
-  background: #F5F7FA;
+  background: #f5f7fa;
   border-radius: 50%;
   transition: 0.3s;
 }
 
 input:checked + label {
-  background: #1c1c1c;
+  background: #161822;
 }
 
 input:checked + label:after {
@@ -432,6 +432,9 @@ label:active:after {
 
 .accordion {
   border-radius: 5px;
+}
+.accordion:hover {
+  cursor: pointer;
 }
 
 .accordion-item {
@@ -685,7 +688,7 @@ label:active:after {
   box-shadow: 0 0 5px #7ecefc, 0 0 25px #7ecefc, 0 0 50px #7ecefc, 0 0 100px #7ecefc;
 }
 .dark .card-experiencia {
-  background-color: #333b59;
+  background-color: #161822;
 }
 .dark .card-experiencia .titulo-projeto {
   color: #e6eaf0;
@@ -695,18 +698,22 @@ label:active:after {
 }
 .dark .btn:hover,
 .dark .btn-2:hover {
-  background: #7ecefc;
   border-radius: 5px;
   box-shadow: 0 0 5px #7ecefc, 0 0 25px #7ecefc, 0 0 50px #7ecefc, 0 0 100px #7ecefc;
 }
 .dark .card-servicos {
-  background: #333b59;
+  background: #161822;
+}
+.dark .card-servicos:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 1px #7ecefc, 0 0 10px #7ecefc, 0 0 15px #7ecefc, 0 0 25px #7ecefc;
 }
 .dark .grid-item--footer:nth-child(3) a {
   color: #c0c5cc;
 }
 .dark .accordion-item {
   background-color: #161822;
+  border: 1px solid #609af2;
 }
 .dark .accordion-item .tipo-formacao,
 .dark .accordion-item .instituto-formacao,
@@ -717,8 +724,11 @@ label:active:after {
 .dark .accordion-item .descricao-formacao {
   color: #c0c5cc;
 }
+.dark .accordion-item:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 1px #7ecefc, 0 0 15px #7ecefc, 0 0 20px #7ecefc, 0 0 50px #7ecefc;
+}
 .dark .footer .redes-footer img:hover {
-  background: #7ecefc;
   color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px #7ecefc, 0 0 25px #7ecefc, 0 0 50px #7ecefc, 0 0 100px #7ecefc;

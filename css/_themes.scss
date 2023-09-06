@@ -78,7 +78,7 @@
     }
   }
   .card-experiencia {
-    background-color: $color-c10;
+    background-color: $color-c11;
     .titulo-projeto {
       color: $color-c02;
     }
@@ -89,7 +89,6 @@
   .btn,
   .btn-2{
     &:hover{
-      background: #7ecefc;
       // color: #fff;
       border-radius: 5px;
       box-shadow:
@@ -100,7 +99,15 @@
     }
   }
   .card-servicos {
-    background: $color-c10;
+    background: $color-c11;
+    &:hover{
+      border-radius: 5px;
+      box-shadow:
+        0 0 1px #7ecefc,
+        0 0 10px #7ecefc,
+        0 0 15px #7ecefc,
+        0 0 25px #7ecefc;
+    }
   }
   .grid-item--footer:nth-child(3) {
     a {
@@ -109,6 +116,7 @@
   }
   .accordion-item {
     background-color: $color-c11;
+    border: 1px solid $color-b03;
     .tipo-formacao,
     .instituto-formacao,
     .tags-formacao-header,
@@ -118,11 +126,18 @@
     .descricao-formacao {
       color: $color-c04;
     }
+    &:hover{
+      border-radius: 5px;
+      box-shadow:
+        0 0 1px #7ecefc,
+        0 0 15px #7ecefc,
+        0 0 20px #7ecefc,
+        0 0 50px #7ecefc;
+    }
   }
   .footer {
     .redes-footer img{
         &:hover {
-          background: #7ecefc;
           color: #fff;
           border-radius: 5px;
           box-shadow:

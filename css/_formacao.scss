@@ -13,7 +13,9 @@
 
 .accordion {
   border-radius: 5px;
-  
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .accordion-item {

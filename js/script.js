@@ -19,10 +19,25 @@ menuItems.forEach((menuItem) => {
   });
 });
 
-/** Class Active para o tema dark */
 function mudaTema() {
-  document.body.classList.toggle("dark");
+  const body = document.body;
+  body.classList.toggle("dark");
+  const isDarkMode = body.classList.contains("dark");
+
+  // Salve o estado do modo escuro no localStorage
+  localStorage.setItem("darkMode", isDarkMode);
 }
+
+// Verifique o estado do modo escuro no localStorage ao carregar a página
+document.addEventListener("DOMContentLoaded", function () {
+  const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+  if (isDarkMode) {
+    document.body.classList.add("dark");
+  }
+});
+
+
 
 /** Accordion - Formação */
 const accordionItems = document.querySelectorAll(".accordion-item");
