@@ -47,7 +47,7 @@
       }
     }
   }
-  .card-servicos{
+  .card-servicos {
     width: 200px;
     height: 300px;
   }
@@ -191,15 +191,21 @@
     h1 {
       font-size: 2.6rem;
     }
-    h2{
-      font-size: 2.0rem;
+    h2 {
+      font-size: 2rem;
     }
     p {
       font-size: 1.8rem;
       line-height: 24px;
     }
-    li{
+    li {
       font-size: 1.6rem;
+    }
+  }
+  .redes-footer {
+    img {
+      width: 100%;
+      margin-right: 20px;
     }
   }
   /* Fecha - Estilos para o seção Footer*/
@@ -213,133 +219,131 @@
     width: 400px;
     margin: 0 auto;
   }
-  .titulo{
+  .titulo {
     font-size: 2.4rem;
   }
-  .nav{
+  .nav {
     height: 50px;
   }
-  .logo{
+  .logo {
     font-size: 2.6rem;
   }
-  .introducao{
+  .introducao {
     display: grid;
     padding-top: 80px;
     padding-bottom: 60px;
-    h1{
+    h1 {
       font-size: 4.2rem;
       line-height: 42px;
     }
-    p{
+    p {
       font-size: 1.6rem;
     }
   }
-  .grid-item--introducao{
+  .grid-item--introducao {
     grid-column: span 4;
   }
-  .grid-item--introducao:nth-child(2){
+  .grid-item--introducao:nth-child(2) {
     grid-column: 1 / span 3;
   }
-  .grid-item--introducao:nth-child(3){
+  .grid-item--introducao:nth-child(3) {
     grid-column: 4 / span 1;
   }
 
-  .experiencia{
+  .experiencia {
     display: grid;
     padding-block: 60px;
   }
-  .grid-item--experiencia{
+  .grid-item--experiencia {
     grid-column: span 4;
   }
-  .grid-item--experiencia:nth-child(2){
+  .grid-item--experiencia:nth-child(2) {
     grid-column: span 4;
   }
-  .grid-item--experiencia:nth-child(3){
+  .grid-item--experiencia:nth-child(3) {
     grid-column: span 4;
   }
-  .grid-item--experiencia:nth-child(4){
+  .grid-item--experiencia:nth-child(4) {
     grid-column: span 4;
     margin: 0 auto;
   }
 
-  .formacao{
+  .formacao {
     display: grid;
     padding-block: 60px;
   }
-  .grid-item--formacao{
+  .grid-item--formacao {
     grid-column: span 4;
   }
-  .grid-item--formacao:nth-child(2){
+  .grid-item--formacao:nth-child(2) {
     grid-column: span 4;
   }
-  .accordion-item{
-    .titulo-formacao{
+  .accordion-item {
+    .titulo-formacao {
       font-size: 1.8rem;
     }
-    .tipo-formacao{
+    .tipo-formacao {
       font-size: 1.4rem;
     }
-    .instituto-formacao{
+    .instituto-formacao {
       font-size: 1.6rem;
     }
-    .descricao-formacao{
+    .descricao-formacao {
       font-size: 1.4rem;
     }
     .tags-formacao-header,
-    .tags-formacao-content{
+    .tags-formacao-content {
       font-size: 1.2rem;
     }
   }
 
-  .servicos{
+  .servicos {
     display: grid;
     padding-block: 60px;
   }
-  .grid-item--servicos{
+  .grid-item--servicos {
     grid-column: span 4;
-    
+  }
+  .grid-item--servicos:nth-child(2) {
+    grid-column: span 4;
+    margin: 0 auto;
+  }
 
-  }
-  .grid-item--servicos:nth-child(2){
+  .grid-item--servicos:nth-child(3) {
     grid-column: span 4;
     margin: 0 auto;
   }
-  
-  .grid-item--servicos:nth-child(3){
+
+  .grid-item--servicos:nth-child(4) {
     grid-column: span 4;
     margin: 0 auto;
   }
-  
-  .grid-item--servicos:nth-child(4){
-    grid-column: span 4;
-    margin: 0 auto;
-  }
-  .card-servicos{
+  .card-servicos {
     width: 200px;
     height: 300px;
     padding: 20px;
-    h2{
+    h2 {
       font-size: 2.4rem;
     }
   }
-  .footer{
-    h1{
+  .footer {
+    h1 {
       font-size: 2.6rem;
       line-height: 26px;
     }
-    p{
-      font-size: 2.0rem;
+    p {
+      font-size: 2rem;
       line-height: 24px;
       max-width: 300px;
     }
   }
-  .grid-item--footer{
+  .grid-item--footer {
     padding-block: 40px;
   }
-  .grid-item--footer:nth-child(2){
+  .grid-item--footer:nth-child(2) {
     padding-top: 10px;
   }
-  .grid-item--footer:nth-child(3){
+  .grid-item--footer:nth-child(3) {
     padding-top: 10px;
   }
 }
@@ -352,153 +356,151 @@
     width: 90%;
     margin: 0 auto;
   }
-  .titulo{
+  .titulo {
     font-size: 2.4rem;
   }
-  .nav{
+  .nav {
     height: 50px;
   }
-  .logo{
+  .logo {
     font-size: 2.6rem;
   }
-  .introducao{
+  .introducao {
     display: grid;
     grid-column: span 2;
     padding-block: 70px;
-    h1{
+    h1 {
       font-size: 2.6rem;
       line-height: 26px;
     }
-    p{
+    p {
       font-size: 1.4rem;
     }
   }
-  .grid-item--introducao{
+  .grid-item--introducao {
     grid-column: span 2;
-    .foto-intro{
+    .foto-intro {
       width: 250px;
       margin: 0 auto;
     }
   }
-  .grid-item--introducao:nth-child(2){
+  .grid-item--introducao:nth-child(2) {
     grid-column: span 2;
   }
-  .grid-item--introducao:nth-child(3){
+  .grid-item--introducao:nth-child(3) {
     grid-column: span 2;
   }
-  .experiencia{
+  .experiencia {
     padding-block: 60px;
     display: grid;
   }
-  .grid-item--experiencia{
+  .grid-item--experiencia {
     grid-column: span 2;
-    .btn-2{
-      @include custom-button(1.4rem, 190px, 50px)
+    .btn-2 {
+      @include custom-button(1.4rem, 190px, 50px);
     }
   }
-  .grid-item--experiencia:nth-child(2){
+  .grid-item--experiencia:nth-child(2) {
     grid-column: span 2;
   }
-  .grid-item--experiencia:nth-child(3){
+  .grid-item--experiencia:nth-child(3) {
     grid-column: span 2;
   }
-  .grid-item--experiencia:nth-child(4){
+  .grid-item--experiencia:nth-child(4) {
     grid-column: span 2;
   }
-  .card-experiencia{
+  .card-experiencia {
     padding: 20px;
-    .titulo-projeto{
+    .titulo-projeto {
       font-size: 1.8rem;
     }
-    .tags-projeto{
+    .tags-projeto {
       font-size: 1.2rem;
     }
-    .btn{
-      @include custom-button(1.2rem, 120px, 50px);
+    .btn {
+      @include custom-button(1.4rem, 120px, 50px);
       margin: 0 10px;
     }
   }
-  .formacao{
+  .formacao {
     display: grid;
     padding-block: 60px;
   }
-  .grid-item--formacao{
+  .grid-item--formacao {
     grid-column: span 2;
   }
-  .grid-item--formacao:nth-child(2){
+  .grid-item--formacao:nth-child(2) {
     grid-column: span 2;
   }
-  .accordion-item{
-    .titulo-formacao{
+  .accordion-item {
+    .titulo-formacao {
       font-size: 1.8rem;
     }
-    .tipo-formacao{
+    .tipo-formacao {
       font-size: 1.4rem;
     }
-    .instituto-formacao{
+    .instituto-formacao {
       font-size: 1.6rem;
     }
-    .descricao-formacao{
+    .descricao-formacao {
       font-size: 1.4rem;
     }
     .tags-formacao-header,
-    .tags-formacao-content{
+    .tags-formacao-content {
       font-size: 1.2rem;
     }
   }
 
-  .servicos{
+  .servicos {
     display: grid;
     padding-block: 60px;
   }
-  .grid-item--servicos{
+  .grid-item--servicos {
     grid-column: span 2;
-    
+  }
+  .grid-item--servicos:nth-child(2) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
 
-  }
-  .grid-item--servicos:nth-child(2){
+  .grid-item--servicos:nth-child(3) {
     grid-column: span 2;
     margin: 0 auto;
   }
-  
-  .grid-item--servicos:nth-child(3){
+
+  .grid-item--servicos:nth-child(4) {
     grid-column: span 2;
     margin: 0 auto;
   }
-  
-  .grid-item--servicos:nth-child(4){
-    grid-column: span 2;
-    margin: 0 auto;
-  }
-  .card-servicos{
+  .card-servicos {
     width: 200px;
     height: 300px;
     padding: 20px;
-    h2{
+    h2 {
       font-size: 2.4rem;
     }
   }
-  .footer{
-    h1{
+  .footer {
+    h1 {
       font-size: 2.4rem;
       line-height: 24px;
     }
-    p{
+    p {
       font-size: 1.8rem;
       line-height: 18px;
       max-width: 300px;
     }
   }
-  .grid-item--footer{
+  .grid-item--footer {
     padding-block: 32px;
   }
-  .grid-item--footer:nth-child(2){
+  .grid-item--footer:nth-child(2) {
     padding-top: 10px;
   }
-  .grid-item--footer:nth-child(3){
+  .grid-item--footer:nth-child(3) {
     padding-top: 10px;
   }
-  .copy{
-    font-size: 1.0rem;
+  .copy {
+    font-size: 1rem;
   }
 }

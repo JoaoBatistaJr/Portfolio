@@ -1,0 +1,41 @@
+.grid-item--sobre{
+  grid-column: span 12;
+}
+
+.background-sobre{
+  background: $color-c01;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $color-b03;
+}
+.sobre{
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+.titulo-sobre{
+    padding: 20px;
+    font-size: 2.0rem;
+}
+.descricao-sobre{
+  padding: 0 32px 20px 32px;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+.soft-skill{
+  padding: 10px;
+  border: 1px solid $color-b03;
+  border-radius: 10px;
+  margin: 4px;
+}
+.copy-sobre{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 20px;
+  background: #fff;
+  font-size: 1.4rem;
+}

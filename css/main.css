@@ -36,8 +36,9 @@ h2 {
 
 img {
   display: block;
-  max-width: 100%;
   border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
@@ -472,6 +473,7 @@ label:active:after {
 }
 .accordion-item .icon {
   transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  width: 20px;
 }
 .accordion-item .open {
   transform: rotate(180deg); /* Gira o ícone 180 graus quando aberto */
@@ -564,7 +566,6 @@ label:active:after {
 }
 .grid-item--footer:nth-child(2) .redes-footer img {
   width: 30px;
-  gap: 40px;
 }
 .grid-item--footer:nth-child(2) .redes-footer img:hover {
   transform: scale(0.95);
@@ -622,6 +623,53 @@ label:active:after {
   transform-origin: left;
 }
 
+.grid-item--sobre {
+  grid-column: span 12;
+}
+
+.background-sobre {
+  background: #f5f7fa;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #609af2;
+}
+
+.sobre {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.titulo-sobre {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.descricao-sobre {
+  padding: 0 32px 20px 32px;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.soft-skill {
+  padding: 10px;
+  border: 1px solid #609af2;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+.copy-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 20px;
+  background: #fff;
+  font-size: 1.4rem;
+}
+
 .dark {
   background: #0b0c12;
 }
@@ -642,8 +690,12 @@ label:active:after {
   color: #7e838c;
 }
 .dark .background,
+.dark .background-sobre,
 .dark .copy {
   background: #161822;
+}
+.dark .copy-sobre {
+  background: #0b0c12;
 }
 .dark .header {
   background: #0b0c12;
@@ -970,6 +1022,10 @@ label:active:after {
   .footer li {
     font-size: 1.6rem;
   }
+  .redes-footer img {
+    width: 100%;
+    margin-right: 20px;
+  }
   /* Fecha - Estilos para o seção Footer*/
 }
 /* Estilos para dispositivos móveis médios (481px a 768px) */
@@ -1197,7 +1253,7 @@ label:active:after {
     padding: 24px;
     background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
     color: #3c006a;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 700;
     line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);

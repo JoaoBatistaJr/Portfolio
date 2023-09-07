@@ -52,6 +52,7 @@
   /* Estilos para o icone de abertura do accordion*/
   .icon {
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    width: 20px;
   }
   .open {
     transform: rotate(180deg); /* Gira o ícone 180 graus quando aberto */
