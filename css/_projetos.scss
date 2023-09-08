@@ -1,0 +1,21 @@
+.grid-item--projetos{
+  grid-column: span 12;
+}
+
+.projetos{
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.img-projeto{
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.card-projetos{
+  
+  border: 1 solid $color-b03;
+  gap: 10px;
+}
