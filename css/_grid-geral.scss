@@ -513,8 +513,9 @@
   .grid-item--footer:nth-child(3) {
     padding-top: 10px;
   }
-  .copy {
-    font-size: 1rem;
+  .copy p,
+  .copy-sobre p {
+    margin-inline: 20px;
   }
   .sobre {
     padding-top: 60px;
@@ -529,7 +530,5 @@
   .descricao-sobre,
   .soft-skill{
     font-size: 1.6rem;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 }

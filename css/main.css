@@ -97,6 +97,7 @@ img {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .nav {
@@ -1348,8 +1349,9 @@ label:active:after {
   .grid-item--footer:nth-child(3) {
     padding-top: 10px;
   }
-  .copy {
-    font-size: 1rem;
+  .copy p,
+  .copy-sobre p {
+    margin-inline: 20px;
   }
   .sobre {
     padding-top: 60px;
@@ -1364,7 +1366,5 @@ label:active:after {
   .descricao-sobre,
   .soft-skill {
     font-size: 1.6rem;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */
