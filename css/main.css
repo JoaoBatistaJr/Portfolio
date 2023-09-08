@@ -664,7 +664,7 @@ label:active:after {
 .copy-sobre {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-block: 20px;
   background: #fff;
   font-size: 1.4rem;
@@ -1027,6 +1027,19 @@ label:active:after {
     margin-right: 20px;
   }
   /* Fecha - Estilos para o seção Footer*/
+  .sobre {
+    padding-top: 100px;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .titulo-sobre {
+    font-size: 1.8rem;
+  }
+  .descricao-sobre,
+  .soft-skill {
+    font-size: 1.6rem;
+  }
 }
 /* Estilos para dispositivos móveis médios (481px a 768px) */
 @media (min-width: 481px) and (max-width: 767px) {
@@ -1037,7 +1050,7 @@ label:active:after {
     margin: 0 auto;
   }
   .titulo {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .nav {
     height: 50px;
@@ -1163,7 +1176,7 @@ label:active:after {
     margin: 0 auto;
   }
   .titulo {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .nav {
     height: 50px;
@@ -1337,5 +1350,21 @@ label:active:after {
   }
   .copy {
     font-size: 1rem;
+  }
+  .sobre {
+    padding-top: 60px;
+    display: grid;
+  }
+  .grid-item--sobre {
+    grid-column: span 2;
+  }
+  .titulo-sobre {
+    font-size: 1.8rem;
+  }
+  .descricao-sobre,
+  .soft-skill {
+    font-size: 1.6rem;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

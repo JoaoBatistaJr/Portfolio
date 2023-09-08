@@ -209,6 +209,19 @@
     }
   }
   /* Fecha - Estilos para o seção Footer*/
+  .sobre {
+    padding-top: 100px;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .titulo-sobre {
+    font-size: 1.8rem;
+  }
+  .descricao-sobre,
+  .soft-skill {
+    font-size: 1.6rem;
+  }
 }
 
 /* Estilos para dispositivos móveis médios (481px a 768px) */
@@ -220,7 +233,7 @@
     margin: 0 auto;
   }
   .titulo {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .nav {
     height: 50px;
@@ -357,7 +370,7 @@
     margin: 0 auto;
   }
   .titulo {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .nav {
     height: 50px;
@@ -502,5 +515,21 @@
   }
   .copy {
     font-size: 1rem;
+  }
+  .sobre {
+    padding-top: 60px;
+    display: grid;
+  }
+  .grid-item--sobre {
+    grid-column: span 2;
+  }
+  .titulo-sobre{
+    font-size: 1.8rem;
+  }
+  .descricao-sobre,
+  .soft-skill{
+    font-size: 1.6rem;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
