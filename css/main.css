@@ -442,7 +442,7 @@ label:active:after {
 
 .accordion-item {
   padding: 20px;
-  border: 1px solid #b2b8bf;
+  border: 1px solid #609af2;
   border-radius: 5px;
   margin-bottom: 20px;
   background-color: #f5f7fa;
@@ -669,6 +669,27 @@ label:active:after {
   padding-block: 20px;
   background: #fff;
   font-size: 1.4rem;
+}
+
+.grid-item--projetos {
+  grid-column: span 12;
+}
+
+.projetos {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.img-projeto {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.card-projetos {
+  border: 1 solid #609af2;
+  gap: 10px;
 }
 
 .dark {
