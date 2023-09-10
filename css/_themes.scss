@@ -22,7 +22,8 @@
   .copy {
     background: $color-c11;
   }
-  .copy-sobre{
+  .copy-sobre,
+  .copy-projetos{
     background: $color-c12;
   }
   .header {
@@ -98,6 +99,15 @@
       color: $color-c02;
     }
     .tags-projeto {
+      color: $color-c04;
+    }
+  }
+  .card-projetos{
+    background: $color-c11;
+    h1{
+      color: $color-c02;
+    }
+    p{
       color: $color-c04;
     }
   }
