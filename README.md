@@ -18,7 +18,10 @@
 
 ##
 
-![image](https://github.com/JoaoBatistaJr/Portifolio/assets/21210172/857c8cb2-ffef-48de-83aa-5e05f9691532)
+![image](https://github.com/JoaoBatistaJr/Portifolio/assets/21210172/352967e3-d1d9-4ce0-b7d7-d7d48bc1a3fe)
+![image](https://github.com/JoaoBatistaJr/Portifolio/assets/21210172/025e054b-513f-4c6f-a972-cb93ccdcb8d5)
+
+
 
 
 
