@@ -69,6 +69,7 @@ img {
 }
 
 .titulo {
+  position: relative;
   font-size: 2.8rem;
 }
 
