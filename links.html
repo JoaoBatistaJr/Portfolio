@@ -28,49 +28,48 @@
     <!-- Fecha - Arquivos CSS -->
 
     <script>
-    document.documentElement.classList.add("js");
-</script>
+        document.documentElement.classList.add("js");
+    </script>
 
   </head>
 
   <body>
-    <main class>
-      <section class="grid-container">
-        <div data-time="400">
-          <img src="img/imagem-introducao.webp" alt="foto perfil">
-        </div>
-        <h1 data-anime="600">João Batista</h1>
-        <div data-anime="800"
-          class="fadeInDown redes">
+    <main class="dark">
+      <section class="grid-container links">
+        <div class="grid-item--links card-links">
+          <div class="grid-item--links">
+            <img class="foto-perfil" src="img/foto-perfil-cardlinks.png"
+              alt="foto perfil">
+          </div>
+          <div class="grid-item--links ">
+            <h1 class="titulo-links">João Batista</h1>
+            <p class="profissao-links">Desenvolvedor FrontEnd</p>
+          </div>
+          <div class=" grid-item--links redes">
+            <a href="https://www.linkedin.com/in/jbjunior03/" target="_blank">
+              <img src="img/svg/linkedin-icon-light.svg" alt="botao do linkedin"></a>
 
-          <a href="https://www.linkedin.com/in/jbjunior03/" target="_blank"><img
-              src="/img/svg/linkedin-icon-light.svg"
-              alt="Icone botão para o contato do Linkedin"></a>
-          <a href="https://github.com/JoaoBatistaJr" target="_blank"><img
-              src="/img/svg/github-icon-light.svg"
-              alt="Icone botão para o contato do Github"></a>
-          <a href="https://www.instagram.com/joaob.dev/" target="_blank"><img
-              src="/img/svg/intagram-icon-light.svg"
-              alt="Icone botão para o contato do Instagram"></a>
+            <a href="https://github.com/JoaoBatistaJr" target="_blank">
+              <img src="img/svg/github-icon-light.svg" alt="botao do github"></a>
+
+            <a href="https://www.instagram.com/joaob.dev/" target="_blank">
+              <img src="img/svg/intagram-icon-light.svg"
+                alt="botao do instagram"></a>
+          </div>
+          <div class="sobre-links grid-item--links">
+            <h2>Sobre</h2>
+            <p>Especializado na criação de aplicações web responsivas e
+              atraentes, meu foco é construir experiências excepcionais. Vamos
+              iniciar uma conversa e tornar seu projeto incrível!</p>
+          </div>
+          <div class="btn-links grid-item--links">
+            <a href><button class="btn">Contato</button></a>
+            <a href="/"><button class="btn">Portfólio</button></a>
+          </div>
+          <p class="copy-links grid-item--links">joaob.dev | Copyright © 2023</p>
         </div>
-        <div>
-          <h2>Sobre</h2>
-          <p>Especializado na criação de aplicações web responsivas e atraentes,
-            meu foco é construir experiências excepcionais. Vamos iniciar uma
-            conversa e tornar seu projeto incrível!</p>
-        </div>
-        <button>
-          Contato
-        </button>
-        <button>
-          Portfólio
-        </button>
       </section>
     </main>
-
-    <footer>
-      <p>joaob.dev | Copyright © 2023</p>
-    </footer>
 
     <!-- Abre - JavaScript -->
     <script defer src="./js/simple-anime.js"></script>

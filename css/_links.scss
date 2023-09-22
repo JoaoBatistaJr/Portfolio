@@ -1,0 +1,106 @@
+.links {
+  padding-block: 80px;
+  // height: 100vh;
+}
+
+.grid-item--links {
+  grid-column: 3 / span 8;
+}
+
+.card-links {
+  background: #161822;
+  border-radius: 10px;
+}
+
+.foto-perfil {
+  margin: 0 auto;
+  border: 3 solid $color-b03;
+  padding-top: 70px;
+  width: 200px;
+}
+
+.grid-item--links:nth-child(2) {
+  //titulo
+  grid-column: 4 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-links {
+  padding-block: 12px;
+  font-size: 3.6rem;
+}
+
+.profissao-links {
+  font-size: 2rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.redes a{
+  &:hover{
+    transform: scale(0.95);
+  }
+}
+
+.grid-item--links:nth-child(3) {
+  //redes
+  grid-column: 8 / span 3;
+  display: flex;
+  justify-content: center;
+  padding-block: 20px;
+  gap: 24px;
+}
+
+.grid-item--links:nth-child(4) {
+  grid-column: 4 / span 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 2.4rem;
+    padding-block: 10px;
+  }
+  p {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-inline: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+.grid-item--links:nth-child(5) {
+  grid-column: 6 / span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-links{
+  padding-top: 10px;
+  padding-bottom: 60px;
+  button{
+    height: 60px;
+    width: 240px;
+    border: 3px solid $color-b03;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px;
+    background: $color-c11;
+    color: $color-c02;
+    &:hover{
+      cursor: pointer;
+      transform: scale(0.95);
+    }
+  }
+}
+
+.grid-item--links:nth-child(6) {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 10px;
+  
+}
