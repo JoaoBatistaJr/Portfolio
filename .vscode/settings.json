@@ -1,4 +1,39 @@
 {
+  "terminal.integrated.env.windows": {},
+  "explorer.confirmDelete": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
-  "liveServer.settings.port": 5501
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.autoIndent": "none",
+  "editor.colorDecorators": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "selection",
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.icons": false,
+  "outline.icons": false,
+  "color-highlight.markerType": "background",
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDragAndDrop": false,
+  "diffEditor.renderSideBySide": true,
+  "html.autoClosingTags": false,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "[javascriptreact]":{
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.sortOrder": "type",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
 }
