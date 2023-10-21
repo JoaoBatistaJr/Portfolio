@@ -37,8 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
 /** Accordion - Formação */
 const accordionItems = document.querySelectorAll(".accordion-item");
 
@@ -93,3 +91,12 @@ accordionItems.forEach((item, index) => {
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
+
+/** Função que atualiza sempre para o ano atual*/
+function atualizarAnoAtual() {
+  const data = new Date();
+  const ano = data.getFullYear();
+  document.getElementById("ano-atual").textContent = ano;
+}
+
+atualizarAnoAtual();

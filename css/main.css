@@ -888,6 +888,11 @@ label:active:after {
 .dark .copy {
   background: #161822;
 }
+.dark .background span,
+.dark .background-sobre span,
+.dark .copy span {
+  color: #c0c5cc;
+}
 .dark .copy-sobre,
 .dark .copy-projetos {
   background: #0b0c12;

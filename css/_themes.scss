@@ -21,6 +21,9 @@
   .background-sobre,
   .copy {
     background: $color-c11;
+    span{
+      color: $color-c04;
+    }
   }
   .copy-sobre,
   .copy-projetos{
