@@ -2,10 +2,6 @@
 <h1 align="center"> 📋 Portfólio </h1>
 <h3 align="center"> 🚀 Feito para mostrar meus projetos e habilidades como desenvolvedor.</h3>
 
-<h4 align="center"> 
-	🚧  Portfólio 🚀 Em construção...  🚧
-</h4>
-
 <p align="center">
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#licenc-a">Licença</a> • 
@@ -14,7 +10,7 @@
 
 ##
 
-<a href="https://juniorsantos.vercel.app" target="_blank"> <h4 align="center"> 🔗 Clique aqui para acessar o Portfólio.</h4></a>
+<h4 align="center"><a href="https://juniorsantos.vercel.app" target="_blank">   🔗 Clique aqui para acessar o Portfólio.</a></h4>
 
 ##
 
@@ -34,6 +30,7 @@
 - [CSS3](https://www.w3schools.com/css/)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [SASS](https://sass-lang.com/documentation)
+- [Figma](https://www.figma.com)
 
 ##
 
