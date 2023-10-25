@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Fira Sans", sans-serif;
+  color: #0b0c12;
 }
 
 li {
@@ -39,6 +40,10 @@ img {
   border-radius: 5px;
   max-width: 100%;
   height: auto;
+}
+
+span#ano-atual {
+  color: #0b0c12;
 }
 
 ::-webkit-scrollbar {
@@ -893,9 +898,18 @@ label:active:after {
 .dark .copy span {
   color: #c0c5cc;
 }
+.dark .background #ano-atual,
+.dark .background-sobre #ano-atual,
+.dark .copy #ano-atual {
+  color: #c0c5cc;
+}
 .dark .copy-sobre,
 .dark .copy-projetos {
   background: #0b0c12;
+}
+.dark .copy-sobre span#ano-atual,
+.dark .copy-projetos span#ano-atual {
+  color: #c0c5cc;
 }
 .dark .header {
   background: #0b0c12;
@@ -1607,7 +1621,8 @@ label:active:after {
     padding-top: 10px;
   }
   .copy p,
-  .copy-sobre p {
+  .copy-sobre p,
+  .copy-projetos {
     margin-inline: 20px;
   }
   .sobre {

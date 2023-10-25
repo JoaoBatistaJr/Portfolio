@@ -1,41 +1,3 @@
-// Resets
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Fira Sans", sans-serif;
-  
-}
-li {
-  list-style: none;
-}
-p {
-  font-family: "Roboto", sans-serif;
-}
-b {
-  font-weight: 700;
-}
-a {
-  text-decoration: none;
-}
-h2 {
-  font-size: 2.4rem;
-}
-img {
-  display: block;
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
-}
-
 // Cores
 $color-c01: #f5f7fa;
 $color-c02: #e6eaf0;
@@ -53,6 +15,50 @@ $color-b03: #609af2; //links
 $color-b04: #547eec;
 $color-b12: #3c006a;
 $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
+
+// Resets
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: $color-c12;
+}
+li {
+  list-style: none;
+}
+p {
+  font-family: "Roboto", sans-serif;
+
+}
+b {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 2.4rem;
+}
+img {
+  display: block;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+span#ano-atual{
+  color: $color-c12;
+}
 
 // Estilo para o ScrollBar
 ::-webkit-scrollbar {
@@ -86,6 +92,8 @@ $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 .ponto {
   color: $color-b03;
 }
+
+
 
 .js [data-anime] {
   opacity: 0;
