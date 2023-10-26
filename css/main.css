@@ -50,13 +50,15 @@ span#ano-atual {
   width: 5px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #333b59;
-}
-
 ::-webkit-scrollbar-thumb {
   background-color: #609af2;
   border-radius: 10px;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s; /* Adicionando uma transição suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 10px; /* Largura da alça da barra de rolagem ao passar o mouse */
 }
 
 .background {
@@ -567,7 +569,7 @@ label:active:after {
 }
 .grid-item--footer:nth-child(2) .redes-footer {
   display: flex;
-  padding-right: 175px;
+  padding-right: 50%;
   justify-content: space-between;
 }
 .grid-item--footer:nth-child(2) .redes-footer img {
@@ -1246,8 +1248,7 @@ label:active:after {
     font-size: 1.6rem;
   }
   .redes-footer img {
-    width: 100%;
-    margin-right: 20px;
+    margin-right: 60px;
   }
   /* Fecha - Estilos para o seção Footer*/
   .sobre {

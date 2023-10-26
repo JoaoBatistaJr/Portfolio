@@ -64,13 +64,17 @@ span#ano-atual{
 ::-webkit-scrollbar {
   width: 5px;
 }
-::-webkit-scrollbar-track {
-  background-color: $color-c10;
-}
+
 ::-webkit-scrollbar-thumb {
   background-color: $color-b03;
   border-radius: 10px;
+  transition: width 0.2s; /* Adicionando uma transição suave */
 }
+
+::-webkit-scrollbar-thumb:hover {
+  width: 10px; /* Largura da alça da barra de rolagem ao passar o mouse */
+}
+
 
 .background {
   background: $color-c01;
