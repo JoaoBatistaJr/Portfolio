@@ -18,7 +18,6 @@
   "outline.icons": false,
   "color-highlight.markerType": "background",
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true,
   "workbench.startupEditor": "newUntitledFile",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
