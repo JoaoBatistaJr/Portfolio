@@ -3,6 +3,9 @@ const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav");
 const menuItems = document.querySelectorAll(".nav-list");
 
+// Função para o menu Ativo
+
+
 // Função para fechar o menu mobile
 function closeMobileMenu() {
   nav.classList.remove("active");
@@ -24,7 +27,7 @@ function mudaTema() {
   body.classList.toggle("dark");
   const isDarkMode = body.classList.contains("dark");
 
-  // Salve o estado do modo escuro no localStorage
+  // Salva o estado do modo escuro no localStorage
   localStorage.setItem("darkMode", isDarkMode);
 }
 

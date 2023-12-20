@@ -151,6 +151,12 @@ span#ano-atual {
   transform-origin: right;
   transition: transform 0.5s;
 }
+.nav-list a .menu_ativo {
+  color: red;
+}
+.nav-list a .menu_ativo::after {
+  background: #0b0c12;
+}
 .nav-list a:hover {
   color: #0b0c12;
 }
