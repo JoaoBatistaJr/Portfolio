@@ -33,7 +33,7 @@ function mudaTema() {
 
 // Verifique o estado do modo escuro no localStorage ao carregar a página
 document.addEventListener("DOMContentLoaded", function () {
-  const isDarkMode = localStorage.getItem("darkMode") === "false"; //Seta o tema padrão: true tema light e false para o tema dark.
+  const isDarkMode = localStorage.getItem("darkMode") === "true"; //Seta o tema padrão: true tema light e false para o tema dark.
 
   if (isDarkMode) {
     document.body.classList.add("dark");
