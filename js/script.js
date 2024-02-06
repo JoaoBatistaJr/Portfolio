@@ -24,8 +24,9 @@ menuItems.forEach((menuItem) => {
 
 function mudaTema() {
   const body = document.body;
-  body.classList.toggle("dark");
-  const isDarkMode = body.classList.contains("dark");
+  const isDarkMode = !body.classList.contains("dark"); // Invertendo o estado atual
+
+  body.classList.toggle("dark", isDarkMode);
 
   // Salva o estado do modo escuro no localStorage
   localStorage.setItem("darkMode", isDarkMode);
@@ -33,12 +34,15 @@ function mudaTema() {
 
 // Verifique o estado do modo escuro no localStorage ao carregar a página
 document.addEventListener("DOMContentLoaded", function () {
-  const isDarkMode = localStorage.getItem("darkMode") === "true"; //Seta o tema padrão: true tema light e false para o tema dark.
+  const isDarkMode =
+    localStorage.getItem("darkMode") === "true" ||
+    !window.matchMedia("(prefers-color-scheme: light)").matches;
 
   if (isDarkMode) {
     document.body.classList.add("dark");
   }
 });
+
 
 /** Accordion - Formação */
 const accordionItems = document.querySelectorAll(".accordion-item");
