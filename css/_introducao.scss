@@ -37,6 +37,7 @@
   p {
     font-size: 1.8rem;
     color: $color-c11;
+    padding-bottom: 20px;
     a {
       color: $color-c12;
       text-decoration: underline;
@@ -47,3 +48,7 @@
     
   }
 }
+// .btn-curriculo {
+//   @include custom-button(1.6rem, 190px, 40px);
+//   color: white;
+// }

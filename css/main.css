@@ -326,6 +326,7 @@ label:active:after {
 .introducao p {
   font-size: 1.8rem;
   color: #161822;
+  padding-bottom: 20px;
 }
 .introducao p a {
   color: #0b0c12;
