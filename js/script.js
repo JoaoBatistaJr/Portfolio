@@ -107,3 +107,4 @@ function atualizarAnoAtual() {
 }
 
 atualizarAnoAtual();
+

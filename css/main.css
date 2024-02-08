@@ -151,12 +151,6 @@ span#ano-atual {
   transform-origin: right;
   transition: transform 0.5s;
 }
-.nav-list a .menu_ativo {
-  color: red;
-}
-.nav-list a .menu_ativo::after {
-  background: #0b0c12;
-}
 .nav-list a:hover {
   color: #0b0c12;
 }
@@ -352,7 +346,6 @@ label:active:after {
   color: #3c006a;
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
 }
@@ -410,14 +403,13 @@ label:active:after {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
-  width: 120px;
+  width: 130px;
   height: 40px;
   padding: 24px;
   background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
   color: #3c006a;
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
 }
@@ -747,14 +739,13 @@ label:active:after {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
-  width: 100px;
+  width: 120px;
   height: 40px;
   padding: 24px;
   background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
   color: #3c006a;
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
 }
@@ -765,7 +756,6 @@ label:active:after {
 .card-projetos .btn-align {
   display: flex;
   justify-content: space-evenly;
-  margin-inline: 10px;
 }
 
 .copy-projetos {
@@ -1141,7 +1131,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
   }
@@ -1175,7 +1164,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
     margin-inline: 10px;
@@ -1311,7 +1299,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
     margin-inline: 10px;
@@ -1509,7 +1496,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
   }
@@ -1548,7 +1534,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
     margin: 0 10px;
@@ -1667,7 +1652,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
   }

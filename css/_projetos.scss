@@ -53,12 +53,11 @@
     text-transform: lowercase;
   }
   .btn{
-    @include custom-button(1.4rem, 100px, 40px)
+    @include custom-button(1.4rem, 120px, 40px)
   }
   .btn-align{
     display: flex;
     justify-content: space-evenly;
-    margin-inline: 10px;
   }
 }
 

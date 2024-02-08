@@ -50,12 +50,7 @@
     transition: transform 0.5s;
   }
 
-.menu_ativo{
-  color: red;
-  &::after{
-    background: $color-c12;
-  }
-}
+
 
   &:hover {
     color: $color-c12;
