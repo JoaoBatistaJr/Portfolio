@@ -279,6 +279,11 @@ label:active:after {
   width: 30px;
 }
 
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
 .grid-item--introducao {
   grid-column: span 6;
 }
