@@ -2,7 +2,7 @@
   "terminal.integrated.env.windows": {},
   "explorer.confirmDelete": false,
   "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 14,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
