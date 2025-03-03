@@ -1,0 +1,200 @@
+.animacao-onda{
+  // -webkit-clip-path: circle(5000px at 90% -15%);
+  // clip-path: circle(5000px at 90% -15%);
+  // pointer-events: all;
+  // z-index: -9999;
+}
+
+// estilos para o tema dark
+.dark {
+  background: $color-c12;
+  h1 {
+    color: $color-c01;
+  }
+  h2 {
+    color: $color-c02;
+  }
+  a {
+    color: $color-b03;
+  }
+  p,
+  li {
+    color: $color-c04;
+  }
+  span {
+    color: $color-c07;
+  }
+  .background,
+  .background-sobre,
+  .copy {
+    background: $color-c11;
+    span{
+      color: $color-c04;
+    }
+    #ano-atual{
+      color: $color-c04;
+    }
+  }
+  .copy-sobre,
+  .copy-projetos{
+    background: $color-c12;
+    span#ano-atual{
+      color: $color-c04;
+    }
+  }
+  .header {
+    background: $color-c12;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    color: $color-c02;
+  }
+  .burger {
+    border-top: 3px solid $color-b03;
+  }
+  .burger::after,
+  .burger::before {
+    background: $color-b03;
+  }
+  .container {
+    background: #333439;
+    color: $color-c02;
+  }
+  .logo,
+  .nav-list a {
+    color: $color-c02;
+    b {
+      color: $color-b03;
+    }
+    &::after{
+      background: $color-c02
+    }
+  }
+  .nav-list {
+    background: $color-c12;
+  }
+  .nav {
+    background: $color-c12;
+  }
+  // .foto-intro{
+  //   &:hover {
+  //     background: #7ecefc;
+  //     color: #fff;
+  //     border-radius: 5px;
+  //     box-shadow:
+  //       0 0 5px #7ecefc,
+  //       0 0 25px #7ecefc,
+  //       0 0 50px #7ecefc,
+  //       0 0 100px #7ecefc;
+  //   }
+  // }
+  .introducao{
+    p{
+      a{
+        color: $color-b03;
+        &:hover{
+          color: $color-b01;
+        }
+      }
+      
+    }
+  }
+  .redes{
+    a:hover {
+      background: #7ecefc;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow:
+        0 0 5px #7ecefc,
+        0 0 25px #7ecefc,
+        0 0 50px #7ecefc,
+        0 0 100px #7ecefc;
+    }
+  }
+  .card-experiencia {
+    background-color: $color-c11;
+    .titulo-projeto {
+      color: $color-c02;
+    }
+    .tags-projeto {
+      color: $color-c04;
+    }
+  }
+  .card-projetos{
+    background: $color-c11;
+    h1{
+      color: $color-c02;
+    }
+    p{
+      color: $color-c04;
+    }
+  }
+  .btn,
+  .btn-2{
+    &:hover{
+      // color: #fff;
+      border-radius: 5px;
+      box-shadow:
+        0 0 5px #7ecefc,
+        0 0 25px #7ecefc,
+        0 0 50px #7ecefc,
+        0 0 100px #7ecefc;
+    }
+  }
+  .card-servicos {
+    background: $color-c11;
+    &:hover{
+      border-radius: 5px;
+      box-shadow:
+        0 0 1px #7ecefc,
+        0 0 10px #7ecefc,
+        0 0 15px #7ecefc,
+        0 0 25px #7ecefc;
+    }
+  }
+  .grid-item--footer:nth-child(3) {
+    a {
+      color: $color-c04;
+    }
+  }
+  .accordion-item {
+    background-color: $color-c11;
+    border: 1px solid $color-b03;
+    .tipo-formacao,
+    .instituto-formacao,
+    .tags-formacao-header,
+    .tags-formacao-content {
+      color: $color-c06;
+    }
+    .descricao-formacao {
+      color: $color-c04;
+    }
+    &:hover{
+      border-radius: 5px;
+      box-shadow:
+        0 0 1px #7ecefc,
+        0 0 15px #7ecefc,
+        0 0 20px #7ecefc,
+        0 0 50px #7ecefc;
+    }
+  }
+  .footer {
+    .redes-footer img{
+        &:hover {
+          color: #fff;
+          border-radius: 5px;
+          box-shadow:
+            0 0 5px #7ecefc,
+            0 0 25px #7ecefc,
+            0 0 50px #7ecefc,
+            0 0 100px #7ecefc;
+        }
+    }
+    .footer-informacoes {
+      a {
+        color: $color-c02;
+        &::after {
+          background: $color-c02;
+        }
+      }
+    }
+  }
+}

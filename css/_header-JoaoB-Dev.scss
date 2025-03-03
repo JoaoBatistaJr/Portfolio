@@ -1,0 +1,141 @@
+.header {
+  background: $color-c01;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav{
+  height: 70px;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3.2rem;
+  color: #0b0c12;
+  font-weight: 700;
+  grid-column: span 11;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-list a {
+  font-size: 1.8rem;
+  color: $color-c12;
+  position: relative;
+  display: block;
+  padding: 2px 0;
+  text-decoration: none;
+  transition: 0.1s;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: $color-c12;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+
+
+
+  &:hover {
+    color: $color-c12;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.burger {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #000;
+  cursor: pointer;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #000;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+  .burger {
+    display: block;
+    z-index: 1;
+  }
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $color-c01;
+    -webkit-clip-path: circle(100px at 90% -15%);
+    clip-path: circle(100px at 90% -15%);
+    transition: .5s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+  }
+  .nav-list a {
+    font-size: 2.4rem;
+    opacity: 0;
+  }
+  .nav-list li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+  }
+  .nav-list li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+  }
+  .nav-list li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+  }
+
+  .nav.active .nav-list {
+    -webkit-clip-path: circle(1500px at 90% -15%);
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+  .nav.active .nav-list a {
+    opacity: 1;
+  }
+  .nav.active .burger { //posição do hamburger
+    position: fixed;
+    top: 26px;
+    right: 15px;
+    border-top-color: transparent;
+  }
+  .nav.active .burger::before {
+    transform: rotate(135deg);
+  }
+  .nav.active .burger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

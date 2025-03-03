@@ -1,0 +1,52 @@
+.grid-item--introducao {
+  grid-column: span 6;
+}
+.grid-item--introducao:nth-child(2) {
+  grid-column: 8 / span 4;
+}
+.grid-item--introducao:nth-child(3) {
+  grid-column: span 1;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.introducao {
+  padding-top: 190px;
+  padding-bottom: 120px;
+  align-items: center;
+  .redes {
+    gap: 40px;
+    a:hover {
+      cursor: pointer;
+      transform: scale(0.95);
+    }
+  }
+  h1 {
+    font-size: 6.4rem;
+    line-height: 72px;
+    padding-bottom: 5px;
+    color: $color-c12;
+  }
+  .foto-intro {
+    border: 1px solid $color-b04;
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: $color-c11;
+    a {
+      color: $color-c12;
+      text-decoration: underline;
+      &:hover {
+        color: $color-b03;
+      }
+    }
+  }
+}
+// .btn-curriculo {
+//   @include custom-button(1.6rem, 190px, 40px);
+//   color: white;
+// }

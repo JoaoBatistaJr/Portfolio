@@ -1,0 +1,599 @@
+/* Estilos para telas maiores (1280px e acima) */
+@media (min-width: 1281px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/* Estilos para telas de laptos e desktop entre 1025px e 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .grid-item--introducao:nth-child(2) {
+    grid-column: 7 / span 4;
+  }
+  .grid-item--introducao:nth-child(3) {
+    grid-column: span 2;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .introducao {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    h1 {
+      font-size: 5.4rem;
+      line-height: 54px;
+    }
+    p {
+      font-size: 1.5rem;
+      max-width: 370px;
+    }
+  }
+  .card-experiencia {
+    .tags-projeto {
+      font-size: 1.4rem;
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .card-servicos {
+    width: 200px;
+    height: 300px;
+  }
+}
+/* Estilos para tablets e Ipads (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    width: 640px;
+    margin: 0 auto;
+  }
+  .titulo {
+    font-size: 2.6rem;
+  }
+  .nav {
+    height: 60px;
+  }
+  .logo {
+    font-size: 2.8rem;
+    grid-column: 1 / span 5;
+  }
+  .navi-list a {
+    font-size: 1.6rem;
+  }
+  .grid-item--introducao {
+    grid-column: span 3;
+  }
+  .grid-item--introducao:nth-child(2) {
+    grid-column: 4 / span 2;
+  }
+  .grid-item--introducao:nth-child(3) {
+    grid-column: 6 / span 1;
+  }
+  .introducao {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    h1 {
+      font-size: 4.2rem;
+      line-height: 42px;
+      // margin-right: 20px;
+    }
+    p {
+      font-size: 1.4rem;
+      margin-right: 20px;
+    }
+    .redes {
+      gap: 24px;
+    }
+  }
+  /* Abre - Estilos para o seção Experiência*/
+  .grid-item--experiencia {
+    grid-column: span 6;
+    .btn-2 {
+      @include custom-button(1.4rem, 190px, 40px);
+    }
+  }
+  .grid-item--experiencia:nth-child(2) {
+    grid-column: 1 / span 3;
+  }
+  .grid-item--experiencia:nth-child(3) {
+    grid-column: 4 / span 3;
+  }
+  .grid-item--experiencia:nth-child(4) {
+    grid-column: span 6;
+    margin: 0 auto;
+  }
+  .card-experiencia {
+    .tags-projeto {
+      font-size: 1.4rem;
+    }
+    .btn {
+      @include custom-button(1.4rem, 100px, 20px);
+      margin-inline: 10px;
+    }
+  }
+  /* Fecha - Estilos para o seção Experiência*/
+
+  /* Abre - Estilos para o seção Formação*/
+  .grid-item--formacao {
+    grid-column: span 6;
+  }
+  .grid-item--formacao:nth-child(2) {
+    grid-column: 1 / span 6;
+  }
+  .accordion-item {
+    .tipo-formacao {
+      font-size: 1.4rem;
+    }
+    .instituto-formacao {
+      font-size: 1.6rem;
+    }
+    .titulo-formacao {
+      font-size: 2rem;
+    }
+    .descricao-formacao {
+      font-size: 1.4rem;
+    }
+  }
+  /* AFecha - Estilos para o seção Formação*/
+
+  /* Abre - Estilos para o seção Serviços*/
+  .grid-item--servicos {
+    grid-column: span 6;
+  }
+  .grid-item--servicos:nth-child(2) {
+    grid-column: 1 / span 2;
+  }
+  .grid-item--servicos:nth-child(3) {
+    grid-column: 3 / span 2;
+  }
+  .grid-item--servicos:nth-child(4) {
+    grid-column: 5 / span 2;
+  }
+  .card-servicos {
+    width: 180px;
+    height: 280px;
+    padding: 10px;
+    h2 {
+      font-size: 2.4rem;
+    }
+    img {
+      width: 80px;
+    }
+  }
+  /* Fecha - Estilos para o seção Serviços*/
+
+  /* Abre - Estilos para o seção Footer*/
+  .grid-item--footer {
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+  }
+  .grid-item--footer:nth-child(2) {
+    grid-column: 3 / span 2;
+  }
+  .grid-item--footer:nth-child(3) {
+    grid-column: 5 / span 2;
+  }
+  .footer {
+    h1 {
+      font-size: 2.6rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 24px;
+    }
+    li {
+      font-size: 1.6rem;
+    }
+  }
+  .redes-footer {
+    img {
+      margin-right: 60px;
+    }
+  }
+  /* Fecha - Estilos para o seção Footer*/
+  .sobre {
+    padding-top: 100px;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .titulo-sobre {
+    font-size: 1.8rem;
+  }
+  .descricao-sobre,
+  .soft-skill {
+    font-size: 1.6rem;
+  }
+  .grid-item--projetos{
+    grid-column: span 6;
+  }
+  .grid-item--projetos:nth-child(2){
+    grid-column: 1 / span 3;
+  }
+  .grid-item--projetos:nth-child(3){
+    grid-column: 4 / span 3;
+  }
+  .grid-item--projetos:nth-child(4){
+    grid-column: 1 / span 3;
+  }
+  .grid-item--projetos:nth-child(5){
+    grid-column: 4 / span 3;
+  }
+  .grid-item--projetos:nth-child(6){
+    grid-column: 1 / span 3;
+  }
+  .grid-item--projetos:nth-child(7){
+    grid-column: 4 / span 3;
+  }
+  .projetos{
+    padding-top: 100px;
+    h2{
+      font-size: 1.8rem;
+    }
+    .btn {
+      @include custom-button(1.4rem, 100px, 20px);
+      margin-inline: 10px;
+    }
+  }
+}
+
+/* Estilos para dispositivos móveis médios (481px a 768px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .nav {
+    height: 50px;
+  }
+  .logo {
+    font-size: 2.6rem;
+  }
+  .introducao {
+    display: grid;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    h1 {
+      font-size: 4.2rem;
+      line-height: 42px;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .grid-item--introducao {
+    grid-column: span 4;
+  }
+  .grid-item--introducao:nth-child(2) {
+    grid-column: 1 / span 3;
+  }
+  .grid-item--introducao:nth-child(3) {
+    grid-column: 4 / span 1;
+  }
+
+  .experiencia {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--experiencia {
+    grid-column: span 4;
+  }
+  .grid-item--experiencia:nth-child(2) {
+    grid-column: span 4;
+  }
+  .grid-item--experiencia:nth-child(3) {
+    grid-column: span 4;
+  }
+  .grid-item--experiencia:nth-child(4) {
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+
+  .formacao {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--formacao {
+    grid-column: span 4;
+  }
+  .grid-item--formacao:nth-child(2) {
+    grid-column: span 4;
+  }
+  .accordion-item {
+    .titulo-formacao {
+      font-size: 1.8rem;
+    }
+    .tipo-formacao {
+      font-size: 1.4rem;
+    }
+    .instituto-formacao {
+      font-size: 1.6rem;
+    }
+    .descricao-formacao {
+      font-size: 1.4rem;
+    }
+    .tags-formacao-header,
+    .tags-formacao-content {
+      font-size: 1.2rem;
+    }
+  }
+
+  .servicos {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--servicos {
+    grid-column: span 4;
+  }
+  .grid-item--servicos:nth-child(2) {
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+
+  .grid-item--servicos:nth-child(3) {
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+
+  .grid-item--servicos:nth-child(4) {
+    grid-column: span 4;
+    margin: 0 auto;
+  }
+  .card-servicos {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .footer {
+    h1 {
+      font-size: 2.6rem;
+      line-height: 26px;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 24px;
+      max-width: 300px;
+    }
+  }
+  .grid-item--footer {
+    padding-block: 40px;
+  }
+  .grid-item--footer:nth-child(2) {
+    padding-top: 10px;
+  }
+  .grid-item--footer:nth-child(3) {
+    padding-top: 10px;
+  }
+}
+
+//* Estilos para dispositivos móveis pequenos (320px a 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .nav {
+    height: 50px;
+  }
+  .logo {
+    font-size: 2.6rem;
+  }
+  .introducao {
+    display: grid;
+    grid-column: span 2;
+    padding-block: 70px;
+    h1 {
+      font-size: 2.6rem;
+      line-height: 26px;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  .grid-item--introducao {
+    grid-column: span 2;
+    .foto-intro {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+  .grid-item--introducao:nth-child(2) {
+    grid-column: span 2;
+  }
+  .grid-item--introducao:nth-child(3) {
+    grid-column: span 2;
+  }
+  .experiencia {
+    padding-block: 60px;
+    display: grid;
+  }
+  .grid-item--experiencia {
+    grid-column: span 2;
+    .btn-2 {
+      @include custom-button(1.4rem, 190px, 50px);
+    }
+  }
+  .grid-item--experiencia:nth-child(2) {
+    grid-column: span 2;
+  }
+  .grid-item--experiencia:nth-child(3) {
+    grid-column: span 2;
+  }
+  .grid-item--experiencia:nth-child(4) {
+    grid-column: span 2;
+  }
+  .card-experiencia {
+    padding: 20px;
+    .titulo-projeto {
+      font-size: 1.8rem;
+    }
+    .tags-projeto {
+      font-size: 1.2rem;
+    }
+    .btn {
+      @include custom-button(1.4rem, 120px, 50px);
+      margin: 0 10px;
+    }
+  }
+  .formacao {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--formacao {
+    grid-column: span 2;
+  }
+  .grid-item--formacao:nth-child(2) {
+    grid-column: span 2;
+  }
+  .accordion-item {
+    .titulo-formacao {
+      font-size: 1.8rem;
+    }
+    .tipo-formacao {
+      font-size: 1.4rem;
+    }
+    .instituto-formacao {
+      font-size: 1.6rem;
+    }
+    .descricao-formacao {
+      font-size: 1.4rem;
+    }
+    .tags-formacao-header,
+    .tags-formacao-content {
+      font-size: 1.2rem;
+    }
+  }
+
+  .servicos {
+    display: grid;
+    padding-block: 60px;
+  }
+  .grid-item--servicos {
+    grid-column: span 2;
+  }
+  .grid-item--servicos:nth-child(2) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+
+  .grid-item--servicos:nth-child(3) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+
+  .grid-item--servicos:nth-child(4) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+  .card-servicos {
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .footer {
+    h1 {
+      font-size: 2.4rem;
+      line-height: 24px;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 18px;
+      max-width: 300px;
+    }
+  }
+  .grid-item--footer {
+    padding-block: 32px;
+  }
+  .grid-item--footer:nth-child(2) {
+    padding-top: 10px;
+  }
+  .grid-item--footer:nth-child(3) {
+    padding-top: 10px;
+  }
+  .copy p,
+  .copy-sobre p,
+  .copy-projetos {
+    margin-inline: 20px;
+  }
+  .sobre {
+    padding-top: 60px;
+    display: grid;
+  }
+  .grid-item--sobre {
+    grid-column: span 2;
+  }
+  .titulo-sobre{
+    font-size: 1.8rem;
+  }
+  .descricao-sobre,
+  .soft-skill{
+    font-size: 1.6rem;
+  }
+  .projetos{
+    padding-top: 60px;
+    display: grid;
+    h2{
+      font-size: 1.8rem;
+    }
+    .btn {
+      @include custom-button(1.4rem, 120px, 20px);
+    }
+    .btn-align{
+      gap: 10px;
+    }
+  }
+  .grid-item--projetos{
+    grid-column: span 2;
+  }
+  .grid-item--projetos:nth-child(2){
+    grid-column: 1 / span 2;
+  }
+  .grid-item--projetos:nth-child(3){
+    grid-column: 1 / span 2;
+  }
+  .grid-item--projetos:nth-child(4){
+    grid-column: 1 / span 2;
+  }
+  .grid-item--projetos:nth-child(5){
+    grid-column: 1 / span 2;
+  }
+  .grid-item--projetos:nth-child(6){
+    grid-column: 1 / span 2;
+  }
+  .grid-item--projetos:nth-child(7){
+    grid-column: 1 / span 2;
+  }
+}

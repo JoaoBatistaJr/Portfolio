@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Júnior Santos - Projetos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Meu nome é João, crio interfaces modernas e bonitas de alta qualidade, concentrado em performance, animações, responsividade e SEO."
+    />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, frontend, Júnior Santos, joaobatistajr, joaobdev, ui designer, programador, front-end, designer, ui, freelancer, freela, website, portfólio"
+    />
+    <meta name="theme-color" content="#0B0C12" />
+    <meta name="copyright" content="Júnior Santos 2023" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfólio - Júnior Santos" />
+    <meta property="og:discription" content="Portfólio - Júnior Santos" />
+    <meta property="og:url" content="https://juniorsantos.dev.br" />
+    <meta
+      property="og:image"
+      content="https://juniorsantos.dev.br/img/preview.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <!-- Abre - Fontes do Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fecha - Fontes do Goolgle -->
+
+    <!-- Abre - Arquivos CSS -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- Fecha - Arquivos CSS -->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-38HT5L6HKD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-38HT5L6HKD");
+    </script>
+
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav grid-container">
+        <a class="logo" href="/"><b>{</b>Portfólio<b>}</b></a>
+        <button class="burger"></button>
+
+        <ul class="nav-list">
+          <li><a href="/#experiencia">Experiência</a></li>
+          <li><a href="/#formacao">Formação</a></li>
+          <li><a href="/#servicos">Serviços</a></li>
+          <li>
+            <input
+              onclick="mudaTema()"
+              class="tema"
+              type="checkbox"
+              id="switch"
+            /><label for="switch">Toggle</label>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="grid-container projetos" id="projetos">
+        <div class="grid-item--projetos" data-anime="400" class="fadeInDown">
+          <h1 class="titulo">Meus Projetos<b class="ponto">.</b></h1>
+        </div>
+
+        <div
+          class="card-projetos grid-item--projetos"
+          data-anime="800"
+          class="fadeInDown"
+        >
+          <img
+            src="/img/smartphone-e-tablet-portfolio.webp"
+            alt="imagem do projeto1"
+            class="img-card"
+          />
+          <h2 class="">Meu Portfólio</h2>
+          <p class="">#HTML #CSS #JAVASCRIPT.</p>
+          <div class="btn-align">
+            <a
+              href="https://github.com/JoaoBatistaJr/Portifolio"
+              target="_blank"
+              ><button class="btn">
+                <img src="/img/svg/github-icon-btn.svg" alt="icone github" />
+                Código
+              </button></a
+            >
+            <a href="https://juniorsantos.vercel.app" target="_blank"
+              ><button class="btn">
+                <img
+                  src="/img/svg/icon-open-in-new-page.svg"
+                  alt="icone abrir nova pagina"
+                />Deploy
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card-projetos grid-item--projetos"
+          data-anime="1000"
+          class="fadeInDown"
+        >
+          <img
+            src="/img/smartphone-e-tablet-flexbox.webp"
+            alt="imagem do projeto1"
+            class="img-card"
+          />
+          <h2 class="">FlexBlog</h2>
+          <p class="">#HTML #CSS #flexbox.</p>
+          <div class="btn-align">
+            <a
+              href="https://github.com/JoaoBatistaJr/FlexBlog-Origamid"
+              target="_blank"
+              ><button class="btn">
+                <img src="/img/svg/github-icon-btn.svg" alt="icone github" />
+                Código
+              </button></a
+            >
+            <a href="https://flex-blog-origamid.netlify.app" target="_blank"
+              ><button class="btn">
+                <img
+                  src="/img/svg/icon-open-in-new-page.svg"
+                  alt="icone abrir nova pagina"
+                />Deploy
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card-projetos grid-item--projetos"
+          data-anime="1200"
+          class="fadeInDown"
+        >
+          <img
+            src="/img/smartphone-e-tablet-wildbeast.webp"
+            alt="imagem do projeto1"
+            class="img-card"
+          />
+          <h2 class="">WieldBeast</h2>
+          <p class="">#HTML #CSS #gridlayout.</p>
+          <div class="btn-align">
+            <a
+              href="https://github.com/JoaoBatistaJr/Wildbeast-Origamid"
+              target="_blank"
+              ><button class="btn">
+                <img src="/img/svg/github-icon-btn.svg" alt="icone github" />
+                Código
+              </button></a
+            >
+            <a
+              href="https://joaobatistajr.github.io/Wildbeast-Origamid/"
+              target="_blank"
+              ><button class="btn">
+                <img
+                  src="/img/svg/icon-open-in-new-page.svg"
+                  alt="icone abrir nova pagina"
+                />Deploy
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card-projetos grid-item--projetos"
+          data-anime="1400"
+          class="fadeInDown"
+        >
+          <img
+            src="/img/smartphone-e-tablet-animais-fantasticos.webp"
+            alt="imagem do projeto1"
+            class="img-card"
+          />
+          <h2 class="">Animais Fantásticos</h2>
+          <p class="">#HTML #CSS #javascript.</p>
+          <div class="btn-align">
+            <a
+              href="https://github.com/JoaoBatistaJr/JavaScript-Origamid"
+              target="_blank"
+              ><button class="btn">
+                <img src="/img/svg/github-icon-btn.svg" alt="icone github" />
+                Código
+              </button></a
+            >
+            <a
+              href="https://joaobatistajr.github.io/JavaScript-Origamid/"
+              target="_blank"
+              ><button class="btn">
+                <img
+                  src="/img/svg/icon-open-in-new-page.svg"
+                  alt="icone abrir nova pagina"
+                />Deploy
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="card-projetos grid-item--projetos"
+          data-anime="1600"
+          class="fadeInDown"
+        >
+          <img
+            src="/img/smartphone-e-tablet-bikcraft.webp"
+            alt="imagem do projeto1"
+            class="img-card"
+          />
+          <h2 class="">Bikcraft</h2>
+          <p class="">#php #HTML #CSS #javascript.</p>
+          <div class="btn-align">
+            <a
+              href="https://github.com/JoaoBatistaJr/Web-Design-Completo-Origamid"
+              target="_blank"
+              ><button class="btn">
+                <img src="/img/svg/github-icon-btn.svg" alt="icone github" />
+                Código
+              </button></a
+            >
+            <a
+              href="https://joaobatistajr.github.io/Web-Design-Completo-Origamid/"
+              target="_blank"
+              ><button class="btn">
+                <img
+                  src="/img/svg/icon-open-in-new-page.svg"
+                  alt="icone abrir nova pagina"
+                />Deploy
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Abre - Footer -->
+    <div class="background">
+      <footer class="grid-container">
+        <div class="grid-item--footer footer background-projetos">
+          <h1 class="titulo">João Batista</h1>
+          <p>
+            Estou disponível para novos projetos no momento. Entre em contato
+            comigo e marcamos uma conversa. 👋🏻
+          </p>
+        </div>
+        <div class="grid-item--footer footer">
+          <h2>Contato</h2>
+          <div class="redes-footer">
+            <a href="https://www.linkedin.com/in/jbjunior03/" target="_blank"
+              ><img
+                src="/img/svg/linkedin-icon-light.svg"
+                alt="Icone do Linkedin"
+            /></a>
+            <a href="https://github.com/JoaoBatistaJr" target="_blank"
+              ><img src="/img/svg/github-icon-light.svg" alt="Icone do Github"
+            /></a>
+            <a href="https://www.instagram.com/joaob.dev/" target="_blank"
+              ><img
+                src="/img/svg/intagram-icon-light.svg"
+                alt="Icone do Instagram"
+            /></a>
+          </div>
+        </div>
+        <div class="grid-item--footer footer">
+          <h2>Informações</h2>
+          <ul class="footer-informacoes">
+            <li><a href="/#experiencia">Experiência</a></li>
+            <li><a href="/#formacao">Formação</a></li>
+            <li><a href="/#servicos">Serviços</a></li>
+            <li><a href="/sobre.html">Sobre</a></li>
+            <li><a href="/projetos.html">Projetos</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <div class="copy-projetos">
+      <p>
+        Júnior Santos | Copyright © <span id="ano-atual"></span> - Todos os
+        direitos reservados.
+      </p>
+    </div>
+    <!-- Fecha - Footer -->
+    <!-- Abre - JavaScript -->
+    <script defer src="./js/simple-anime.js"></script>
+    <script defer src="./js/script.js"></script>
+    <!-- Fecha - JavaScript -->
+  </body>
+</html>

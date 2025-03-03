@@ -1,0 +1,77 @@
+.grid-item--footer {
+  padding-block: 60px;
+  grid-column: span 4;
+}
+
+.grid-item--footer:nth-child(2) {
+  //Contato
+  grid-column: span 4;
+  grid-column: 6 / span 4;
+
+  .redes-footer {
+    display: flex;
+    padding-right: 50%;
+    justify-content: space-between;
+    img {
+      width: 30px;
+      &:hover {
+        transform: scale(0.95);
+        cursor: pointer;
+      }
+    }
+  }
+}
+.grid-item--footer:nth-child(3) {
+  //Informações
+  grid-column: span 2;
+}
+
+.footer {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: $color-c11;
+  }
+  P {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 2rem;
+    line-height: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+  li {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .footer-informacoes a {
+    color: $color-c12;
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    transition: 0.1s;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 70%;
+      height: 3px;
+      background: $color-c12;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+    &:hover {
+      color: $color-c12;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
