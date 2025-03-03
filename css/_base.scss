@@ -1,40 +1,3 @@
-// Resets
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Fira Sans", sans-serif;
-}
-li {
-  list-style: none;
-}
-p {
-  font-family: "Roboto", sans-serif;
-}
-b {
-  font-weight: 700;
-}
-a {
-  text-decoration: none;
-}
-h2 {
-  font-size: 2.4rem;
-}
-img {
-  display: block;
-  border-radius: 5px;
-  max-width: 100%;
-  height: auto;
-}
-
 // Cores
 $color-c01: #f5f7fa;
 $color-c02: #e6eaf0;
@@ -53,17 +16,67 @@ $color-b04: #547eec;
 $color-b12: #3c006a;
 $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 
+// Resets
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: $color-c12;
+}
+
+
+li {
+  list-style: none;
+}
+p {
+  font-family: "Roboto", sans-serif;
+
+}
+b {
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 2.4rem;
+}
+img {
+  display: block;
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+span#ano-atual{
+  color: $color-c12;
+}
+
 // Estilo para o ScrollBar
 ::-webkit-scrollbar {
   width: 5px;
 }
-::-webkit-scrollbar-track {
-  background-color: $color-c10;
-}
+
 ::-webkit-scrollbar-thumb {
   background-color: $color-b03;
   border-radius: 10px;
+  transition: width 0.2s; /* Adicionando uma transição suave */
 }
+
+::-webkit-scrollbar-thumb:hover {
+  width: 10px; /* Largura da alça da barra de rolagem ao passar o mouse */
+}
+
 
 .background {
   background: $color-c01;
@@ -76,6 +89,7 @@ $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
   padding-block: 20px;
   background: $color-c01;
   font-size: 1.4rem;
+  
 }
 .titulo {
   position: relative;
@@ -84,6 +98,8 @@ $linear-gradiente: linear-gradient(180deg, $color-b01 0%, $color-b04 100%);
 .ponto {
   color: $color-b03;
 }
+
+
 
 .js [data-anime] {
   opacity: 0;

@@ -3,18 +3,26 @@
 
   <head>
     <meta charset="UTF-8" />
-    <title>João Batista Jr - Portfólio</title>
+    <title>Júnior Santos - Portfólio</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description"
-      content="Meu Portfólio profissional. Criado para expor meus projetos e habilidades no decorrer da minha carreira como Desenvolvedor." />
+    <meta name="description" content="Meu nome é João, crio interfaces modernas e bonitas de alta qualidade, concentrado em performance, animações, responsividade e SEO." />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, frontend, Júnior Santos, joaobatistajr, joaobdev, ui designer, programador, front-end, designer, ui, freelancer, freela, website, portfólio"
+    />
+    <meta name="theme-color" content="#0B0C12" />
+    <meta name="copyright" content="Júnior Santos 2023" />
+    <meta http-equiv="content-language" content="pt-br" />
     <meta property="og:type" content="website" />
     <meta property="og:title"
-      content="Portfólio - João Batista Júnior" />
+      content="Portfólio - Júnior Santos" />
     <meta property="og:discription"
-      content="Meu Portfólio profissional. Criado para expor meus projetos e habilidades no decorrer da minha carreira como Desenvolvedor." />
-    <meta property="og:url" content="https://joaobstistajr/portfolio/" />
-    <meta property="og:image"
-      content="https://github.com/JoaoBatistaJr.png" />
+      content="Portfólio - Júnior Santos" />
+    <meta property="og:url" content="https://juniorsantos.dev.br" />
+    <meta
+      property="og:image"
+      content="https://juniorsantos.dev.br/img/preview.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="shortcut icon" href="/img/favicon.ico" />
@@ -27,6 +35,17 @@
     <!-- Abre - Arquivos CSS -->
     <link rel="stylesheet" href="/css/main.css" />
     <!-- Fecha - Arquivos CSS -->
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-38HT5L6HKD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-38HT5L6HKD');
+    </script>
 
     <script>
     document.documentElement.classList.add("js");
@@ -43,6 +62,7 @@
           <button class="burger" title="Menu"></button>
 
           <ul class="nav-list">
+            <li><a href="#introducao">Início</a></li>
             <li><a href="#experiencia">Experiência</a></li>
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#servicos">Serviços</a></li>
@@ -61,12 +81,13 @@
         <section class="grid-container introducao" id="introducao">
           <div data-anime="400"
             class="fadeInDown grid-item--introducao">
-            <p>Oi, 👋🏻 eu sou João</p>
+            <p>Oi,👋🏻 sou João.</p>
             <h1>Desenvolvedor FrontEnd & <br>UI Designer<b class="ponto">.</b></h1>
-            <p>Atualmente estou aprendendo frameworks como
-              <b>Reacjs</b>, <b>Vuejs</b> e <b>UI/UX Design</b>. <a href="/sobre.html">Saiba
+            <p>Trabalho principalmente com <b>HTML</b>, <b>CSS</b> e <b>Javascript</b> Vanila. Atualmente estou aprendendo frameworks como
+              <b>Reacjs</b>, <b>Nextjs</b> e <b>UI/UX Design</b>. Estou em busca da minha primera oportunidade de emprego. <a href="/sobre.html">Saiba
                 mais sobre mim.</a>
             </p>
+            <!-- <a target="_blank" href="assets/Currículo.pdf"><button class="btn-curriculo">Baixar Currículo</button></a> -->
           </div>
           <div data-anime="800" class="fadeInDown grid-item--introducao ">
             <img src="img/imagem-introducao.webp" class="foto-intro" alt="Foto da introdução.">
@@ -95,25 +116,25 @@
             </div>
             <div data-anime="600" class="fadeInDown grid-item--experiencia">
               <div class="card-experiencia">
-                <img src="/img/smartphone-e-tablet-wildbeast.webp"
+                <img src="/img/Dogs.webp"
                   alt="imagem do projeto1" class="img-card">
-                  <h2 class="titulo-projeto">Wildbeast</h2>
-                  <p class="tags-projeto">#GridLayout #HTML #CSS.</p>
+                  <h2 class="titulo-projeto">Dogs</h2>
+                  <p class="tags-projeto">#React #HTML #CSS.</p>
                 <div class="btn-align">
-                  <a href="https://github.com/JoaoBatistaJr/Wildbeast-Origamid" target="_blank"><button class="btn"><img src="/img/svg/github-icon-btn.svg" alt="icone github">Código</button></a>
-                  <a href="https://joaobatistajr.github.io/Wildbeast-Origamid/" target="_blank"><button class="btn"><img src="/img/svg/icon-open-in-new-page.svg" alt="icone abrir nova pagina">Deploy</button></a>
+                  <a href="https://github.com/JoaoBatistaJr/Projeto-Dogs-Origamid" target="_blank"><button class="btn"><img src="/img/svg/github-icon-btn.svg" alt="icone github">Código</button></a>
+                  <a href="https://projeto-dogs-origamid.vercel.app" target="_blank"><button class="btn"><img src="/img/svg/icon-open-in-new-page.svg" alt="icone abrir nova pagina">Deploy</button></a>
                 </div>
               </div>
             </div>
             <div data-anime="800" class="fadeInDown grid-item--experiencia">
               <div class="card-experiencia">
-                <img src="/img/smartphone-e-tablet-flexbox.webp"
+                <img src="/img/LeScone.webp"
                   alt="imagem do projeto2" class="img-card">
-                <h2 class="titulo-projeto">FlexBox</h2>
-                <p class="tags-projeto">#HTML #CSS #flexbox.</p>
+                <h2 class="titulo-projeto">Le Scone</h2>
+                <p class="tags-projeto">#HTML #SASS #JavaScript.</p>
                 <div class="btn-align">
-                  <a href="https://github.com/JoaoBatistaJr/FlexBlog-Origamid" target="_blank"><button class="btn"><img src="/img/svg/github-icon-btn.svg" alt="icone github">Código</button></a>
-                  <a href="https://flex-blog-origamid.netlify.app" target="_blank"><button class="btn"><img src="/img/svg/icon-open-in-new-page.svg" alt="icone para nova pagina">Deploy</button></a>
+                  <a href="https://github.com/JoaoBatistaJr/Le-Scone-Origamid" target="_blank"><button class="btn"><img src="/img/svg/github-icon-btn.svg" alt="icone github">Código</button></a>
+                  <a href="https://joaobatistajr.github.io/Le-Scone-Origamid/" target="_blank"><button class="btn"><img src="/img/svg/icon-open-in-new-page.svg" alt="icone para nova pagina">Deploy</button></a>
                 </div>
               </div>
             </div>
@@ -237,7 +258,7 @@
           <div data-anime="400" class="fadeInDown background">
             <section class="grid-container servicos" id="servicos">
               <div class="grid-item--servicos">
-                <h1 class="titulo">Serviços <b class="ponto">.</b></h1>
+                <h1 class="titulo">Serviços<b class="ponto">.</b></h1>
               </div>
               <div class="grid-item--servicos">
                 <div class="card-servicos">
@@ -275,11 +296,6 @@
         </div>
         <div class="grid-item--footer footer">
           <h2>Contato</h2>
-          <ul>
-            <li>+55 84 9 8736-9216</li>
-            <li>joaob.dev@gmail.com</li>
-            <li>São Rafael - RN</li>
-          </ul>
           <div class="redes-footer">
             <a href="https://www.linkedin.com/in/jbjunior03/" target="_blank"><img src="/img/svg/linkedin-icon-light.svg" alt="Icone do Linkedin"></a>
             <a href="https://github.com/JoaoBatistaJr" target="_blank"><img src="/img/svg/github-icon-light.svg" alt="Icone do Github"></a>
@@ -298,7 +314,7 @@
         </div>
       </footer>
       <div class="copy">
-        <p>JoãoBatistaJr | Copyright © 2023 - Todos os direitos reservados.</p>
+        <p>Júnior Santos | Copyright © <span id="ano-atual"></span> - Todos os direitos reservados.</p>
       </div>
       <!-- Fecha - Footer -->
 

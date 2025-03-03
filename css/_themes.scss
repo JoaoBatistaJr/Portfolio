@@ -1,3 +1,10 @@
+.animacao-onda{
+  // -webkit-clip-path: circle(5000px at 90% -15%);
+  // clip-path: circle(5000px at 90% -15%);
+  // pointer-events: all;
+  // z-index: -9999;
+}
+
 // estilos para o tema dark
 .dark {
   background: $color-c12;
@@ -21,10 +28,19 @@
   .background-sobre,
   .copy {
     background: $color-c11;
+    span{
+      color: $color-c04;
+    }
+    #ano-atual{
+      color: $color-c04;
+    }
   }
   .copy-sobre,
   .copy-projetos{
     background: $color-c12;
+    span#ano-atual{
+      color: $color-c04;
+    }
   }
   .header {
     background: $color-c12;

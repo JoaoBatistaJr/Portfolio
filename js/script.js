@@ -3,6 +3,9 @@ const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav");
 const menuItems = document.querySelectorAll(".nav-list");
 
+// Função para o menu Ativo
+
+
 // Função para fechar o menu mobile
 function closeMobileMenu() {
   nav.classList.remove("active");
@@ -21,22 +24,24 @@ menuItems.forEach((menuItem) => {
 
 function mudaTema() {
   const body = document.body;
-  body.classList.toggle("dark");
-  const isDarkMode = body.classList.contains("dark");
+  const isDarkMode = !body.classList.contains("dark"); // Invertendo o estado atual
 
-  // Salve o estado do modo escuro no localStorage
+  body.classList.toggle("dark", isDarkMode);
+
+  // Salva o estado do modo escuro no localStorage
   localStorage.setItem("darkMode", isDarkMode);
 }
 
 // Verifique o estado do modo escuro no localStorage ao carregar a página
 document.addEventListener("DOMContentLoaded", function () {
-  const isDarkMode = localStorage.getItem("darkMode") === "true";
+  const isDarkMode =
+    localStorage.getItem("darkMode") === "true" ||
+    !window.matchMedia("(prefers-color-scheme: light)").matches;
 
   if (isDarkMode) {
     document.body.classList.add("dark");
   }
 });
-
 
 
 /** Accordion - Formação */
@@ -93,3 +98,13 @@ accordionItems.forEach((item, index) => {
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
+
+/** Função que atualiza sempre para o ano atual*/
+function atualizarAnoAtual() {
+  const data = new Date();
+  const ano = data.getFullYear();
+  document.getElementById("ano-atual").textContent = ano;
+}
+
+atualizarAnoAtual();
+

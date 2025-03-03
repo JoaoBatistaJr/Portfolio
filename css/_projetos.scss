@@ -17,12 +17,15 @@
 .grid-item--projetos:nth-child(5){
   grid-column: 1 / span 4;
 }
+
 .grid-item--projetos:nth-child(6){
   grid-column: 5 / span 4;
 }
+
 .grid-item--projetos:nth-child(7){
   grid-column: 9 / span 4;
 }
+
 .projetos{
   padding-top: 120px;
   padding-bottom: 80px;
@@ -50,12 +53,11 @@
     text-transform: lowercase;
   }
   .btn{
-    @include custom-button(1.4rem, 100px, 40px)
+    @include custom-button(1.4rem, 120px, 40px)
   }
   .btn-align{
     display: flex;
     justify-content: space-evenly;
-    margin-inline: 10px;
   }
 }
 

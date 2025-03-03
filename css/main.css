@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Fira Sans", sans-serif;
+  color: #0b0c12;
 }
 
 li {
@@ -41,17 +42,23 @@ img {
   height: auto;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+span#ano-atual {
+  color: #0b0c12;
 }
 
-::-webkit-scrollbar-track {
-  background-color: #333b59;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #609af2;
   border-radius: 10px;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s; /* Adicionando uma transição suave */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 10px; /* Largura da alça da barra de rolagem ao passar o mouse */
 }
 
 .background {
@@ -338,7 +345,6 @@ label:active:after {
   color: #3c006a;
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
 }
@@ -396,14 +402,13 @@ label:active:after {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
-  width: 120px;
+  width: 130px;
   height: 40px;
   padding: 24px;
   background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
   color: #3c006a;
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
 }
@@ -562,7 +567,7 @@ label:active:after {
 }
 .grid-item--footer:nth-child(2) .redes-footer {
   display: flex;
-  padding-right: 175px;
+  padding-right: 50%;
   justify-content: space-between;
 }
 .grid-item--footer:nth-child(2) .redes-footer img {
@@ -653,6 +658,7 @@ label:active:after {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: center;
+  align-items: flex-end;
 }
 
 .soft-skill {
@@ -732,14 +738,13 @@ label:active:after {
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
-  width: 100px;
+  width: 120px;
   height: 40px;
   padding: 24px;
   background: linear-gradient(180deg, #7ecefc 0%, #547eec 100%);
   color: #3c006a;
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
 }
@@ -750,7 +755,6 @@ label:active:after {
 .card-projetos .btn-align {
   display: flex;
   justify-content: space-evenly;
-  margin-inline: 10px;
 }
 
 .copy-projetos {
@@ -887,9 +891,23 @@ label:active:after {
 .dark .copy {
   background: #161822;
 }
+.dark .background span,
+.dark .background-sobre span,
+.dark .copy span {
+  color: #c0c5cc;
+}
+.dark .background #ano-atual,
+.dark .background-sobre #ano-atual,
+.dark .copy #ano-atual {
+  color: #c0c5cc;
+}
 .dark .copy-sobre,
 .dark .copy-projetos {
   background: #0b0c12;
+}
+.dark .copy-sobre span#ano-atual,
+.dark .copy-projetos span#ano-atual {
+  color: #c0c5cc;
 }
 .dark .header {
   background: #0b0c12;
@@ -1112,7 +1130,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
   }
@@ -1146,7 +1163,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
     margin-inline: 10px;
@@ -1226,8 +1242,7 @@ label:active:after {
     font-size: 1.6rem;
   }
   .redes-footer img {
-    width: 100%;
-    margin-right: 20px;
+    margin-right: 60px;
   }
   /* Fecha - Estilos para o seção Footer*/
   .sobre {
@@ -1283,7 +1298,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
     margin-inline: 10px;
@@ -1481,7 +1495,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
   }
@@ -1520,7 +1533,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
     margin: 0 10px;
@@ -1601,7 +1613,8 @@ label:active:after {
     padding-top: 10px;
   }
   .copy p,
-  .copy-sobre p {
+  .copy-sobre p,
+  .copy-projetos {
     margin-inline: 20px;
   }
   .sobre {
@@ -1638,7 +1651,6 @@ label:active:after {
     color: #3c006a;
     font-size: 1.4rem;
     font-weight: 700;
-    line-height: 20px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
     gap: 8px;
   }

@@ -11,7 +11,6 @@
   color: $color-b12;
   font-size: $font-size;
   font-weight: 700;
-  line-height: 20px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   gap: 8px;
   &:hover {
@@ -67,5 +66,4 @@ label:active:after {
   //Largura de deslocamento da aninmação do toggle
   width: 30px;
 }
-
 
